@@ -17,6 +17,7 @@ Output: AI_split/<year>/<Country_Name>.pdf
 
 import json
 import re
+import sys
 from pathlib import Path
 
 from pypdf import PdfReader, PdfWriter
@@ -74,7 +75,7 @@ def split_pdf(pdf_name: str, countries: list[dict]):
         start_page = country["true_page"]  # 1-indexed
 
         if i + 1 < len(countries):
-            end_page = countries[i + 1]["true_page"] - 1
+            end_page = max(start_page, countries[i + 1]["true_page"] - 1)
         else:
             end_page = total_pages
 
@@ -82,7 +83,9 @@ def split_pdf(pdf_name: str, countries: list[dict]):
         end_idx = end_page - 1
 
         if start_idx < 0 or start_idx >= total_pages:
-            print(f"  WARNING: {country['name']} page {start_page} out of range (total: {total_pages})")
+            print(
+                f"  WARNING: {country['name']} page {start_page} out of range (total: {total_pages})"
+            )
             continue
 
         end_idx = min(end_idx, total_pages - 1)
@@ -106,13 +109,23 @@ def main():
     with open(PARSED_PATH) as f:
         parsed = json.load(f)
 
+    # Optional year filter: python split_pdfs.py 2023 2015 2019
+    year_filter = set(sys.argv[1:]) if len(sys.argv) > 1 else None
+
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
     for pdf_name, countries in sorted(parsed.items()):
+        if year_filter:
+            year = extract_year(pdf_name)
+            if year not in year_filter:
+                continue
         print(f"Splitting {pdf_name}...")
         split_pdf(pdf_name, countries)
 
-    print(f"\nDone. Output in {OUTPUT_DIR}/")
+    if year_filter:
+        print(f"\nDone. Processed years: {', '.join(sorted(year_filter))}")
+    else:
+        print(f"\nDone. Output in {OUTPUT_DIR}/")
 
 
 if __name__ == "__main__":
