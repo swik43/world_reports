@@ -1,6 +1,6 @@
 # World Reports PDF Splitter
 
-Splits human rights organization annual report PDFs into individual per-country files. Currently supports Amnesty International (AI), with Human Rights Watch (HRW) planned.
+Splits human rights organization annual report PDFs into individual per-country files. Supports Amnesty International (AI) and Human Rights Watch (HRW).
 
 ## Prerequisites
 
@@ -93,7 +93,65 @@ Output goes to `output/ai/<year>/<Country_Name>.pdf`.
 
 ## Human Rights Watch (HRW) Workflow
 
-_Coming soon._ HRW reports use a different layout and will have dedicated scripts in `scripts/hrw/`.
+HRW reports come in two layouts:
+
+- **Single-layout** (2005–2015, 2017–2018, 2022): one printed page per PDF page, same as AI reports.
+- **Double-layout** (2016, 2019–2021, 2023–2024): two printed pages side by side on each PDF page. These need an extra preprocessing step.
+
+### Step 0: Add PDFs
+
+Place HRW report PDFs in the `HRW/` directory. These are not included in the repo.
+
+### Step 1: Configure
+
+Edit `data/hrw/contents_config.json` to register each PDF with:
+
+- **contents_pages** — 1-indexed PDF pages where the table of contents lives
+- **layout** — `"single"` or `"double"`
+
+For single-layout PDFs:
+- **offset** — `true_page - report_page` (same as AI)
+
+For double-layout PDFs:
+- **double_start** — the PDF page where the double-page layout begins (typically 2, since page 1 is a single-page cover)
+- **report_page_1** — the PDF page containing report page 1
+
+### Step 2: Extract contents page images
+
+```bash
+python scripts/hrw/extract_contents_images.py           # all PDFs
+python scripts/hrw/extract_contents_images.py 2023      # specific year
+```
+
+### Step 3: Extract country data with Claude
+
+Same process as AI — attach contents page images and extract `{"name", "report_page"}` entries into `data/hrw/contents_json/`.
+
+### Step 4: Unsplit double-layout PDFs
+
+```bash
+python scripts/hrw/unsplit_double_pages.py               # all double-layout PDFs
+python scripts/hrw/unsplit_double_pages.py 2024 2023     # specific years
+```
+
+This crops each double page into left and right halves, producing single-page-per-sheet PDFs in `output/hrw_unsplit/`. Originals are not modified.
+
+### Step 5: Build final config
+
+```bash
+python scripts/hrw/build_final_config.py
+```
+
+For double-layout PDFs, the offset is computed automatically from `report_page_1` and `double_start`. Writes `data/hrw/parsed_contents.json`.
+
+### Step 6: Split PDFs
+
+```bash
+python scripts/hrw/split_pdfs.py                # all PDFs
+python scripts/hrw/split_pdfs.py 2023 2015      # specific years
+```
+
+Single-layout PDFs are read from `HRW/`, double-layout PDFs are read from `output/hrw_unsplit/`. Output goes to `output/hrw/<year>/<Country_Name>.pdf`.
 
 ---
 
@@ -109,20 +167,29 @@ world_reports/
       extract_contents_images.py
       build_final_config.py
       split_pdfs.py
-    hrw/                       # HRW processing scripts (planned)
+    hrw/                       # HRW processing scripts
+      extract_contents_images.py
+      unsplit_double_pages.py   # converts double-layout → single-page-per-sheet
+      build_final_config.py
+      split_pdfs.py
   data/
     ai/                        # AI intermediate data
       contents_config.json     # contents pages + offsets per PDF
       parsed_contents.json     # generated: country names + true pages
       contents_images/         # generated: PNG images of contents pages
       contents_json/           # Claude's extracted country/page data
-    hrw/                       # HRW intermediate data (planned)
+    hrw/                       # HRW intermediate data
+      contents_config.json     # contents pages + offsets/layout per PDF
+      parsed_contents.json     # generated: country names + true pages
+      contents_images/         # generated: PNG images of contents pages
+      contents_json/           # Claude's extracted country/page data
   output/
     ai/                        # generated: per-country PDFs
       2023/
         Afghanistan.pdf
         Albania.pdf
         ...
-    hrw/                       # HRW output (planned)
+    hrw/                       # generated: per-country PDFs
+    hrw_unsplit/               # generated: double-layout PDFs converted to single
   new.sh                       # helper to open a new contents JSON
 ```

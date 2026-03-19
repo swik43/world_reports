@@ -23,8 +23,10 @@ from pathlib import Path
 from pypdf import PdfReader, PdfWriter
 
 HRW_DIR = Path("HRW")
+UNSPLIT_DIR = Path("output/hrw_unsplit")
 OUTPUT_DIR = Path("output/hrw")
 PARSED_PATH = Path("data/hrw/parsed_contents.json")
+CONFIG_PATH = Path("data/hrw/contents_config.json")
 
 
 def extract_year(pdf_name: str) -> str:
@@ -40,8 +42,10 @@ def sanitize_filename(name: str) -> str:
     return name.strip()
 
 
-def split_pdf(pdf_name: str, countries: list[dict]):
-    pdf_path = HRW_DIR / pdf_name
+def split_pdf(pdf_name: str, countries: list[dict], config: dict):
+    is_double = config.get(pdf_name, {}).get("layout") == "double"
+    source_dir = UNSPLIT_DIR if is_double else HRW_DIR
+    pdf_path = source_dir / pdf_name
     if not pdf_path.exists():
         print(f"WARNING: {pdf_name} not found, skipping")
         return
@@ -94,6 +98,8 @@ def main():
 
     with open(PARSED_PATH) as f:
         parsed = json.load(f)
+    with open(CONFIG_PATH) as f:
+        config = json.load(f)
 
     # Optional year filter: python split_pdfs.py 2023 2015 2019
     year_filter = set(sys.argv[1:]) if len(sys.argv) > 1 else None
@@ -106,7 +112,7 @@ def main():
             if year not in year_filter:
                 continue
         print(f"Splitting {pdf_name}...")
-        split_pdf(pdf_name, countries)
+        split_pdf(pdf_name, countries, config)
 
     if year_filter:
         print(f"\nDone. Processed years: {', '.join(sorted(year_filter))}")

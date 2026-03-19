@@ -54,13 +54,13 @@ def main():
                 print(f"WARNING: {pdf_name} not in contents_config.json, skipping")
                 continue
 
-            layout = cfg.get("layout", "single")
             offset = cfg.get("offset")
 
-            # For double-layout PDFs, each PDF page holds 2 printed pages.
-            # double_start is the PDF page where the double layout begins.
-            # true_page = double_start + (report_page - 1) // 2
-            double_start = cfg.get("double_start", 0)
+            # For double-layout PDFs, unsplit_double_pages.py has already
+            # split each double page into two single pages, so we compute
+            # the equivalent offset for the unsplit PDF.
+            if cfg.get("layout") == "double":
+                offset = 2 * cfg["report_page_1"] - cfg["double_start"]
 
             processed = []
             for country in countries:
@@ -68,9 +68,6 @@ def main():
 
                 if "true_page" in country:
                     true_page = country["true_page"]
-                elif layout == "double":
-                    report_page = country["report_page"]
-                    true_page = double_start + (report_page - 1) // 2
                 elif offset is not None:
                     true_page = offset + country["report_page"]
                 else:
@@ -82,9 +79,7 @@ def main():
                 processed.append({"name": name, "true_page": true_page})
 
             result[pdf_name] = processed
-            if layout == "double":
-                mode_str = f"double (start page {double_start})"
-            elif offset is not None:
+            if offset is not None:
                 mode_str = f"offset {offset:+d}"
             else:
                 mode_str = "true_page direct"
