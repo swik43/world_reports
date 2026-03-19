@@ -1,106 +1,110 @@
 {
   "1999_Amnesty_International.pdf": {
     "contents_pages": [7, 8],
-    "preset": "slash"
+    "offset": 8
   },
   "2000_Amnesty_International.pdf": {
     "contents_pages": [7, 8],
-    "preset": "slash"
+    "offset": 8
   },
   "2001_Amnesty_International.pdf": {
     "contents_pages": [7, 8],
-    "preset": "slash"
+    "offset": 8
   },
   "2002_Amnesty_International.pdf": {
     "contents_pages": [7, 8],
-    "preset": "slash"
+    "offset": 8
   },
   "2003_Amnesty_International.pdf": {
     "contents_pages": [6, 7],
-    "preset": "slash"
+    "offset": 7
   },
   "2004_Amnesty_International.pdf": {
     "contents_pages": [8, 9],
-    "preset": "slash"
+    "offset": 13
   },
   "2005_Amnesty_International.pdf": {
     "contents_pages": [8, 9],
-    "preset": "slash"
+    "offset": 11
+  },
+  "2006_Amnesty_International.pdf": {
+    "contents_pages": [],
+    "offset": null
   },
   "2007_Amnesty_International.pdf": {
     "contents_pages": [10, 11],
-    "preset": "slash"
+    "offset": 14
   },
   "2008_Amnesty_International.pdf": {
     "contents_pages": [10, 11],
-    "preset": "slash"
+    "offset": 16
   },
   "2009_Amnesty_International.pdf": {
     "contents_pages": [6, 7],
-    "preset": "slash"
+    "offset": 23
   },
   "2010_Amnesty_International.pdf": {
     "contents_pages": [6, 7],
-    "preset": "slash"
+    "offset": 26
   },
   "2011_Amnesty_International.pdf": {
     "contents_pages": [8, 9],
-    "preset": "slash"
+    "offset": 20
   },
   "2012_Amnesty_International.pdf": {
     "contents_pages": [6, 7],
-    "preset": "slash"
+    "offset": 12
   },
   "2014_Amnesty_International.pdf": {
     "contents_pages": [4, 5],
-    "preset": "space"
+    "offset": 8
   },
   "2015_Amnesty_International.pdf": {
     "contents_pages": [5, 6, 7, 8],
-    "preset": "dots"
+    "offset": 0
   },
   "2016_Amnesty_International.pdf": {
     "contents_pages": [5, 6],
-    "preset": "space"
+    "offset": 0
   },
   "2017_Amnesty_International.pdf": {
     "contents_pages": [5, 6],
-    "preset": "space"
+    "offset": 0
   },
   "2019_Africa_Amnesty_International.pdf": {
     "contents_pages": [4],
-    "preset": "wide_space"
+    "offset": 0
   },
   "2019_Americas_Amnesty_International.pdf": {
     "contents_pages": [3],
-    "preset": "wide_space"
+    "offset": 1
   },
   "2019_Asia_Pacific_Amnesty_International.pdf": {
     "contents_pages": [4],
-    "preset": "wide_space"
+    "offset": 0
   },
   "2019_Eastern_Europe_Central_Asia_Amnesty_International.pdf": {
     "contents_pages": [3],
-    "preset": "wide_space"
+    "offset": 0
   },
   "2019_Middle_East_North_Africa_Amnesty_International.pdf": {
     "contents_pages": [4],
-    "preset": "wide_space"
+    "offset": 0
   },
   "2020_Amnesty_International.pdf": {
     "contents_pages": [5, 6],
-    "preset": "space"
+    "offset": 0
   },
   "2021_Amnesty_International.pdf": {
     "contents_pages": [5, 6],
-    "preset": "space"
+    "offset": 0
   },
   "2022_Amnesty_International.pdf": {
     "contents_pages": [5, 6],
-    "preset": "space"
+    "offset": 0
   },
   "2023_Amnesty_International.pdf": {
     "contents_pages": [5, 6],
-    "preset": "space"
+    "offset": 0
   }
 }
