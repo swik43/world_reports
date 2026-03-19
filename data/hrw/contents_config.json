@@ -56,8 +56,8 @@
   },
   "2016_World_Report_Human_Rights_Watch.pdf": {
     "contents_pages": [5, 6],
-    "offset": null,
-    "layout": "double"
+    "layout": "double",
+    "double_start": 2
   },
   "2017_World_Report_Human_Rights_Watch.pdf": {
     "contents_pages": [9, 10, 11],
@@ -71,18 +71,18 @@
   },
   "2019_World_Report_Human_Rights_Watch.pdf": {
     "contents_pages": [5, 6],
-    "offset": null,
-    "layout": "double"
+    "layout": "double",
+    "double_start": 2
   },
   "2020_World_Report_Human_Rights_Watch.pdf": {
     "contents_pages": [5, 6],
-    "offset": null,
-    "layout": "double"
+    "layout": "double",
+    "double_start": 2
   },
   "2021_World_Report_Human_Rights_Watch.pdf": {
     "contents_pages": [4, 5],
-    "offset": null,
-    "layout": "double"
+    "layout": "double",
+    "double_start": 2
   },
   "2022_World_Report_Human_Rights_Watch.pdf": {
     "contents_pages": [6, 7, 8, 9],
@@ -91,12 +91,12 @@
   },
   "2023_World_Report_Human_Rights_Watch.pdf": {
     "contents_pages": [4, 5],
-    "offset": null,
-    "layout": "double"
+    "layout": "double",
+    "double_start": 2
   },
   "2024_World_Report_Human_Rights_Watch.pdf": {
     "contents_pages": [4, 5],
-    "offset": null,
-    "layout": "double"
+    "layout": "double",
+    "double_start": 2
   }
 }

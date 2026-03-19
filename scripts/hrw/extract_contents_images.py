@@ -36,9 +36,6 @@ def main():
             if year not in year_filter:
                 continue
 
-        if info.get("layout") == "single":
-            continue
-
         contents_pages = info["contents_pages"]
         if not contents_pages:
             continue

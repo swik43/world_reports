@@ -15,7 +15,7 @@ Usage:
 import json
 from pathlib import Path
 
-CLAUDE_DIR = Path("data/ai/contents_json")
+IMAGE_DIR = Path("data/ai/contents_json")
 CONFIG_PATH = Path("data/ai/contents_config.json")
 OUTPUT_PATH = Path("data/ai/parsed_contents.json")
 
@@ -37,7 +37,7 @@ def main():
 
     result = {}
 
-    for path in sorted(CLAUDE_DIR.glob("*.json")):
+    for path in sorted(IMAGE_DIR.glob("*.json")):
         with open(path) as f:
             data = json.load(f)
 
