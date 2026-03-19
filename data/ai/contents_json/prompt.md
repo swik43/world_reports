@@ -1,11 +1,7 @@
-Here is the updated prompt incorporating all your amendments:
-
----
-
 I will provide you with the contents pages from an Amnesty International annual report PDF. Extract every country name and its page number as listed.
 Return ONLY valid JSON in this exact format — no commentary:
 
-```
+```json
 {
   "FILENAME.pdf": [
     { "name": "Afghanistan", "report_page": 50 },
