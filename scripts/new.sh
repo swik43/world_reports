@@ -1,0 +1,12 @@
+#!/bin/sh
+
+kind=$1
+year=$2
+
+case "$kind" in
+  hrw) suffix="World_Report_Human_Rights_Watch" ;;
+  ai)  suffix="Amnesty_International" ;;
+  *)   echo "Unknown kind: $kind (use 'hrw' or 'ai')" && exit 1 ;;
+esac
+
+$EDITOR "data/${kind}/contents_json/${year}_${suffix}.json"

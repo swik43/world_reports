@@ -19,7 +19,17 @@ from copy import deepcopy
 from pathlib import Path
 
 from pypdf import PdfReader, PdfWriter
-from tqdm import tqdm
+from rich.console import Group
+from rich.live import Live
+from rich.progress import (
+    BarColumn,
+    MofNCompleteColumn,
+    Progress,
+    TextColumn,
+    TimeElapsedColumn,
+)
+from rich.spinner import Spinner
+from rich.text import Text
 
 HRW_DIR = Path("HRW")
 CONFIG_PATH = Path("data/hrw/contents_config.json")
@@ -48,18 +58,24 @@ def split_page_halves(page):
     return left, right
 
 
-def process_pdf(pdf_name: str, cfg: dict):
-    pdf_path = HRW_DIR / pdf_name
-    if not pdf_path.exists():
-        print(f"  WARNING: {pdf_path} not found, skipping")
-        return
-
+def process_pdf(
+    pdf_name: str,
+    cfg: dict,
+    *,
+    spinner: Spinner,
+    live: Live,
+    overall_progress: Progress,
+    overall_task,
+):
     double_start = cfg["double_start"]  # 1-indexed PDF page where doubles begin
-    reader = PdfReader(str(pdf_path))
+    reader = PdfReader(str(HRW_DIR / pdf_name))
     writer = PdfWriter()
 
-    for i, page in enumerate(tqdm(reader.pages, desc=f"  {pdf_name}", unit="pg")):
+    for i, page in enumerate(reader.pages):
         page_num = i + 1  # 1-indexed
+
+        spinner.update(text=Text(f"{pdf_name} / page {page_num}", style="gray"))
+        live.update(make_layout(spinner, overall_progress))
 
         if page_num < double_start:
             # Pre-double pages (cover, etc.) — keep as-is
@@ -69,12 +85,16 @@ def process_pdf(pdf_name: str, cfg: dict):
             writer.add_page(left)
             writer.add_page(right)
 
+        overall_progress.advance(overall_task)
+
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     out_path = OUTPUT_DIR / pdf_name
     with open(out_path, "wb") as f:
         writer.write(f)
 
-    print(f"  {len(reader.pages)} pages -> {len(writer.pages)} pages -> {out_path}")
+
+def make_layout(spinner, overall_progress):
+    return Group(spinner, overall_progress)
 
 
 def main():
@@ -83,6 +103,10 @@ def main():
 
     year_filter = set(sys.argv[1:]) if len(sys.argv) > 1 else None
 
+    # Pre-scan: filter to double-layout PDFs and count total pages
+    eligible: list[tuple[str, dict]] = []
+    total_pages = 0
+
     for pdf_name, cfg in sorted(config.items()):
         if cfg.get("layout") != "double":
             continue
@@ -90,10 +114,41 @@ def main():
             year = extract_year(pdf_name)
             if year not in year_filter:
                 continue
-        print(f"Processing {pdf_name}...")
-        process_pdf(pdf_name, cfg)
 
-    print("\nDone.")
+        pdf_path = HRW_DIR / pdf_name
+        if not pdf_path.exists():
+            print(f"WARNING: {pdf_path} not found, skipping")
+            continue
+
+        reader = PdfReader(str(pdf_path))
+        total_pages += len(reader.pages)
+        eligible.append((pdf_name, cfg))
+
+    if not eligible:
+        print("No eligible double-layout PDFs found.")
+        return
+
+    overall_progress = Progress(
+        TextColumn("[bold blue]{task.description}"),
+        BarColumn(),
+        MofNCompleteColumn(),
+        TimeElapsedColumn(),
+    )
+    overall_task = overall_progress.add_task("Overall", total=total_pages)
+    spinner = Spinner("dots", text=Text("Starting...", style="cyan"))
+
+    with Live(make_layout(spinner, overall_progress), refresh_per_second=10) as live:
+        for pdf_name, cfg in eligible:
+            process_pdf(
+                pdf_name,
+                cfg,
+                spinner=spinner,
+                live=live,
+                overall_progress=overall_progress,
+                overall_task=overall_task,
+            )
+
+    print(f"\nDone. {len(eligible)} PDFs processed ({total_pages} pages) to {OUTPUT_DIR}/")
 
 
 if __name__ == "__main__":

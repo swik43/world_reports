@@ -14,6 +14,8 @@ import sys
 from pathlib import Path
 
 import pymupdf4llm
+from rich.console import Group
+from rich.live import Live
 from rich.progress import (
     BarColumn,
     MofNCompleteColumn,
@@ -21,6 +23,8 @@ from rich.progress import (
     TextColumn,
     TimeElapsedColumn,
 )
+from rich.spinner import Spinner
+from rich.text import Text
 
 PDF_DIR = Path("output/hrw")
 MD_DIR = Path("output/hrw_markdown")
@@ -31,26 +35,6 @@ def extract_year(dir_name: str) -> int:
     if match:
         return int(match.group(1))
     return 0
-
-
-def convert_dir(year_dir: Path, progress: Progress, year_task_id: int) -> None:
-    md_dest = MD_DIR / year_dir.name
-    md_dest.mkdir(parents=True, exist_ok=True)
-
-    pdfs = sorted(year_dir.glob("*.pdf"))
-    file_task = progress.add_task(f"  [cyan]{year_dir.name}", total=len(pdfs))
-
-    for pdf_path in pdfs:
-        progress.update(
-            file_task, description=f"  [cyan]{year_dir.name}[/] {pdf_path.stem}"
-        )
-        out_path = md_dest / pdf_path.with_suffix(".md").name
-        md_text = pymupdf4llm.to_markdown(str(pdf_path))
-        out_path.write_text(md_text, encoding="utf-8")  # pyright: ignore[reportArgumentType]
-        progress.advance(file_task)
-        progress.advance(year_task_id)  # pyright: ignore[reportArgumentType]
-
-    progress.update(file_task, visible=False)
 
 
 def main():
@@ -79,15 +63,36 @@ def main():
 
     total_pdfs = sum(len(list(d.glob("*.pdf"))) for d in year_dirs)
 
-    with Progress(
+    overall_progress = Progress(
         TextColumn("[bold blue]{task.description}"),
         BarColumn(),
         MofNCompleteColumn(),
         TimeElapsedColumn(),
-    ) as progress:
-        overall = progress.add_task("Overall", total=total_pdfs)
+    )
+    overall_task = overall_progress.add_task("Overall", total=total_pdfs)
+    spinner = Spinner("dots", text=Text("Starting...", style="cyan"))
+
+    def make_layout():
+        return Group(spinner, overall_progress)
+
+    with Live(make_layout(), refresh_per_second=10) as live:
         for year_dir in year_dirs:
-            convert_dir(year_dir, progress, overall)
+            md_dest = MD_DIR / year_dir.name
+            md_dest.mkdir(parents=True, exist_ok=True)
+
+            pdfs = sorted(year_dir.glob("*.pdf"))
+
+            for pdf_path in pdfs:
+                spinner.update(
+                    text=Text(f"{year_dir.name} / {pdf_path.stem}", style="gray")
+                )
+                live.update(make_layout())
+
+                out_path = md_dest / pdf_path.with_suffix(".md").name
+                md_text = pymupdf4llm.to_markdown(str(pdf_path))
+                out_path.write_text(md_text, encoding="utf-8")  # pyright: ignore[reportArgumentType]
+
+                overall_progress.advance(overall_task)
 
     print(f"\nDone. {total_pdfs} files converted to {MD_DIR}/")
 

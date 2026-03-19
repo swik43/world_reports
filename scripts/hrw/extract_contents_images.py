@@ -14,6 +14,17 @@ import sys
 from pathlib import Path
 
 import pypdfium2 as pdfium
+from rich.console import Group
+from rich.live import Live
+from rich.progress import (
+    BarColumn,
+    MofNCompleteColumn,
+    Progress,
+    TextColumn,
+    TimeElapsedColumn,
+)
+from rich.spinner import Spinner
+from rich.text import Text
 
 HRW_DIR = Path("HRW")
 CONFIG_PATH = Path("data/hrw/contents_config.json")
@@ -30,6 +41,10 @@ def main():
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
+    # Pre-scan: build eligible list and count total pages
+    eligible: list[tuple[str, dict]] = []
+    total_pages = 0
+
     for pdf_name, info in sorted(config.items()):
         if year_filter:
             year = pdf_name.split("_")[0]
@@ -45,22 +60,48 @@ def main():
             print(f"WARNING: {pdf_name} not found, skipping")
             continue
 
-        stem = pdf_name.replace(".pdf", "")
-        out_dir = OUTPUT_DIR / stem
-        out_dir.mkdir(parents=True, exist_ok=True)
+        eligible.append((pdf_name, info))
+        total_pages += len(contents_pages)
 
-        pdf = pdfium.PdfDocument(str(pdf_path))
-        for page_num in contents_pages:
-            page = pdf[page_num - 1]  # 0-indexed
-            bitmap = page.render(scale=SCALE)
-            image = bitmap.to_pil()
-            out_path = out_dir / f"page_{page_num}.png"
-            image.save(str(out_path))
+    if not eligible:
+        print("No eligible PDFs found.")
+        return
 
-        pdf.close()
-        print(f"{pdf_name}: {len(contents_pages)} pages -> {out_dir}/")
+    overall_progress = Progress(
+        TextColumn("[bold blue]{task.description}"),
+        BarColumn(),
+        MofNCompleteColumn(),
+        TimeElapsedColumn(),
+    )
+    overall_task = overall_progress.add_task("Overall", total=total_pages)
+    spinner = Spinner("dots", text=Text("Starting...", style="cyan"))
 
-    print(f"\nDone. Images in {OUTPUT_DIR}/")
+    def make_layout():
+        return Group(spinner, overall_progress)
+
+    with Live(make_layout(), refresh_per_second=10) as live:
+        for pdf_name, info in eligible:
+            contents_pages = info["contents_pages"]
+            stem = pdf_name.replace(".pdf", "")
+            out_dir = OUTPUT_DIR / stem
+            out_dir.mkdir(parents=True, exist_ok=True)
+
+            pdf = pdfium.PdfDocument(str(HRW_DIR / pdf_name))
+            for page_num in contents_pages:
+                spinner.update(text=Text(f"{pdf_name} / page {page_num}", style="gray"))
+                live.update(make_layout())
+
+                page = pdf[page_num - 1]  # 0-indexed
+                bitmap = page.render(scale=SCALE)
+                image = bitmap.to_pil()
+                out_path = out_dir / f"page_{page_num}.png"
+                image.save(str(out_path))
+
+                overall_progress.advance(overall_task)
+
+            pdf.close()
+
+    print(f"\nDone. {total_pages} pages extracted to {OUTPUT_DIR}/")
 
 
 if __name__ == "__main__":

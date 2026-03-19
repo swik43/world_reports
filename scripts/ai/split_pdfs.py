@@ -21,6 +21,17 @@ import sys
 from pathlib import Path
 
 from pypdf import PdfReader, PdfWriter
+from rich.console import Group
+from rich.live import Live
+from rich.progress import (
+    BarColumn,
+    MofNCompleteColumn,
+    Progress,
+    TextColumn,
+    TimeElapsedColumn,
+)
+from rich.spinner import Spinner
+from rich.text import Text
 
 AI_DIR = Path("AI")
 OUTPUT_DIR = Path("output/ai")
@@ -55,23 +66,25 @@ def year_dir_for(pdf_name: str) -> Path:
     return OUTPUT_DIR / year
 
 
-def split_pdf(pdf_name: str, countries: list[dict]):
-    pdf_path = AI_DIR / pdf_name
-    if not pdf_path.exists():
-        print(f"WARNING: {pdf_name} not found, skipping")
-        return
-
-    if not countries:
-        print(f"  No countries to split for {pdf_name}")
-        return
-
+def split_pdf(
+    pdf_name: str,
+    countries: list[dict],
+    *,
+    spinner: Spinner,
+    live: Live,
+    overall_progress: Progress,
+    overall_task,
+):
     dest = year_dir_for(pdf_name)
     dest.mkdir(parents=True, exist_ok=True)
 
-    reader = PdfReader(str(pdf_path))
+    reader = PdfReader(str(AI_DIR / pdf_name))
     total_pages = len(reader.pages)
 
     for i, country in enumerate(countries):
+        spinner.update(text=Text(f"{pdf_name} / {country['name']}", style="gray"))
+        live.update(make_layout(spinner, overall_progress))
+
         start_page = country["true_page"]  # 1-indexed
 
         if i + 1 < len(countries):
@@ -83,9 +96,10 @@ def split_pdf(pdf_name: str, countries: list[dict]):
         end_idx = end_page - 1
 
         if start_idx < 0 or start_idx >= total_pages:
-            print(
+            live.console.print(
                 f"  WARNING: {country['name']} page {start_page} out of range (total: {total_pages})"
             )
+            overall_progress.advance(overall_task)
             continue
 
         end_idx = min(end_idx, total_pages - 1)
@@ -98,7 +112,11 @@ def split_pdf(pdf_name: str, countries: list[dict]):
         with open(dest / filename, "wb") as f:
             writer.write(f)
 
-    print(f"  Split into {len(countries)} files in {dest}")
+        overall_progress.advance(overall_task)
+
+
+def make_layout(spinner, overall_progress):
+    return Group(spinner, overall_progress)
 
 
 def main():
@@ -109,23 +127,56 @@ def main():
     with open(PARSED_PATH) as f:
         parsed = json.load(f)
 
-    # Optional year filter: python split_pdfs.py 2023 2015 2019
     year_filter = set(sys.argv[1:]) if len(sys.argv) > 1 else None
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+    # Pre-scan: build eligible list and count total countries
+    eligible: list[tuple[str, list[dict]]] = []
+    total_countries = 0
 
     for pdf_name, countries in sorted(parsed.items()):
         if year_filter:
             year = extract_year(pdf_name)
             if year not in year_filter:
                 continue
-        print(f"Splitting {pdf_name}...")
-        split_pdf(pdf_name, countries)
 
-    if year_filter:
-        print(f"\nDone. Processed years: {', '.join(sorted(year_filter))}")
-    else:
-        print(f"\nDone. Output in {OUTPUT_DIR}/")
+        if not countries:
+            continue
+
+        pdf_path = AI_DIR / pdf_name
+        if not pdf_path.exists():
+            print(f"WARNING: {pdf_name} not found, skipping")
+            continue
+
+        eligible.append((pdf_name, countries))
+        total_countries += len(countries)
+
+    if not eligible:
+        print("No eligible PDFs found.")
+        return
+
+    overall_progress = Progress(
+        TextColumn("[bold blue]{task.description}"),
+        BarColumn(),
+        MofNCompleteColumn(),
+        TimeElapsedColumn(),
+    )
+    overall_task = overall_progress.add_task("Overall", total=total_countries)
+    spinner = Spinner("dots", text=Text("Starting...", style="cyan"))
+
+    with Live(make_layout(spinner, overall_progress), refresh_per_second=10) as live:
+        for pdf_name, countries in eligible:
+            split_pdf(
+                pdf_name,
+                countries,
+                spinner=spinner,
+                live=live,
+                overall_progress=overall_progress,
+                overall_task=overall_task,
+            )
+
+    print(f"\nDone. {total_countries} country files split to {OUTPUT_DIR}/")
 
 
 if __name__ == "__main__":
