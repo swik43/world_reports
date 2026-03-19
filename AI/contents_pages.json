@@ -1,0 +1,106 @@
+{
+  "1999_Amnesty_International.pdf": {
+    "contents_pages": [7, 8],
+    "preset": "slash"
+  },
+  "2000_Amnesty_International.pdf": {
+    "contents_pages": [7, 8],
+    "preset": "slash"
+  },
+  "2001_Amnesty_International.pdf": {
+    "contents_pages": [7, 8],
+    "preset": "slash"
+  },
+  "2002_Amnesty_International.pdf": {
+    "contents_pages": [7, 8],
+    "preset": "slash"
+  },
+  "2003_Amnesty_International.pdf": {
+    "contents_pages": [6, 7],
+    "preset": "slash"
+  },
+  "2004_Amnesty_International.pdf": {
+    "contents_pages": [8, 9],
+    "preset": "slash"
+  },
+  "2005_Amnesty_International.pdf": {
+    "contents_pages": [8, 9],
+    "preset": "slash"
+  },
+  "2007_Amnesty_International.pdf": {
+    "contents_pages": [10, 11],
+    "preset": "slash"
+  },
+  "2008_Amnesty_International.pdf": {
+    "contents_pages": [10, 11],
+    "preset": "slash"
+  },
+  "2009_Amnesty_International.pdf": {
+    "contents_pages": [6, 7],
+    "preset": "slash"
+  },
+  "2010_Amnesty_International.pdf": {
+    "contents_pages": [6, 7],
+    "preset": "slash"
+  },
+  "2011_Amnesty_International.pdf": {
+    "contents_pages": [8, 9],
+    "preset": "slash"
+  },
+  "2012_Amnesty_International.pdf": {
+    "contents_pages": [6, 7],
+    "preset": "slash"
+  },
+  "2014_Amnesty_International.pdf": {
+    "contents_pages": [4, 5],
+    "preset": "space"
+  },
+  "2015_Amnesty_International.pdf": {
+    "contents_pages": [5, 6, 7, 8],
+    "preset": "dots"
+  },
+  "2016_Amnesty_International.pdf": {
+    "contents_pages": [5, 6],
+    "preset": "space"
+  },
+  "2017_Amnesty_International.pdf": {
+    "contents_pages": [5, 6],
+    "preset": "space"
+  },
+  "2019_Africa_Amnesty_International.pdf": {
+    "contents_pages": [4],
+    "preset": "wide_space"
+  },
+  "2019_Americas_Amnesty_International.pdf": {
+    "contents_pages": [3],
+    "preset": "wide_space"
+  },
+  "2019_Asia_Pacific_Amnesty_International.pdf": {
+    "contents_pages": [4],
+    "preset": "wide_space"
+  },
+  "2019_Eastern_Europe_Central_Asia_Amnesty_International.pdf": {
+    "contents_pages": [3],
+    "preset": "wide_space"
+  },
+  "2019_Middle_East_North_Africa_Amnesty_International.pdf": {
+    "contents_pages": [4],
+    "preset": "wide_space"
+  },
+  "2020_Amnesty_International.pdf": {
+    "contents_pages": [5, 6],
+    "preset": "space"
+  },
+  "2021_Amnesty_International.pdf": {
+    "contents_pages": [5, 6],
+    "preset": "space"
+  },
+  "2022_Amnesty_International.pdf": {
+    "contents_pages": [5, 6],
+    "preset": "space"
+  },
+  "2023_Amnesty_International.pdf": {
+    "contents_pages": [5, 6],
+    "preset": "space"
+  }
+}
