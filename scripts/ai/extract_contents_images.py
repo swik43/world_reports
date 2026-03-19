@@ -1,12 +1,12 @@
 """
 Extract contents pages from Amnesty International PDFs as PNG images.
 
-Reads AI/contents_config.json, renders the specified contents pages
-from each original PDF, and saves them as PNGs in AI_contents_images/.
+Reads data/ai/contents_config.json, renders the specified contents pages
+from each original PDF, and saves them as PNGs in data/ai/contents_images/.
 
 Usage:
-    python scripts/extract_contents_images.py          # all PDFs
-    python scripts/extract_contents_images.py 2023     # specific years
+    python scripts/ai/extract_contents_images.py          # all PDFs
+    python scripts/ai/extract_contents_images.py 2023     # specific years
 """
 
 import json
@@ -16,8 +16,8 @@ from pathlib import Path
 import pypdfium2 as pdfium
 
 AI_DIR = Path("AI")
-CONFIG_PATH = AI_DIR / "contents_config.json"
-OUTPUT_DIR = Path("AI_contents_images")
+CONFIG_PATH = Path("data/ai/contents_config.json")
+OUTPUT_DIR = Path("data/ai/contents_images")
 
 SCALE = 3  # render at 3x for readability
 

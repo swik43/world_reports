@@ -1,23 +1,23 @@
 """
 Build parsed_contents.json from Claude's output JSONs.
 
-Reads each JSON in AI_contents_json/ (name + report_page from Claude),
-applies the offset from AI/contents_config.json to compute true_page,
-normalizes country names to title case, and writes AI/parsed_contents.json.
+Reads each JSON in data/ai/contents_json/ (name + report_page from Claude),
+applies the offset from data/ai/contents_config.json to compute true_page,
+normalizes country names to title case, and writes data/ai/parsed_contents.json.
 
 Files with offset=null in the config (e.g. 2006) must provide true_page
 directly in their JSON instead of report_page.
 
 Usage:
-    python scripts/build_final_config.py
+    python scripts/ai/build_final_config.py
 """
 
 import json
 from pathlib import Path
 
-CLAUDE_DIR = Path("AI_contents_json")
-CONFIG_PATH = Path("AI/contents_config.json")
-OUTPUT_PATH = Path("AI/parsed_contents.json")
+CLAUDE_DIR = Path("data/ai/contents_json")
+CONFIG_PATH = Path("data/ai/contents_config.json")
+OUTPUT_PATH = Path("data/ai/parsed_contents.json")
 
 
 def titlecase_name(name: str) -> str:

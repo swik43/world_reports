@@ -1,6 +1,6 @@
-# Amnesty International PDF Splitter
+# World Reports PDF Splitter
 
-Splits Amnesty International annual report PDFs into individual per-country files.
+Splits human rights organization annual report PDFs into individual per-country files. Currently supports Amnesty International (AI), with Human Rights Watch (HRW) planned.
 
 ## Prerequisites
 
@@ -17,7 +17,11 @@ uv venv && source .venv/bin/activate
 uv pip install pdfplumber pypdf pypdfium2
 ```
 
-## Step 0: Add PDFs
+---
+
+## Amnesty International (AI) Workflow
+
+### Step 0: Add PDFs
 
 Place all Amnesty International report PDFs in the `AI/` directory. The filenames should follow the pattern `<year>_Amnesty_International.pdf`, e.g.:
 
@@ -31,25 +35,25 @@ AI/
 
 These PDFs are not included in the repo.
 
-## Step 1: Configure
+### Step 1: Configure
 
-Edit `AI/contents_config.json` to register each PDF with:
+Edit `data/ai/contents_config.json` to register each PDF with:
 
 - **contents_pages** — the 1-indexed PDF page numbers where the table of contents lives
 - **offset** — the difference between a country's true PDF page and its page number as printed in the contents (`true_page - report_page`). Set to `null` if you plan to provide `true_page` values directly in the JSON.
 
 To find the offset, open a PDF, note the page number listed for the first country in the contents (e.g. Afghanistan = 35), then find its actual PDF page (e.g. 48). The offset is `48 - 35 = 13`.
 
-## Step 2: Extract contents page images
+### Step 2: Extract contents page images
 
 ```bash
-python scripts/extract_contents_images.py           # all PDFs
-python scripts/extract_contents_images.py 2023      # specific year
+python scripts/ai/extract_contents_images.py           # all PDFs
+python scripts/ai/extract_contents_images.py 2023      # specific year
 ```
 
-This renders the contents pages as PNG images in `AI_contents_images/`.
+This renders the contents pages as PNG images in `data/ai/contents_images/`.
 
-## Step 3: Extract country data with Claude
+### Step 3: Extract country data with Claude
 
 Open Claude and attach the contents page images for a given report. Use this prompt:
 
@@ -62,45 +66,63 @@ Open Claude and attach the contents page images for a given report. Use this pro
 >
 > Only include country entries — skip headers like "Foreword", "Regional Overview", etc.
 
-Save each response as a JSON file in `AI_contents_json/`, named to match the PDF (e.g. `2023_Amnesty_International.json`).
+Save each response as a JSON file in `data/ai/contents_json/`, named to match the PDF (e.g. `2023_Amnesty_International.json`).
 
 If a PDF has no machine-readable contents (or you prefer to do it manually), you can provide `true_page` instead of `report_page` in the JSON and set the offset to `null` in the config.
 
-## Step 4: Build final config
+### Step 4: Build final config
 
 ```bash
-python scripts/build_final_config.py
+python scripts/ai/build_final_config.py
 ```
 
-This reads all JSONs from `AI_contents_json/`, applies the offsets, and writes `AI/parsed_contents.json`.
+This reads all JSONs from `data/ai/contents_json/`, applies the offsets, and writes `data/ai/parsed_contents.json`.
 
-**Review `AI/parsed_contents.json` before proceeding** — spot-check a few entries by opening the original PDF and verifying the `true_page` values land on the correct country.
+**Review `data/ai/parsed_contents.json` before proceeding** — spot-check a few entries by opening the original PDF and verifying the `true_page` values land on the correct country.
 
-## Step 5: Split PDFs
+### Step 5: Split PDFs
 
 ```bash
-python scripts/split_pdfs.py                # all PDFs
-python scripts/split_pdfs.py 2023 2015      # specific years
+python scripts/ai/split_pdfs.py                # all PDFs
+python scripts/ai/split_pdfs.py 2023 2015      # specific years
 ```
 
-Output goes to `AI_split/<year>/<Country_Name>.pdf`.
+Output goes to `output/ai/<year>/<Country_Name>.pdf`.
+
+---
+
+## Human Rights Watch (HRW) Workflow
+
+_Coming soon._ HRW reports use a different layout and will have dedicated scripts in `scripts/hrw/`.
+
+---
 
 ## Directory structure
 
 ```
 world_reports/
-  AI/                        # source PDFs + config
-    contents_config.json     # contents pages + offsets per PDF
-    parsed_contents.json     # generated: country names + true pages
-  AI_contents_images/        # generated: PNG images of contents pages
-  AI_contents_json/          # Claude's extracted country/page data
-  AI_split/                  # generated: per-country PDFs
-    2023/
-      Afghanistan.pdf
-      Albania.pdf
-      ...
+  AI/                          # source PDFs (Amnesty International)
+  HRW/                         # source PDFs (Human Rights Watch)
+  IDMC/                        # source PDFs (IDMC)
   scripts/
-    extract_contents_images.py
-    build_final_config.py
-    split_pdfs.py
+    ai/                        # AI processing scripts
+      extract_contents_images.py
+      build_final_config.py
+      split_pdfs.py
+    hrw/                       # HRW processing scripts (planned)
+  data/
+    ai/                        # AI intermediate data
+      contents_config.json     # contents pages + offsets per PDF
+      parsed_contents.json     # generated: country names + true pages
+      contents_images/         # generated: PNG images of contents pages
+      contents_json/           # Claude's extracted country/page data
+    hrw/                       # HRW intermediate data (planned)
+  output/
+    ai/                        # generated: per-country PDFs
+      2023/
+        Afghanistan.pdf
+        Albania.pdf
+        ...
+    hrw/                       # HRW output (planned)
+  new.sh                       # helper to open a new contents JSON
 ```

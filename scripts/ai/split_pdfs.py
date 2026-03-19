@@ -12,7 +12,7 @@ Reads parsed_contents.json with format:
 Each country's range: from its true_page to the next country's true_page - 1
 (last country runs to end of PDF).
 
-Output: AI_split/<year>/<Country_Name>.pdf
+Output: output/ai/<year>/<Country_Name>.pdf
 """
 
 import json
@@ -23,8 +23,8 @@ from pathlib import Path
 from pypdf import PdfReader, PdfWriter
 
 AI_DIR = Path("AI")
-OUTPUT_DIR = Path("AI_split")
-PARSED_PATH = AI_DIR / "parsed_contents.json"
+OUTPUT_DIR = Path("output/ai")
+PARSED_PATH = Path("data/ai/parsed_contents.json")
 
 
 def extract_year(pdf_name: str) -> str:
