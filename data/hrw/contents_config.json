@@ -1,4 +1,29 @@
 {
+  "2001_Africa.pdf": {
+    "contents_pages": [],
+    "offset": null,
+    "layout": "single"
+  },
+  "2001_Americas.pdf": {
+    "contents_pages": [],
+    "offset": null,
+    "layout": "single"
+  },
+  "2001_Asia.pdf": {
+    "contents_pages": [],
+    "offset": null,
+    "layout": "single"
+  },
+  "2001_Europe_and_Central_Asia.pdf": {
+    "contents_pages": [],
+    "offset": null,
+    "layout": "single"
+  },
+  "2001_Middle_East_and_North_Africa.pdf": {
+    "contents_pages": [],
+    "offset": null,
+    "layout": "single"
+  },
   "2004_World_Report_Human_Rights_Watch.pdf": {
     "contents_pages": [8, 9, 10, 11],
     "offset": 12,
