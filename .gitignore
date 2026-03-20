@@ -3,6 +3,6 @@
 *.zip
 *.png
 .DS_Store
-.claude/*
+.claude/worktrees*
 output/*
 scripts/__pycache__/*
