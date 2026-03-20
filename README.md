@@ -1,6 +1,8 @@
 # World Reports PDF Splitter
 
-Splits human rights organization annual report PDFs into individual per-country files. Supports Amnesty International (AI) and Human Rights Watch (HRW).
+Splits human rights organization annual report PDFs into individual per-country files. Currently handles:
+- Amnesty International (AI)
+- Human Rights Watch (HRW).
 
 ## Prerequisites
 
@@ -10,11 +12,9 @@ Splits human rights organization annual report PDFs into individual per-country 
 ## Setup
 
 ```bash
-cd world_reports
-
 # Create virtual environment and install dependencies
 uv venv && source .venv/bin/activate
-uv pip install pdfplumber pypdf pypdfium2
+uv sync
 ```
 
 ---
@@ -55,18 +55,23 @@ This renders the contents pages as PNG images in `data/ai/contents_images/`.
 
 ### Step 3: Extract country data with Claude
 
-Open Claude and attach the contents page images for a given report. Use this prompt:
-
-> Extract every country name and its page number from this contents page.
-> Return only valid JSON, no markdown fences or commentary:
->
-> ```
-> {"FILENAME.pdf": [{"name": "Afghanistan", "report_page": 50}, ...]}
-> ```
->
-> Only include country entries — skip headers like "Foreword", "Regional Overview", etc.
+Open Claude and attach the contents page images for a given report. Use this [prompt](data/ai/contents_json/prompt.md)
 
 Save each response as a JSON file in `data/ai/contents_json/`, named to match the PDF (e.g. `2023_Amnesty_International.json`).
+
+To create a new contents JSON file and open it in your editor, run:
+```
+scripts/new.sh <kind> <year>
+```
+where:
+- `<kind>` is `ai` or `hrw` 
+- `<year>` is the report year
+
+For example:
+```
+scripts/new.sh ai 2023
+```
+opens `data/ai/contents_json/2023_Amnesty_International.json` in your editor `$EDITOR` and you can paste the output from Claude in this file.
 
 If a PDF has no machine-readable contents (or you prefer to do it manually), you can provide `true_page` instead of `report_page` in the JSON and set the offset to `null` in the config.
 
@@ -134,7 +139,7 @@ python scripts/hrw/unsplit_double_pages.py               # all double-layout PDF
 python scripts/hrw/unsplit_double_pages.py 2024 2023     # specific years
 ```
 
-This crops each double page into left and right halves, producing single-page-per-sheet PDFs in `output/hrw_unsplit/`. Originals are not modified.
+This crops each double page into left and right halves, producing single-page-per-sheet PDFs in `output/hrw_unsplit/`. Originals are not modified. This step takes some time.
 
 ### Step 5: Build final config
 
@@ -159,37 +164,37 @@ Single-layout PDFs are read from `HRW/`, double-layout PDFs are read from `outpu
 
 ```
 world_reports/
-  AI/                          # source PDFs (Amnesty International)
-  HRW/                         # source PDFs (Human Rights Watch)
-  IDMC/                        # source PDFs (IDMC)
-  scripts/
-    ai/                        # AI processing scripts
-      extract_contents_images.py
-      build_final_config.py
-      split_pdfs.py
-    hrw/                       # HRW processing scripts
-      extract_contents_images.py
-      unsplit_double_pages.py   # converts double-layout → single-page-per-sheet
-      build_final_config.py
-      split_pdfs.py
-  data/
-    ai/                        # AI intermediate data
-      contents_config.json     # contents pages + offsets per PDF
-      parsed_contents.json     # generated: country names + true pages
-      contents_images/         # generated: PNG images of contents pages
-      contents_json/           # Claude's extracted country/page data
-    hrw/                       # HRW intermediate data
-      contents_config.json     # contents pages + offsets/layout per PDF
-      parsed_contents.json     # generated: country names + true pages
-      contents_images/         # generated: PNG images of contents pages
-      contents_json/           # Claude's extracted country/page data
-  output/
-    ai/                        # generated: per-country PDFs
-      2023/
-        Afghanistan.pdf
-        Albania.pdf
-        ...
-    hrw/                       # generated: per-country PDFs
-    hrw_unsplit/               # generated: double-layout PDFs converted to single
-  new.sh                       # helper to open a new contents JSON
+├── AI/                            # source PDFs (Amnesty International)
+├── HRW/                           # source PDFs (Human Rights Watch)
+├── scripts/
+│   ├── new.sh                     # helper to open a new contents JSON
+│   ├── ai/
+│   │   ├── extract_contents_images.py
+│   │   ├── build_final_config.py
+│   │   ├── split_pdfs.py
+│   │   └── convert_to_markdown.py
+│   └── hrw/
+│       ├── extract_contents_images.py
+│       ├── unsplit_double_pages.py # converts double-layout → single-page-per-sheet
+│       ├── build_final_config.py
+│       ├── split_pdfs.py
+│       └── convert_to_markdown.py
+├── data/
+│   ├── ai/                        # AI intermediate data
+│   │   ├── contents_config.json   # contents pages + offsets per PDF
+│   │   ├── parsed_contents.json   # generated: country names + true pages
+│   │   ├── contents_images/       # generated: PNG images of contents pages
+│   │   └── contents_json/         # Claude's extracted country/page data
+│   └── hrw/                       # HRW intermediate data
+│       ├── contents_config.json   # contents pages + offsets/layout per PDF
+│       ├── parsed_contents.json   # generated: country names + true pages
+│       ├── contents_images/       # generated: PNG images of contents pages
+│       └── contents_json/         # Claude's extracted country/page data
+└── output/
+    ├── ai/                        # generated: per-country PDFs
+    │   └── <year>/
+    │       ├── <country>.pdf
+    │       └── ...
+    ├── hrw/                       # generated: per-country PDFs
+    └── hrw_unsplit/               # generated: double-layout PDFs converted to single
 ```
