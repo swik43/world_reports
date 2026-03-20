@@ -24,6 +24,36 @@
     "offset": null,
     "layout": "single"
   },
+  "2002_Africa.pdf": {
+    "contents_pages": [],
+    "layout": "double",
+    "double_start": 1,
+    "report_page_1": 1
+  },
+  "2002_Americas.pdf": {
+    "contents_pages": [],
+    "layout": "double",
+    "double_start": 1,
+    "report_page_1": 1
+  },
+  "2002_Asia.pdf": {
+    "contents_pages": [],
+    "layout": "double",
+    "double_start": 1,
+    "report_page_1": 1
+  },
+  "2002_Europe_and_Central_Asia.pdf": {
+    "contents_pages": [],
+    "layout": "double",
+    "double_start": 1,
+    "report_page_1": 1
+  },
+  "2002_Middle_East_and_North_Africa.pdf": {
+    "contents_pages": [],
+    "layout": "double",
+    "double_start": 1,
+    "report_page_1": 1
+  },
   "2004_World_Report_Human_Rights_Watch.pdf": {
     "contents_pages": [8, 9, 10, 11],
     "offset": 12,
