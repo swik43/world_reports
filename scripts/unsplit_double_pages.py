@@ -13,12 +13,21 @@ Usage:
 """
 
 import json
+import multiprocessing
+import queue
 from copy import deepcopy
+from pathlib import Path
 
-from config import SOURCES, extract_year, make_layout, make_progress
+from config import SOURCES, extract_year
 from pypdf import PdfReader, PdfWriter
 from rich.live import Live
-from rich.text import Text
+from rich.progress import (
+    BarColumn,
+    MofNCompleteColumn,
+    Progress,
+    TextColumn,
+    TimeElapsedColumn,
+)
 
 cfg = SOURCES["hrw"]
 
@@ -38,39 +47,32 @@ def split_page_halves(page):
     return left, right
 
 
-def process_pdf(
-    pdf_name,
-    pdf_cfg,
-    *,
-    spinner,
-    live,
-    progress,
-    overall_task,
-):
-    double_start = pdf_cfg["double_start"]  # 1-indexed PDF page where doubles begin
-    reader = PdfReader(str(cfg.source_dir / pdf_name))
+def process_pdf_worker(
+    pdf_name: str,
+    pdf_cfg: dict,
+    source_dir: str,
+    unsplit_dir: str,
+    progress_queue: multiprocessing.Queue,
+) -> None:
+    """Process a single double-layout PDF. Runs in a worker process."""
+    double_start = pdf_cfg["double_start"]
+    reader = PdfReader(str(Path(source_dir) / pdf_name))
     writer = PdfWriter()
 
     for i, page in enumerate(reader.pages):
-        page_num = i + 1  # 1-indexed
-
-        spinner.update(text=Text(f"{pdf_name} / page {page_num}", style="gray"))
-        live.update(make_layout(spinner, progress))
-
+        page_num = i + 1
         if page_num < double_start:
-            # Pre-double pages (cover, etc.) -- keep as-is
             writer.add_page(page)
         else:
             left, right = split_page_halves(page)
             writer.add_page(left)
             writer.add_page(right)
 
-        progress.advance(overall_task)
+        progress_queue.put((pdf_name, 1))
 
-    assert cfg.unsplit_dir is not None
-    cfg.unsplit_dir.mkdir(parents=True, exist_ok=True)
-    out_path = cfg.unsplit_dir / pdf_name
-    with open(out_path, "wb") as f:
+    out_dir = Path(unsplit_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
+    with open(out_dir / pdf_name, "wb") as f:
         writer.write(f)
 
 
@@ -84,7 +86,7 @@ def main():
 
     # Pre-scan: filter to double-layout PDFs and count total pages
     eligible: list[tuple[str, dict]] = []
-    total_pages = 0
+    pdf_page_counts: dict[str, int] = {}
 
     for pdf_name, pdf_cfg in sorted(config.items()):
         if pdf_cfg.get("layout") != "double":
@@ -100,26 +102,63 @@ def main():
             continue
 
         reader = PdfReader(str(pdf_path))
-        total_pages += len(reader.pages)
+        pdf_page_counts[pdf_name] = len(reader.pages)
         eligible.append((pdf_name, pdf_cfg))
 
     if not eligible:
         print("No eligible double-layout PDFs found.")
         return
 
-    progress, spinner = make_progress()
-    overall_task = progress.add_task("Overall", total=total_pages)
+    total_pages = sum(pdf_page_counts.values())
 
-    with Live(make_layout(spinner, progress), refresh_per_second=10) as live:
+    # One progress bar per PDF
+    progress = Progress(
+        TextColumn("[bold blue]{task.description}"),
+        BarColumn(),
+        MofNCompleteColumn(),
+        TimeElapsedColumn(),
+    )
+
+    pdf_tasks = {}
+    for pdf_name, _ in eligible:
+        pdf_tasks[pdf_name] = progress.add_task(
+            pdf_name, total=pdf_page_counts[pdf_name]
+        )
+
+    progress_queue: multiprocessing.Queue = multiprocessing.Queue()
+
+    with Live(progress, refresh_per_second=10):
+        assert cfg.unsplit_dir is not None
+
+        processes = []
         for pdf_name, pdf_cfg in eligible:
-            process_pdf(
-                pdf_name,
-                pdf_cfg,
-                spinner=spinner,
-                live=live,
-                progress=progress,
-                overall_task=overall_task,
+            p = multiprocessing.Process(
+                target=process_pdf_worker,
+                args=(
+                    pdf_name,
+                    pdf_cfg,
+                    str(cfg.source_dir),
+                    str(cfg.unsplit_dir),
+                    progress_queue,
+                ),
             )
+            processes.append(p)
+            p.start()
+
+        # Drain progress events from workers
+        pages_done = 0
+        while pages_done < total_pages:
+            try:
+                pdf_name, count = progress_queue.get(timeout=1.0)
+                progress.advance(pdf_tasks[pdf_name], count)
+                pages_done += count
+            except queue.Empty:
+                # All workers dead before all pages reported — something crashed
+                if all(not p.is_alive() for p in processes):
+                    break
+
+        for p in processes:
+            p.join()
 
     print(
         f"\nDone. {len(eligible)} PDFs processed ({total_pages} pages) to {cfg.unsplit_dir}/"
