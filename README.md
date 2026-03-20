@@ -47,15 +47,15 @@ To find the offset, open a PDF, note the page number listed for the first countr
 ### Step 2: Extract contents page images
 
 ```bash
-python scripts/ai/extract_contents_images.py           # all PDFs
-python scripts/ai/extract_contents_images.py 2023      # specific year
+python scripts/extract_contents_images.py ai           # all PDFs
+python scripts/extract_contents_images.py ai 2023      # specific year
 ```
 
 This renders the contents pages as PNG images in `data/ai/contents_images/`.
 
 ### Step 3: Extract country data with Claude
 
-Open Claude and attach the contents page images for a given report. Use this [prompt](data/ai/contents_json/prompt.md)
+Open Claude and attach the contents page images for a given report. Use this [prompt](./data/ai/contents_json/prompt.md)
 
 Save each response as a JSON file in `data/ai/contents_json/`, named to match the PDF (e.g. `2023_Amnesty_International.json`).
 
@@ -64,7 +64,7 @@ To create a new contents JSON file and open it in your editor, run:
 scripts/new.sh <kind> <year>
 ```
 where:
-- `<kind>` is `ai` or `hrw` 
+- `<kind>` is `ai` or `hrw`
 - `<year>` is the report year
 
 For example:
@@ -78,7 +78,7 @@ If a PDF has no machine-readable contents (or you prefer to do it manually), you
 ### Step 4: Build final config
 
 ```bash
-python scripts/ai/build_final_config.py
+python scripts/build_final_config.py ai
 ```
 
 This reads all JSONs from `data/ai/contents_json/`, applies the offsets, and writes `data/ai/parsed_contents.json`.
@@ -88,8 +88,8 @@ This reads all JSONs from `data/ai/contents_json/`, applies the offsets, and wri
 ### Step 5: Split PDFs
 
 ```bash
-python scripts/ai/split_pdfs.py                # all PDFs
-python scripts/ai/split_pdfs.py 2023 2015      # specific years
+python scripts/split_pdfs.py ai                # all PDFs
+python scripts/split_pdfs.py ai 2023 2015      # specific years
 ```
 
 Output goes to `output/ai/<year>/<Country_Name>.pdf`.
@@ -97,8 +97,8 @@ Output goes to `output/ai/<year>/<Country_Name>.pdf`.
 ### Step 6: Convert to Markdown
 
 ```bash
-python scripts/ai/convert_to_markdown.py              # all eligible years (2013+)
-python scripts/ai/convert_to_markdown.py 2023 2022    # specific years
+python scripts/convert_to_markdown.py ai              # all eligible years (2013+)
+python scripts/convert_to_markdown.py ai 2023 2022    # specific years
 ```
 
 Converts per-country PDFs to Markdown using pymupdf4llm. Only processes post-2012 reports where the single-column layout produces clean output. Output goes to `output/ai_markdown/<year>/<Country_Name>.md`.
@@ -133,8 +133,8 @@ For double-layout PDFs:
 ### Step 2: Extract contents page images
 
 ```bash
-python scripts/hrw/extract_contents_images.py           # all PDFs
-python scripts/hrw/extract_contents_images.py 2023      # specific year
+python scripts/extract_contents_images.py hrw           # all PDFs
+python scripts/extract_contents_images.py hrw 2023      # specific year
 ```
 
 ### Step 3: Extract country data with Claude
@@ -144,8 +144,8 @@ Same process as AI — attach contents page images and extract `{"name", "report
 ### Step 4: Unsplit double-layout PDFs
 
 ```bash
-python scripts/hrw/unsplit_double_pages.py               # all double-layout PDFs
-python scripts/hrw/unsplit_double_pages.py 2024 2023     # specific years
+python scripts/unsplit_double_pages.py               # all double-layout PDFs
+python scripts/unsplit_double_pages.py 2024 2023     # specific years
 ```
 
 This crops each double page into left and right halves, producing single-page-per-sheet PDFs in `output/hrw_unsplit/`. Originals are not modified. This step takes some time.
@@ -153,7 +153,7 @@ This crops each double page into left and right halves, producing single-page-pe
 ### Step 5: Build final config
 
 ```bash
-python scripts/hrw/build_final_config.py
+python scripts/build_final_config.py hrw
 ```
 
 For double-layout PDFs, the offset is computed automatically from `report_page_1` and `double_start`. Writes `data/hrw/parsed_contents.json`.
@@ -161,8 +161,8 @@ For double-layout PDFs, the offset is computed automatically from `report_page_1
 ### Step 6: Split PDFs
 
 ```bash
-python scripts/hrw/split_pdfs.py                # all PDFs
-python scripts/hrw/split_pdfs.py 2023 2015      # specific years
+python scripts/split_pdfs.py hrw                # all PDFs
+python scripts/split_pdfs.py hrw 2023 2015      # specific years
 ```
 
 Single-layout PDFs are read from `HRW/`, double-layout PDFs are read from `output/hrw_unsplit/`. Output goes to `output/hrw/<year>/<Country_Name>.pdf`.
@@ -170,8 +170,8 @@ Single-layout PDFs are read from `HRW/`, double-layout PDFs are read from `outpu
 ### Step 7: Convert to Markdown
 
 ```bash
-python scripts/hrw/convert_to_markdown.py              # all years
-python scripts/hrw/convert_to_markdown.py 2023 2022    # specific years
+python scripts/convert_to_markdown.py hrw              # all years
+python scripts/convert_to_markdown.py hrw 2023 2022    # specific years
 ```
 
 Converts per-country PDFs to Markdown using pymupdf4llm. Output goes to `output/hrw_markdown/<year>/<Country_Name>.md`.
@@ -185,18 +185,14 @@ world_reports/
 ├── AI/                            # source PDFs (Amnesty International)
 ├── HRW/                           # source PDFs (Human Rights Watch)
 ├── scripts/
+│   ├── config.py                  # shared source configs + utilities
 │   ├── new.sh                     # helper to open a new contents JSON
-│   ├── ai/
-│   │   ├── extract_contents_images.py
-│   │   ├── build_final_config.py
-│   │   ├── split_pdfs.py
-│   │   └── convert_to_markdown.py
-│   └── hrw/
-│       ├── extract_contents_images.py
-│       ├── unsplit_double_pages.py # converts double-layout → single-page-per-sheet
-│       ├── build_final_config.py
-│       ├── split_pdfs.py
-│       └── convert_to_markdown.py
+│   ├── extract_contents_images.py # extract contents pages as PNGs
+│   ├── build_final_config.py      # build parsed_contents.json from Claude output
+│   ├── unsplit_double_pages.py    # converts double-layout → single-page-per-sheet (HRW only)
+│   ├── split_pdfs.py              # split PDFs into per-country files
+│   ├── convert_to_markdown.py     # convert per-country PDFs to Markdown
+│   └── offset_years.py            # rename files/dirs to shift year numbers
 ├── data/
 │   ├── ai/                        # AI intermediate data
 │   │   ├── contents_config.json   # contents pages + offsets per PDF

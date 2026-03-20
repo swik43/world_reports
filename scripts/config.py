@@ -1,0 +1,132 @@
+"""
+Shared configuration and utilities for world-reports scripts.
+
+Provides per-source configs (HRW / AI) and common helper functions
+used across extract, build, split, and convert scripts.
+"""
+
+import re
+import sys
+from dataclasses import dataclass
+from pathlib import Path
+
+from rich.console import Group
+from rich.progress import (
+    BarColumn,
+    MofNCompleteColumn,
+    Progress,
+    TextColumn,
+    TimeElapsedColumn,
+)
+from rich.spinner import Spinner
+from rich.text import Text
+
+
+@dataclass
+class SourceConfig:
+    source_dir: Path
+    pdf_suffix: str
+    data_dir: Path
+    output_dir: Path
+    markdown_dir: Path
+    unsplit_dir: Path | None
+    min_markdown_year: int | None
+
+    @property
+    def config_path(self) -> Path:
+        return self.data_dir / "contents_config.json"
+
+    @property
+    def parsed_path(self) -> Path:
+        return self.data_dir / "parsed_contents.json"
+
+    @property
+    def contents_images_dir(self) -> Path:
+        return self.data_dir / "contents_images"
+
+    @property
+    def contents_json_dir(self) -> Path:
+        return self.data_dir / "contents_json"
+
+
+SOURCES: dict[str, SourceConfig] = {
+    "hrw": SourceConfig(
+        source_dir=Path("HRW"),
+        pdf_suffix="World_Report_Human_Rights_Watch",
+        data_dir=Path("data/hrw"),
+        output_dir=Path("output/hrw"),
+        markdown_dir=Path("output/hrw_markdown"),
+        unsplit_dir=Path("output/hrw_unsplit"),
+        min_markdown_year=None,
+    ),
+    "ai": SourceConfig(
+        source_dir=Path("AI"),
+        pdf_suffix="Amnesty_International",
+        data_dir=Path("data/ai"),
+        output_dir=Path("output/ai"),
+        markdown_dir=Path("output/ai_markdown"),
+        unsplit_dir=None,
+        min_markdown_year=2013,
+    ),
+}
+
+
+def extract_year(name: str) -> str:
+    """Extract leading 4-digit year from a filename or directory name."""
+    match = re.match(r"(\d{4})", name)
+    if match:
+        return match.group(1)
+    raise ValueError(f"Cannot extract year from {name}")
+
+
+def sanitize_filename(name: str) -> str:
+    """Clean a country name for use as a filename."""
+    name = name.replace("/", "-")
+    name = re.sub(r'[<>:"|?*]', "", name)
+    return name.strip()
+
+
+def titlecase_name(name: str) -> str:
+    """Normalize ALL-CAPS country names to title case."""
+    if not name.isupper():
+        return name
+    result = name.title()
+    for word in ["And", "Of", "The"]:
+        result = result.replace(f" {word} ", f" {word.lower()} ")
+    result = result.replace("D'", "d'")
+    return result
+
+
+def make_progress() -> tuple[Progress, Spinner]:
+    """Create the standard rich progress bar and spinner."""
+    progress = Progress(
+        TextColumn("[bold blue]{task.description}"),
+        BarColumn(),
+        MofNCompleteColumn(),
+        TimeElapsedColumn(),
+    )
+    spinner = Spinner("dots", text=Text("Starting...", style="cyan"))
+    return progress, spinner
+
+
+def make_layout(spinner: Spinner, progress: Progress) -> Group:
+    """Combine spinner and progress bar for Live display."""
+    return Group(spinner, progress)
+
+
+def get_source(argv: list[str] | None = None) -> tuple[SourceConfig, set[str] | None]:
+    """Parse CLI args: first arg = source key, rest = optional year filter.
+
+    Usage: script.py <hrw|ai> [year ...]
+    """
+    if argv is None:
+        argv = sys.argv[1:]
+
+    if not argv or argv[0] not in SOURCES:
+        valid = ", ".join(SOURCES)
+        print(f"Usage: <script> <{valid}> [year ...]")
+        sys.exit(1)
+
+    cfg = SOURCES[argv[0]]
+    year_filter = set(argv[1:]) if len(argv) > 1 else None
+    return cfg, year_filter

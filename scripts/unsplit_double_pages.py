@@ -6,41 +6,21 @@ For each double-layout PDF (as marked in contents_config.json), this script:
 - Splits every page from double_start onward into left and right halves
 - Writes the result to output/hrw_unsplit/<pdf_name>
 
-This is non-destructive — original PDFs are never modified.
+This is non-destructive -- original PDFs are never modified.
 
 Usage:
-    python scripts/hrw/unsplit_double_pages.py [year ...]
+    python scripts/unsplit_double_pages.py [year ...]
 """
 
 import json
-import re
-import sys
 from copy import deepcopy
-from pathlib import Path
 
+from config import SOURCES, extract_year, make_layout, make_progress
 from pypdf import PdfReader, PdfWriter
-from rich.console import Group
 from rich.live import Live
-from rich.progress import (
-    BarColumn,
-    MofNCompleteColumn,
-    Progress,
-    TextColumn,
-    TimeElapsedColumn,
-)
-from rich.spinner import Spinner
 from rich.text import Text
 
-HRW_DIR = Path("HRW")
-CONFIG_PATH = Path("data/hrw/contents_config.json")
-OUTPUT_DIR = Path("output/hrw_unsplit")
-
-
-def extract_year(pdf_name: str) -> str:
-    match = re.match(r"(\d{4})_", pdf_name)
-    if match:
-        return match.group(1)
-    raise ValueError(f"Cannot extract year from {pdf_name}")
+cfg = SOURCES["hrw"]
 
 
 def split_page_halves(page):
@@ -59,46 +39,45 @@ def split_page_halves(page):
 
 
 def process_pdf(
-    pdf_name: str,
-    cfg: dict,
+    pdf_name,
+    pdf_cfg,
     *,
-    spinner: Spinner,
-    live: Live,
-    overall_progress: Progress,
+    spinner,
+    live,
+    progress,
     overall_task,
 ):
-    double_start = cfg["double_start"]  # 1-indexed PDF page where doubles begin
-    reader = PdfReader(str(HRW_DIR / pdf_name))
+    double_start = pdf_cfg["double_start"]  # 1-indexed PDF page where doubles begin
+    reader = PdfReader(str(cfg.source_dir / pdf_name))
     writer = PdfWriter()
 
     for i, page in enumerate(reader.pages):
         page_num = i + 1  # 1-indexed
 
         spinner.update(text=Text(f"{pdf_name} / page {page_num}", style="gray"))
-        live.update(make_layout(spinner, overall_progress))
+        live.update(make_layout(spinner, progress))
 
         if page_num < double_start:
-            # Pre-double pages (cover, etc.) — keep as-is
+            # Pre-double pages (cover, etc.) -- keep as-is
             writer.add_page(page)
         else:
             left, right = split_page_halves(page)
             writer.add_page(left)
             writer.add_page(right)
 
-        overall_progress.advance(overall_task)
+        progress.advance(overall_task)
 
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    out_path = OUTPUT_DIR / pdf_name
+    assert cfg.unsplit_dir is not None
+    cfg.unsplit_dir.mkdir(parents=True, exist_ok=True)
+    out_path = cfg.unsplit_dir / pdf_name
     with open(out_path, "wb") as f:
         writer.write(f)
 
 
-def make_layout(spinner, overall_progress):
-    return Group(spinner, overall_progress)
-
-
 def main():
-    with open(CONFIG_PATH) as f:
+    import sys
+
+    with open(cfg.config_path) as f:
         config = json.load(f)
 
     year_filter = set(sys.argv[1:]) if len(sys.argv) > 1 else None
@@ -107,48 +86,44 @@ def main():
     eligible: list[tuple[str, dict]] = []
     total_pages = 0
 
-    for pdf_name, cfg in sorted(config.items()):
-        if cfg.get("layout") != "double":
+    for pdf_name, pdf_cfg in sorted(config.items()):
+        if pdf_cfg.get("layout") != "double":
             continue
         if year_filter:
             year = extract_year(pdf_name)
             if year not in year_filter:
                 continue
 
-        pdf_path = HRW_DIR / pdf_name
+        pdf_path = cfg.source_dir / pdf_name
         if not pdf_path.exists():
             print(f"WARNING: {pdf_path} not found, skipping")
             continue
 
         reader = PdfReader(str(pdf_path))
         total_pages += len(reader.pages)
-        eligible.append((pdf_name, cfg))
+        eligible.append((pdf_name, pdf_cfg))
 
     if not eligible:
         print("No eligible double-layout PDFs found.")
         return
 
-    overall_progress = Progress(
-        TextColumn("[bold blue]{task.description}"),
-        BarColumn(),
-        MofNCompleteColumn(),
-        TimeElapsedColumn(),
-    )
-    overall_task = overall_progress.add_task("Overall", total=total_pages)
-    spinner = Spinner("dots", text=Text("Starting...", style="cyan"))
+    progress, spinner = make_progress()
+    overall_task = progress.add_task("Overall", total=total_pages)
 
-    with Live(make_layout(spinner, overall_progress), refresh_per_second=10) as live:
-        for pdf_name, cfg in eligible:
+    with Live(make_layout(spinner, progress), refresh_per_second=10) as live:
+        for pdf_name, pdf_cfg in eligible:
             process_pdf(
                 pdf_name,
-                cfg,
+                pdf_cfg,
                 spinner=spinner,
                 live=live,
-                overall_progress=overall_progress,
+                progress=progress,
                 overall_task=overall_task,
             )
 
-    print(f"\nDone. {len(eligible)} PDFs processed ({total_pages} pages) to {OUTPUT_DIR}/")
+    print(
+        f"\nDone. {len(eligible)} PDFs processed ({total_pages} pages) to {cfg.unsplit_dir}/"
+    )
 
 
 if __name__ == "__main__":

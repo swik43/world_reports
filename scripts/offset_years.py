@@ -1,5 +1,6 @@
 """
-Offset the year in all HRW file names, directory names, and config files.
+Offset the year in all file names, directory names, and config files
+for a given source (hrw or ai).
 
 Change YEAR_OFFSET to control direction and magnitude:
   -1 = decrement by 1 year
@@ -9,15 +10,9 @@ Change YEAR_OFFSET to control direction and magnitude:
 Processes in the correct order to avoid collisions (highest-first when
 incrementing, lowest-first when decrementing).
 
-Covers:
-  - HRW/ source PDFs and subdirectories
-  - output/hrw/ split country PDFs (year subdirectories)
-  - output/hrw_unsplit/ unsplit double-layout PDFs
-  - output/hrw_markdown/ converted markdown files (year subdirectories)
-  - data/hrw/contents_images/ extracted contents page images
-  - data/hrw/contents_json/ extracted contents JSON files
-  - data/hrw/contents_config.json (keys)
-  - data/hrw/parsed_contents.json (keys)
+Usage:
+    python scripts/offset_years.py hrw [--dry-run]
+    python scripts/offset_years.py ai [--dry-run]
 """
 
 import json
@@ -25,18 +20,13 @@ import re
 import sys
 from pathlib import Path
 
+from config import SOURCES, SourceConfig
+
 # ── Change this value to control the year shift ──────────────────────
 YEAR_OFFSET = -1
 # ─────────────────────────────────────────────────────────────────────
 
-ROOT = Path(__file__).resolve().parents[2]
-HRW_DIR = ROOT / "HRW"
-OUTPUT_HRW = ROOT / "output" / "hrw"
-OUTPUT_UNSPLIT = ROOT / "output" / "hrw_unsplit"
-OUTPUT_MARKDOWN = ROOT / "output" / "hrw_markdown"
-DATA_DIR = ROOT / "data" / "hrw"
-CONTENTS_IMAGES = DATA_DIR / "contents_images"
-CONTENTS_JSON = DATA_DIR / "contents_json"
+ROOT = Path(__file__).resolve().parents[1]
 
 YEAR_PREFIX = re.compile(r"^(\d{4})(_.*)")
 YEAR_DIR = re.compile(r"^\d{4}$")
@@ -135,38 +125,46 @@ def patch_json_keys(path: Path, dry_run: bool) -> int:
     return changed
 
 
-def main(dry_run: bool = False) -> None:
+def build_locations(cfg: SourceConfig) -> list[tuple[str, Path]]:
+    """Build the list of directories to process from a source config."""
+    locations = [
+        (f"{cfg.source_dir.name} source files", ROOT / cfg.source_dir),
+        ("Output: split country PDFs", ROOT / cfg.output_dir),
+    ]
+    if cfg.unsplit_dir:
+        locations.append(("Output: unsplit double-layout PDFs", ROOT / cfg.unsplit_dir))
+    locations += [
+        ("Output: markdown files", ROOT / cfg.markdown_dir),
+        ("Data: contents images", ROOT / cfg.contents_images_dir),
+        ("Data: contents JSON", ROOT / cfg.contents_json_dir),
+    ]
+    return locations
+
+
+def main(source_key: str, dry_run: bool = False) -> None:
     if YEAR_OFFSET == 0:
         print("YEAR_OFFSET is 0, nothing to do.")
         return
 
+    cfg = SOURCES[source_key]
     direction = f"+{YEAR_OFFSET}" if YEAR_OFFSET > 0 else str(YEAR_OFFSET)
-    print(f"Year offset: {direction}\n")
+    print(f"Source: {source_key}, year offset: {direction}\n")
 
     total = 0
 
-    locations = [
-        ("HRW source files", HRW_DIR),
-        ("Output: split country PDFs", OUTPUT_HRW),
-        ("Output: unsplit double-layout PDFs", OUTPUT_UNSPLIT),
-        ("Output: markdown files", OUTPUT_MARKDOWN),
-        ("Data: contents images", CONTENTS_IMAGES),
-        ("Data: contents JSON", CONTENTS_JSON),
-    ]
-
-    for label, path in locations:
+    for label, path in build_locations(cfg):
         print(f"== {label} ({path.relative_to(ROOT)}) ==")
         total += rename_dir_tree(path, dry_run)
         print()
 
     json_configs = [
-        DATA_DIR / "contents_config.json",
-        DATA_DIR / "parsed_contents.json",
+        ROOT / cfg.config_path,
+        ROOT / cfg.parsed_path,
     ]
 
-    for config in json_configs:
-        print(f"== Config: {config.name} ==")
-        total += patch_json_keys(config, dry_run)
+    for config_path in json_configs:
+        print(f"== Config: {config_path.name} ==")
+        total += patch_json_keys(config_path, dry_run)
         print()
 
     verb = "Would update" if dry_run else "Updated"
@@ -174,7 +172,16 @@ def main(dry_run: bool = False) -> None:
 
 
 if __name__ == "__main__":
+    # Parse source key (first non-flag arg) and --dry-run flag
+    args = [a for a in sys.argv[1:] if a != "--dry-run"]
     dry_run = "--dry-run" in sys.argv
+
+    if not args or args[0] not in SOURCES:
+        valid = ", ".join(SOURCES)
+        print(f"Usage: {sys.argv[0]} <{valid}> [--dry-run]")
+        sys.exit(1)
+
     if not dry_run:
         print("Pass --dry-run to preview changes without modifying anything.\n")
-    main(dry_run=dry_run)
+
+    main(args[0], dry_run=dry_run)
