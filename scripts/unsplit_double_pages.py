@@ -1,15 +1,15 @@
 """
-Convert double-layout HRW PDFs into single-page-per-sheet PDFs.
+Convert double-layout PDFs into single-page-per-sheet PDFs.
 
 For each double-layout PDF (as marked in contents_config.json), this script:
-- Keeps page 1 (cover) as-is
+- Keeps pages before double_start as-is
 - Splits every page from double_start onward into left and right halves
-- Writes the result to output/hrw_unsplit/<pdf_name>
+- Writes the result to the source's unsplit_dir
 
 This is non-destructive -- original PDFs are never modified.
 
 Usage:
-    python scripts/unsplit_double_pages.py [year ...]
+    python scripts/unsplit_double_pages.py <hrw|ai|idmc> [year ...]
 """
 
 import json
@@ -18,7 +18,7 @@ import queue
 from copy import deepcopy
 from pathlib import Path
 
-from config import SOURCES, extract_year
+from config import extract_year, get_source
 from pypdf import PdfReader, PdfWriter
 from rich.live import Live
 from rich.progress import (
@@ -29,7 +29,6 @@ from rich.progress import (
     TimeElapsedColumn,
 )
 
-cfg = SOURCES["hrw"]
 
 
 def split_page_halves(page):
@@ -77,12 +76,12 @@ def process_pdf_worker(
 
 
 def main():
-    import sys
+    cfg, year_filter = get_source()
+
+    assert cfg.unsplit_dir is not None, f"No unsplit_dir configured for this source"
 
     with open(cfg.config_path) as f:
         config = json.load(f)
-
-    year_filter = set(sys.argv[1:]) if len(sys.argv) > 1 else None
 
     # Pre-scan: filter to double-layout PDFs and count total pages
     eligible: list[tuple[str, dict]] = []
@@ -128,8 +127,6 @@ def main():
     progress_queue: multiprocessing.Queue = multiprocessing.Queue()
 
     with Live(progress, refresh_per_second=10):
-        assert cfg.unsplit_dir is not None
-
         processes = []
         for pdf_name, pdf_cfg in eligible:
             p = multiprocessing.Process(

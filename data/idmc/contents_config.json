@@ -18,5 +18,44 @@
     "contents_pages": [],
     "offset": null,
     "layout": "single"
+  },
+  "2017_GRID.pdf": {
+    "contents_pages": [6, 7],
+    "offset": null,
+    "layout": "single"
+  },
+  "2018_GRID.pdf": {
+    "contents_pages": [6, 7],
+    "offset": null,
+    "layout": "single"
+  },
+  "2019_GRID.pdf": {
+    "contents_pages": [6, 7],
+    "offset": null,
+    "layout": "single"
+  },
+  "2020_GRID.pdf": {
+    "contents_pages": [6, 7],
+    "layout": "double",
+    "double_start": 2,
+    "report_page_1": 1
+  },
+  "2021_GRID.pdf": {
+    "contents_pages": [6, 7],
+    "layout": "double",
+    "double_start": 2,
+    "report_page_1": 1
+  },
+  "2022_GRID.pdf": {
+    "contents_pages": [6, 7],
+    "layout": "double",
+    "double_start": 2,
+    "report_page_1": 1
+  },
+  "2023_GRID.pdf": {
+    "contents_pages": [6, 7],
+    "layout": "double",
+    "double_start": 2,
+    "report_page_1": 1
   }
 }

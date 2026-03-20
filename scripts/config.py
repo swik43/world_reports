@@ -74,7 +74,7 @@ SOURCES: dict[str, SourceConfig] = {
         data_dir=Path("data/idmc"),
         output_dir=Path("output/idmc"),
         markdown_dir=Path("output/idmc_markdown"),
-        unsplit_dir=None,
+        unsplit_dir=Path("output/idmc_unsplit"),
         min_markdown_year=None,
     ),
 }
