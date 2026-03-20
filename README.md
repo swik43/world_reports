@@ -94,6 +94,15 @@ python scripts/ai/split_pdfs.py 2023 2015      # specific years
 
 Output goes to `output/ai/<year>/<Country_Name>.pdf`.
 
+### Step 6: Convert to Markdown
+
+```bash
+python scripts/ai/convert_to_markdown.py              # all eligible years (2013+)
+python scripts/ai/convert_to_markdown.py 2023 2022    # specific years
+```
+
+Converts per-country PDFs to Markdown using pymupdf4llm. Only processes post-2012 reports where the single-column layout produces clean output. Output goes to `output/ai_markdown/<year>/<Country_Name>.md`.
+
 ---
 
 ## Human Rights Watch (HRW) Workflow
@@ -158,6 +167,15 @@ python scripts/hrw/split_pdfs.py 2023 2015      # specific years
 
 Single-layout PDFs are read from `HRW/`, double-layout PDFs are read from `output/hrw_unsplit/`. Output goes to `output/hrw/<year>/<Country_Name>.pdf`.
 
+### Step 7: Convert to Markdown
+
+```bash
+python scripts/hrw/convert_to_markdown.py              # all years
+python scripts/hrw/convert_to_markdown.py 2023 2022    # specific years
+```
+
+Converts per-country PDFs to Markdown using pymupdf4llm. Output goes to `output/hrw_markdown/<year>/<Country_Name>.md`.
+
 ---
 
 ## Directory structure
@@ -195,6 +213,8 @@ world_reports/
     │   └── <year>/
     │       ├── <country>.pdf
     │       └── ...
+    ├── ai_markdown/               # generated: per-country Markdown (2013+)
     ├── hrw/                       # generated: per-country PDFs
+    ├── hrw_markdown/              # generated: per-country Markdown
     └── hrw_unsplit/               # generated: double-layout PDFs converted to single
 ```
