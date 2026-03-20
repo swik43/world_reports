@@ -3,4 +3,5 @@
 *.zip
 *.png
 .DS_Store
+.claude/*
 output/*
