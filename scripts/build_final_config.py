@@ -65,7 +65,10 @@ def main():
                     )
                     continue
 
-                processed.append({"name": name, "true_page": true_page})
+                entry = {"name": name, "true_page": true_page}
+                if "end_page" in country:
+                    entry["end_page"] = country["end_page"]
+                processed.append(entry)
 
             result[pdf_name] = processed
             offset_str = (

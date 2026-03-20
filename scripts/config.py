@@ -68,6 +68,15 @@ SOURCES: dict[str, SourceConfig] = {
         unsplit_dir=None,
         min_markdown_year=2013,
     ),
+    "idmc": SourceConfig(
+        source_dir=Path("IDMC"),
+        pdf_suffix="IDMC",
+        data_dir=Path("data/idmc"),
+        output_dir=Path("output/idmc"),
+        markdown_dir=Path("output/idmc_markdown"),
+        unsplit_dir=None,
+        min_markdown_year=None,
+    ),
 }
 
 

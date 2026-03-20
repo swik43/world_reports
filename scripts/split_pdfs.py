@@ -82,7 +82,9 @@ def split_pdf(
 
         start_page = country["true_page"]  # 1-indexed
 
-        if i + 1 < len(countries):
+        if "end_page" in country:
+            end_page = country["end_page"]
+        elif i + 1 < len(countries):
             end_page = max(start_page, countries[i + 1]["true_page"] - 1)
         else:
             end_page = total_pages
