@@ -31,7 +31,9 @@ from rich.progress import (
 def convert_file(pdf_path: str, out_path: str) -> None:
     """Convert a single PDF to Markdown. Runs in a worker process."""
     md_text = pymupdf4llm.to_markdown(pdf_path)
-    Path(out_path).write_text(md_text, encoding="utf-8")  # pyright: ignore[reportArgumentType]
+    Path(out_path).write_text(
+        md_text, encoding="utf-8"
+    )  # pyright: ignore[reportArgumentType]
 
 
 def extract_year_int(dir_name: str) -> int:
@@ -58,9 +60,7 @@ def main():
 
     if year_filter:
         year_dirs = [
-            d
-            for d in year_dirs
-            if re.match(r"(\d{4})", d.name).group(1) in year_filter  # pyright: ignore[reportOptionalMemberAccess]
+            d for d in year_dirs if str(extract_year_int(d.name)) in year_filter
         ]
 
     if not year_dirs:

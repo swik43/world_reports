@@ -23,7 +23,7 @@ from pathlib import Path
 from config import SOURCES, SourceConfig
 
 # ── Change this value to control the year shift ──────────────────────
-YEAR_OFFSET = -1
+YEAR_OFFSET = +1
 # ─────────────────────────────────────────────────────────────────────
 
 ROOT = Path(__file__).resolve().parents[1]
