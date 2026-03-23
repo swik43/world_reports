@@ -4,5 +4,7 @@
 *.png
 .DS_Store
 .claude/worktrees*
+_tmp/*
 output/*
 scripts/__pycache__/*
+HRW/*
