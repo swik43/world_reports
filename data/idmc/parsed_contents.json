@@ -1,6 +1,19 @@
 {
   "2008_Global.pdf": [
     {
+      "name": "IDP's Protection needs and risks",
+      "true_page": 21
+    },
+    {
+      "name": "Durable solutions",
+      "true_page": 25
+    },
+    {
+      "name": "National Responses",
+      "true_page": 28,
+      "end_page": 30
+    },
+    {
       "name": "Car",
       "true_page": 38
     },
@@ -212,6 +225,18 @@
   ],
   "2009_Global.pdf": [
     {
+      "name": "IDPs in displacement",
+      "true_page": 18
+    },
+    {
+      "name": "Durable solutions",
+      "true_page": 21
+    },
+    {
+      "name": "Responses to internal displacement",
+      "true_page": 24
+    },
+    {
       "name": "Car",
       "true_page": 33
     },
@@ -406,6 +431,15 @@
     }
   ],
   "2010_Global.pdf": [
+    {
+      "name": "Durable solutions",
+      "true_page": 28
+    },
+    {
+      "name": "National Responses",
+      "true_page": 32,
+      "end_page": 35
+    },
     {
       "name": "Algeria",
       "true_page": 40
@@ -602,6 +636,15 @@
     }
   ],
   "2011_Conflict and violence.pdf": [
+    {
+      "name": "Preventing and responding to abuses",
+      "true_page": 24
+    },
+    {
+      "name": "Recovering dignity and self-sufficiency",
+      "true_page": 28,
+      "end_page": 32
+    },
     {
       "name": "Burundi",
       "true_page": 41
@@ -1285,6 +1328,11 @@
   ],
   "2018(2017)_GRID.pdf": [
     {
+      "name": "The year in focus",
+      "true_page": 18,
+      "end_page": 25
+    },
+    {
       "name": "Sub-Saharan Africa",
       "true_page": 27
     },
@@ -1496,6 +1544,11 @@
     {
       "name": "Europe And Central Asia",
       "true_page": 72
+    },
+    {
+      "name": "Ending Internal Displacement",
+      "true_page": 77,
+      "end_page": 88
     },
     {
       "name": "Philippines",

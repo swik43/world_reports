@@ -1,0 +1,517 @@
+{
+  "2018(2017)_GRID.pdf": {
+    "source_path": "IDMC/2018(2017)_GRID.pdf",
+    "countries": [
+      {
+        "name": "The year in focus",
+        "true_page": 18,
+        "end_page": 25
+      },
+      {
+        "name": "Sub-Saharan Africa",
+        "true_page": 27
+      },
+      {
+        "name": "Drc",
+        "true_page": 30
+      },
+      {
+        "name": "Lake Chad Basin",
+        "true_page": 31
+      },
+      {
+        "name": "Middle East And North Africa",
+        "true_page": 32
+      },
+      {
+        "name": "Syria",
+        "true_page": 34
+      },
+      {
+        "name": "Yemen",
+        "true_page": 36
+      },
+      {
+        "name": "East Asia And Pacific",
+        "true_page": 38
+      },
+      {
+        "name": "Indonesia And Vanuatu",
+        "true_page": 40
+      },
+      {
+        "name": "Viet Nam",
+        "true_page": 42
+      },
+      {
+        "name": "South Asia",
+        "true_page": 44
+      },
+      {
+        "name": "Afghanistan",
+        "true_page": 46
+      },
+      {
+        "name": "Americas",
+        "true_page": 48
+      },
+      {
+        "name": "Northern Triangle Of Central America",
+        "true_page": 50
+      },
+      {
+        "name": "The Atlantic Hurricane Season",
+        "true_page": 52
+      },
+      {
+        "name": "Europe And Central Asia",
+        "true_page": 55
+      },
+      {
+        "name": "Ukraine",
+        "true_page": 57
+      }
+    ]
+  },
+  "2019(2018)_GRID.pdf": {
+    "source_path": "IDMC/2019(2018)_GRID.pdf",
+    "countries": [
+      {
+        "name": "Sub-Saharan Africa",
+        "true_page": 19
+      },
+      {
+        "name": "Ethiopia",
+        "true_page": 24
+      },
+      {
+        "name": "Cameroon",
+        "true_page": 26
+      },
+      {
+        "name": "Nigeria",
+        "true_page": 28
+      },
+      {
+        "name": "Middle East And North Africa",
+        "true_page": 30
+      },
+      {
+        "name": "Syria_A",
+        "true_page": 34
+      },
+      {
+        "name": "Libya",
+        "true_page": 36
+      },
+      {
+        "name": "East Asia And Pacific",
+        "true_page": 38
+      },
+      {
+        "name": "Japan",
+        "true_page": 40
+      },
+      {
+        "name": "Philippines",
+        "true_page": 42
+      },
+      {
+        "name": "South Asia",
+        "true_page": 44
+      },
+      {
+        "name": "Afghanistan",
+        "true_page": 46
+      },
+      {
+        "name": "India",
+        "true_page": 48
+      },
+      {
+        "name": "Americas",
+        "true_page": 49
+      },
+      {
+        "name": "United States",
+        "true_page": 52
+      },
+      {
+        "name": "Colombia",
+        "true_page": 54
+      },
+      {
+        "name": "Europe And Central Asia",
+        "true_page": 56,
+        "end_page": 62
+      },
+      {
+        "name": "Medellin And San Salvador",
+        "true_page": 91
+      },
+      {
+        "name": "Flood Displacement Risk",
+        "true_page": 94
+      },
+      {
+        "name": "Nairobi",
+        "true_page": 98
+      },
+      {
+        "name": "Displacement Profiling In Urban Areas",
+        "true_page": 100
+      },
+      {
+        "name": "Syria_B",
+        "true_page": 106
+      }
+    ]
+  },
+  "2020(2019)_GRID.pdf": {
+    "source_path": "IDMC/2020(2019)_GRID.pdf",
+    "countries": [
+      {
+        "name": "Sub-Saharan Africa",
+        "true_page": 24
+      },
+      {
+        "name": "The Sahel",
+        "true_page": 32
+      },
+      {
+        "name": "Mozambique",
+        "true_page": 34
+      },
+      {
+        "name": "White Nile Basin",
+        "true_page": 36
+      },
+      {
+        "name": "Middle East And North Africa",
+        "true_page": 38
+      },
+      {
+        "name": "Syria",
+        "true_page": 44
+      },
+      {
+        "name": "Iraq",
+        "true_page": 46
+      },
+      {
+        "name": "East Asia And Pacific",
+        "true_page": 48
+      },
+      {
+        "name": "Myanmar",
+        "true_page": 54
+      },
+      {
+        "name": "South Asia",
+        "true_page": 56
+      },
+      {
+        "name": "Americas",
+        "true_page": 61
+      },
+      {
+        "name": "Venezuela",
+        "true_page": 68
+      },
+      {
+        "name": "The Bahamas",
+        "true_page": 70
+      },
+      {
+        "name": "Europe And Central Asia",
+        "true_page": 72
+      },
+      {
+        "name": "Ending Internal Displacement",
+        "true_page": 77,
+        "end_page": 88
+      },
+      {
+        "name": "Philippines",
+        "true_page": 92
+      }
+    ]
+  },
+  "2021(2020)_GRID.pdf": {
+    "source_path": "output/idmc_unsplit/2021(2020)_GRID.pdf",
+    "countries": [
+      {
+        "name": "Sub-Saharan Africa",
+        "true_page": 30
+      },
+      {
+        "name": "Burkina Faso",
+        "true_page": 36
+      },
+      {
+        "name": "Mozambique",
+        "true_page": 38
+      },
+      {
+        "name": "Middle East And North Africa",
+        "true_page": 39
+      },
+      {
+        "name": "Syria",
+        "true_page": 46
+      },
+      {
+        "name": "Yemen",
+        "true_page": 48
+      },
+      {
+        "name": "East Asia And Pacific",
+        "true_page": 50
+      },
+      {
+        "name": "Storms In East Asia And Pacific",
+        "true_page": 56
+      },
+      {
+        "name": "South Asia",
+        "true_page": 58
+      },
+      {
+        "name": "Afghanistan",
+        "true_page": 64
+      },
+      {
+        "name": "Americas",
+        "true_page": 66
+      },
+      {
+        "name": "Atlantic Hurricane Season",
+        "true_page": 72
+      },
+      {
+        "name": "Europe And Central Asia",
+        "true_page": 74,
+        "end_page": 77
+      }
+    ]
+  },
+  "2022(2021)_GRID.pdf": {
+    "source_path": "output/idmc_unsplit/2022(2021)_GRID.pdf",
+    "countries": [
+      {
+        "name": "Sub-Saharan Africa",
+        "true_page": 36
+      },
+      {
+        "name": "Ethiopia",
+        "true_page": 46
+      },
+      {
+        "name": "Sudan",
+        "true_page": 48
+      },
+      {
+        "name": "Middle East And North Africa",
+        "true_page": 50
+      },
+      {
+        "name": "Palestine",
+        "true_page": 56
+      },
+      {
+        "name": "East Asia And Pacific",
+        "true_page": 58
+      },
+      {
+        "name": "China",
+        "true_page": 66
+      },
+      {
+        "name": "Myanmar",
+        "true_page": 68
+      },
+      {
+        "name": "Papua New Guinea",
+        "true_page": 70
+      },
+      {
+        "name": "South Asia",
+        "true_page": 72
+      },
+      {
+        "name": "Afghanistan",
+        "true_page": 78
+      },
+      {
+        "name": "Americas",
+        "true_page": 80
+      },
+      {
+        "name": "Haiti",
+        "true_page": 86
+      },
+      {
+        "name": "Europe And Central Asia",
+        "true_page": 88
+      },
+      {
+        "name": "Germany",
+        "true_page": 94
+      },
+      {
+        "name": "Central Asia",
+        "true_page": 96
+      }
+    ]
+  },
+  "2023(2022)_GRID.pdf": {
+    "source_path": "output/idmc_unsplit/2023(2022)_GRID.pdf",
+    "countries": [
+      {
+        "name": "Sub-Saharan Africa",
+        "true_page": 22
+      },
+      {
+        "name": "Drc",
+        "true_page": 34
+      },
+      {
+        "name": "Somalia",
+        "true_page": 36
+      },
+      {
+        "name": "Madagascar",
+        "true_page": 38
+      },
+      {
+        "name": "Middle East And North Africa",
+        "true_page": 40
+      },
+      {
+        "name": "Yemen",
+        "true_page": 50
+      },
+      {
+        "name": "East Asia And The Pacific",
+        "true_page": 52
+      },
+      {
+        "name": "Myanmar",
+        "true_page": 60
+      },
+      {
+        "name": "Philippines",
+        "true_page": 62
+      },
+      {
+        "name": "Tonga",
+        "true_page": 64
+      },
+      {
+        "name": "South Asia",
+        "true_page": 66
+      },
+      {
+        "name": "Pakistan",
+        "true_page": 76
+      },
+      {
+        "name": "Americas",
+        "true_page": 78
+      },
+      {
+        "name": "Europe And Central Asia",
+        "true_page": 88
+      },
+      {
+        "name": "Ukraine",
+        "true_page": 94
+      },
+      {
+        "name": "Burkina Faso",
+        "true_page": 104
+      },
+      {
+        "name": "South Sudan",
+        "true_page": 108
+      }
+    ]
+  },
+  "2024(2023)_GRID.pdf": {
+    "source_path": "output/idmc_unsplit/2024(2023)_GRID.pdf",
+    "countries": [
+      {
+        "name": "Sub-Saharan Africa",
+        "true_page": 30
+      },
+      {
+        "name": "Sudan",
+        "true_page": 42
+      },
+      {
+        "name": "Malawi",
+        "true_page": 44
+      },
+      {
+        "name": "Middle East And North Africa",
+        "true_page": 46
+      },
+      {
+        "name": "Palestine",
+        "true_page": 56
+      },
+      {
+        "name": "Syria",
+        "true_page": 58
+      },
+      {
+        "name": "Libya",
+        "true_page": 60
+      },
+      {
+        "name": "East Asia And Pacific",
+        "true_page": 62
+      },
+      {
+        "name": "New Zealand",
+        "true_page": 72
+      },
+      {
+        "name": "The Philippines",
+        "true_page": 74
+      },
+      {
+        "name": "South Asia",
+        "true_page": 76
+      },
+      {
+        "name": "Afghanistan",
+        "true_page": 86
+      },
+      {
+        "name": "Americas",
+        "true_page": 88
+      },
+      {
+        "name": "Colombia",
+        "true_page": 98
+      },
+      {
+        "name": "Canada",
+        "true_page": 100
+      },
+      {
+        "name": "Europe And Central Asia",
+        "true_page": 102
+      },
+      {
+        "name": "Türkiye",
+        "true_page": 110
+      },
+      {
+        "name": "Ukraine",
+        "true_page": 112
+      }
+    ]
+  }
+}
