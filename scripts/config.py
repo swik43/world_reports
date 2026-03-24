@@ -34,19 +34,25 @@ class SourceConfig:
 
     @property
     def unsplit_config_path(self) -> Path:
-        return self.data_dir / "unsplit_config.json"
+        return self.data_dir / "1_unsplit_config.json"
 
     @property
     def contents_config_path(self) -> Path:
-        return self.data_dir / "contents_config.json"
+        # HRW: step 2, AI: step 1
+        prefix = "2" if self.unsplit_dir is not None else "1"
+        return self.data_dir / f"{prefix}_contents_config.json"
 
     @property
     def overrides_path(self) -> Path:
-        return self.data_dir / "overrides.json"
+        # HRW: step 3, AI: step 2
+        prefix = "3" if self.unsplit_dir is not None else "2"
+        return self.data_dir / f"{prefix}_overrides.json"
 
     @property
     def split_config_path(self) -> Path:
-        return self.data_dir / "split_config.json"
+        # HRW: step 4, AI: step 3
+        prefix = "4" if self.unsplit_dir is not None else "3"
+        return self.data_dir / f"{prefix}_split_config.json"
 
     @property
     def contents_images_dir(self) -> Path:

@@ -37,7 +37,7 @@ These PDFs are not included in the repo.
 
 ### Step 1: Configure
 
-Edit `data/ai/contents_config.json` to register each PDF with:
+Edit `data/ai/1_contents_config.json` to register each PDF with:
 
 - **contents_pages** — the 1-indexed PDF page numbers where the table of contents lives
 - **offset** — the difference between a country's true PDF page and its page number as printed in the contents (`true_page - report_page`). Set to `null` if you plan to provide `true_page` values directly in the JSON.
@@ -73,7 +73,7 @@ scripts/new.sh ai 2023
 ```
 opens `data/ai/contents_json/2023_Amnesty_International.json` in your editor `$EDITOR` and you can paste the output from Claude in this file.
 
-**Manual override:** if you want to skip the Claude extraction step entirely for a PDF, add its country list directly to `data/ai/overrides.json`:
+**Manual override:** if you want to skip the Claude extraction step entirely for a PDF, add its country list directly to `data/ai/2_overrides.json`:
 
 ```json
 {
@@ -92,9 +92,9 @@ Overrides take priority over anything in `contents_json/`.
 python scripts/build_final_config.py ai
 ```
 
-This reads all JSONs from `data/ai/contents_json/` (and `data/ai/overrides.json`), applies the offsets, and writes `data/ai/split_config.json`.
+This reads all JSONs from `data/ai/contents_json/` (and `data/ai/2_overrides.json`), applies the offsets, and writes `data/ai/3_split_config.json`.
 
-**Review `data/ai/split_config.json` before proceeding** — spot-check a few entries by opening the original PDF and verifying the `true_page` values land on the correct country.
+**Review `data/ai/3_split_config.json` before proceeding** — spot-check a few entries by opening the original PDF and verifying the `true_page` values land on the correct country.
 
 ### Step 5: Split PDFs
 
@@ -129,7 +129,7 @@ Place HRW report PDFs in the `HRW/` directory. These are not included in the rep
 
 ### Step 1: Configure double-layout PDFs (double-layout only)
 
-Edit `data/hrw/unsplit_config.json` to register double-layout PDFs with:
+Edit `data/hrw/1_unsplit_config.json` to register double-layout PDFs with:
 
 - **double_start** — the PDF page where the double-page layout begins (typically 2, since page 1 is a single-page cover)
 - **report_page_1** — the PDF page containing report page 1
@@ -145,7 +145,7 @@ This crops each double page into left and right halves, producing single-page-pe
 
 ### Step 3: Configure contents extraction
 
-Edit `data/hrw/contents_config.json` to register each PDF (all layouts) with:
+Edit `data/hrw/2_contents_config.json` to register each PDF (all layouts) with:
 
 - **contents_pages** — 1-indexed PDF pages where the table of contents lives
 - **offset** — `true_page - report_page`. For double-layout PDFs this is the offset relative to the unsplit PDF.
@@ -161,7 +161,7 @@ python scripts/extract_contents_images.py hrw 2023      # specific year
 
 Same process as AI — attach contents page images and extract `{"name", "report_page"}` entries into `data/hrw/contents_json/`.
 
-**Manual override:** to skip Claude extraction for a PDF, add its country list to `data/hrw/overrides.json`:
+**Manual override:** to skip Claude extraction for a PDF, add its country list to `data/hrw/3_overrides.json`:
 
 ```json
 {
@@ -178,9 +178,9 @@ Same process as AI — attach contents page images and extract `{"name", "report
 python scripts/build_final_config.py hrw
 ```
 
-Writes `data/hrw/split_config.json` with each PDF's source path and country list. Double-layout PDFs will point to `output/hrw_unsplit/`; single-layout PDFs point to `HRW/`.
+Writes `data/hrw/4_split_config.json` with each PDF's source path and country list. Double-layout PDFs will point to `output/hrw_unsplit/`; single-layout PDFs point to `HRW/`.
 
-**Review `data/hrw/split_config.json` before proceeding** — spot-check a few entries by opening the PDF and verifying the `true_page` values land on the correct country.
+**Review `data/hrw/4_split_config.json` before proceeding** — spot-check a few entries by opening the PDF and verifying the `true_page` values land on the correct country.
 
 ### Step 7: Split PDFs
 
@@ -218,19 +218,19 @@ world_reports/
 │   ├── convert_to_markdown.py     # convert per-country PDFs to Markdown
 │   └── offset_years.py            # rename files/dirs to shift year numbers
 ├── data/
-│   ├── ai/                        # AI intermediate data
-│   │   ├── contents_config.json   # contents pages + offsets per PDF
-│   │   ├── overrides.json         # manual country data (bypasses Claude extraction)
-│   │   ├── split_config.json      # generated: country names + true pages + source paths
-│   │   ├── contents_images/       # generated: PNG images of contents pages
-│   │   └── contents_json/         # Claude's extracted country/page data
-│   └── hrw/                       # HRW intermediate data
-│       ├── unsplit_config.json    # double-layout PDF specs (double_start, report_page_1)
-│       ├── contents_config.json   # contents pages + offsets per PDF
-│       ├── overrides.json         # manual country data (bypasses Claude extraction)
-│       ├── split_config.json      # generated: country names + true pages + source paths
-│       ├── contents_images/       # generated: PNG images of contents pages
-│       └── contents_json/         # Claude's extracted country/page data
+│   ├── ai/                          # AI intermediate data
+│   │   ├── 1_contents_config.json   # contents pages + offsets per PDF
+│   │   ├── 2_overrides.json         # manual country data (bypasses Claude extraction)
+│   │   ├── 3_split_config.json      # generated: country names + true pages + source paths
+│   │   ├── contents_images/         # generated: PNG images of contents pages
+│   │   └── contents_json/           # Claude's extracted country/page data
+│   └── hrw/                         # HRW intermediate data
+│       ├── 1_unsplit_config.json    # double-layout PDF specs (double_start, report_page_1)
+│       ├── 2_contents_config.json   # contents pages + offsets per PDF
+│       ├── 3_overrides.json         # manual country data (bypasses Claude extraction)
+│       ├── 4_split_config.json      # generated: country names + true pages + source paths
+│       ├── contents_images/         # generated: PNG images of contents pages
+│       └── contents_json/           # Claude's extracted country/page data
 └── output/
     ├── ai/                        # generated: per-country PDFs
     │   └── <year>/
