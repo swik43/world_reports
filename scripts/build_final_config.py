@@ -52,7 +52,11 @@ def main():
 
     result = {}
 
-    for pdf_name, pdf_cfg in sorted(contents_config.items()):
+    # Process all PDFs from contents_config plus any override-only PDFs
+    all_pdf_names = sorted(set(contents_config) | set(overrides))
+
+    for pdf_name in all_pdf_names:
+        pdf_cfg = contents_config.get(pdf_name, {})
         offset = pdf_cfg.get("offset")
 
         # Determine source path
