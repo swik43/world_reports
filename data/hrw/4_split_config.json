@@ -1,6 +1,6 @@
 {
   "2004(2003)_World_Report_Human_Rights_Watch.pdf": {
-    "source_path": "HRW/2004(2003)_World_Report_Human_Rights_Watch.pdf",
+    "source_path": "input/wr/hrw/2004(2003)_World_Report_Human_Rights_Watch.pdf",
     "countries": [
       {
         "name": "Afghanistan",
@@ -23,7 +23,7 @@
     ]
   },
   "2005(2004)_World_Report_Human_Rights_Watch.pdf": {
-    "source_path": "HRW/2005(2004)_World_Report_Human_Rights_Watch.pdf",
+    "source_path": "input/wr/hrw/2005(2004)_World_Report_Human_Rights_Watch.pdf",
     "countries": [
       {
         "name": "Angola",
@@ -284,7 +284,7 @@
     ]
   },
   "2006(2005)_World_Report_Human_Rights_Watch.pdf": {
-    "source_path": "HRW/2006(2005)_World_Report_Human_Rights_Watch.pdf",
+    "source_path": "input/wr/hrw/2006(2005)_World_Report_Human_Rights_Watch.pdf",
     "countries": [
       {
         "name": "Angola",
@@ -561,7 +561,7 @@
     ]
   },
   "2007(2006)_World_Report_Human_Rights_Watch.pdf": {
-    "source_path": "HRW/2007(2006)_World_Report_Human_Rights_Watch.pdf",
+    "source_path": "input/wr/hrw/2007(2006)_World_Report_Human_Rights_Watch.pdf",
     "countries": [
       {
         "name": "Angola",
@@ -862,7 +862,7 @@
     ]
   },
   "2008(2007)_World_Report_Human_Rights_Watch.pdf": {
-    "source_path": "HRW/2008(2007)_World_Report_Human_Rights_Watch.pdf",
+    "source_path": "input/wr/hrw/2008(2007)_World_Report_Human_Rights_Watch.pdf",
     "countries": [
       {
         "name": "Angola",
@@ -1175,7 +1175,7 @@
     ]
   },
   "2009(2008)_World_Report_Human_Rights_Watch.pdf": {
-    "source_path": "HRW/2009(2008)_World_Report_Human_Rights_Watch.pdf",
+    "source_path": "input/wr/hrw/2009(2008)_World_Report_Human_Rights_Watch.pdf",
     "countries": [
       {
         "name": "Angola",
@@ -1504,7 +1504,7 @@
     ]
   },
   "2010(2009)_World_Report_Human_Rights_Watch.pdf": {
-    "source_path": "HRW/2010(2009)_World_Report_Human_Rights_Watch.pdf",
+    "source_path": "input/wr/hrw/2010(2009)_World_Report_Human_Rights_Watch.pdf",
     "countries": [
       {
         "name": "Angola",
@@ -1829,7 +1829,7 @@
     ]
   },
   "2011(2010)_World_Report_Human_Rights_Watch.pdf": {
-    "source_path": "HRW/2011(2010)_World_Report_Human_Rights_Watch.pdf",
+    "source_path": "input/wr/hrw/2011(2010)_World_Report_Human_Rights_Watch.pdf",
     "countries": [
       {
         "name": "Angola",
@@ -2162,7 +2162,7 @@
     ]
   },
   "2012(2011)_World_Report_Human_Rights_Watch.pdf": {
-    "source_path": "HRW/2012(2011)_World_Report_Human_Rights_Watch.pdf",
+    "source_path": "input/wr/hrw/2012(2011)_World_Report_Human_Rights_Watch.pdf",
     "countries": [
       {
         "name": "Angola",
@@ -2503,7 +2503,7 @@
     ]
   },
   "2013(2012)_World_Report_Human_Rights_Watch.pdf": {
-    "source_path": "HRW/2013(2012)_World_Report_Human_Rights_Watch.pdf",
+    "source_path": "input/wr/hrw/2013(2012)_World_Report_Human_Rights_Watch.pdf",
     "countries": [
       {
         "name": "Angola",
@@ -2844,7 +2844,7 @@
     ]
   },
   "2014(2013)_World_Report_Human_Rights_Watch.pdf": {
-    "source_path": "HRW/2014(2013)_World_Report_Human_Rights_Watch.pdf",
+    "source_path": "input/wr/hrw/2014(2013)_World_Report_Human_Rights_Watch.pdf",
     "countries": [
       {
         "name": "Angola",
@@ -3197,7 +3197,7 @@
     ]
   },
   "2015(2014)_World_Report_Human_Rights_Watch.pdf": {
-    "source_path": "HRW/2015(2014)_World_Report_Human_Rights_Watch.pdf",
+    "source_path": "input/wr/hrw/2015(2014)_World_Report_Human_Rights_Watch.pdf",
     "countries": [
       {
         "name": "Afghanistan",
@@ -3546,7 +3546,7 @@
     ]
   },
   "2016(2015)_World_Report_Human_Rights_Watch.pdf": {
-    "source_path": "output/hrw_unsplit/2016(2015)_World_Report_Human_Rights_Watch.pdf",
+    "source_path": "intermediate/unsplit/hrw/2016(2015)_World_Report_Human_Rights_Watch.pdf",
     "countries": [
       {
         "name": "Afghanistan",
@@ -3903,7 +3903,7 @@
     ]
   },
   "2017(2016)_World_Report_Human_Rights_Watch.pdf": {
-    "source_path": "HRW/2017(2016)_World_Report_Human_Rights_Watch.pdf",
+    "source_path": "input/wr/hrw/2017(2016)_World_Report_Human_Rights_Watch.pdf",
     "countries": [
       {
         "name": "Afghanistan",
@@ -4268,7 +4268,7 @@
     ]
   },
   "2018(2017)_World_Report_Human_Rights_Watch.pdf": {
-    "source_path": "HRW/2018(2017)_World_Report_Human_Rights_Watch.pdf",
+    "source_path": "input/wr/hrw/2018(2017)_World_Report_Human_Rights_Watch.pdf",
     "countries": [
       {
         "name": "Afghanistan",
@@ -4637,7 +4637,7 @@
     ]
   },
   "2019(2018)_World_Report_Human_Rights_Watch.pdf": {
-    "source_path": "output/hrw_unsplit/2019(2018)_World_Report_Human_Rights_Watch.pdf",
+    "source_path": "intermediate/unsplit/hrw/2019(2018)_World_Report_Human_Rights_Watch.pdf",
     "countries": [
       {
         "name": "Afghanistan",
@@ -5026,7 +5026,7 @@
     ]
   },
   "2020(2019)_World_Report_Human_Rights_Watch.pdf": {
-    "source_path": "output/hrw_unsplit/2020(2019)_World_Report_Human_Rights_Watch.pdf",
+    "source_path": "intermediate/unsplit/hrw/2020(2019)_World_Report_Human_Rights_Watch.pdf",
     "countries": [
       {
         "name": "Algeria",
@@ -5411,7 +5411,7 @@
     ]
   },
   "2021(2020)_World_Report_Human_Rights_Watch.pdf": {
-    "source_path": "output/hrw_unsplit/2021(2020)_World_Report_Human_Rights_Watch.pdf",
+    "source_path": "intermediate/unsplit/hrw/2021(2020)_World_Report_Human_Rights_Watch.pdf",
     "countries": [
       {
         "name": "Afghanistan",
@@ -5824,7 +5824,7 @@
     ]
   },
   "2022(2021)_World_Report_Human_Rights_Watch.pdf": {
-    "source_path": "HRW/2022(2021)_World_Report_Human_Rights_Watch.pdf",
+    "source_path": "input/wr/hrw/2022(2021)_World_Report_Human_Rights_Watch.pdf",
     "countries": [
       {
         "name": "Afghanistan",
@@ -6237,7 +6237,7 @@
     ]
   },
   "2023(2022)_World_Report_Human_Rights_Watch.pdf": {
-    "source_path": "output/hrw_unsplit/2023(2022)_World_Report_Human_Rights_Watch.pdf",
+    "source_path": "intermediate/unsplit/hrw/2023(2022)_World_Report_Human_Rights_Watch.pdf",
     "countries": [
       {
         "name": "Afghanistan",
@@ -6646,7 +6646,7 @@
     ]
   },
   "2024(2023)_World_Report_Human_Rights_Watch.pdf": {
-    "source_path": "output/hrw_unsplit/2024(2023)_World_Report_Human_Rights_Watch.pdf",
+    "source_path": "intermediate/unsplit/hrw/2024(2023)_World_Report_Human_Rights_Watch.pdf",
     "countries": [
       {
         "name": "Afghanistan",
