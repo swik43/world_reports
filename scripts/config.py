@@ -102,6 +102,17 @@ def extract_year(name: str) -> str:
     raise ValueError(f"Cannot extract year from {name}")
 
 
+def extract_year_full(name: str) -> str:
+    """Extract year with optional parenthetical from a filename.
+
+    Returns 'YYYY(YYYY)' when present, otherwise 'YYYY'.
+    """
+    match = re.match(r"(\d{4}(?:\(\d{4}\))?)", name)
+    if match:
+        return match.group(1)
+    raise ValueError(f"Cannot extract year from {name}")
+
+
 def sanitize_filename(name: str) -> str:
     """Clean a country name for use as a filename."""
     name = name.replace("/", "-")

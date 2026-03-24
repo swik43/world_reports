@@ -23,6 +23,7 @@ from pathlib import Path
 from config import (
     SourceConfig,
     extract_year,
+    extract_year_full,
     get_source,
     make_layout,
     make_progress,
@@ -38,25 +39,25 @@ MANIFESTS_DIR = PROJECT_ROOT / "manifests"
 
 def year_dir_for(pdf_name: str, output_dir: Path) -> Path:
     """Determine the output subdirectory for an AI regional PDF."""
-    year = extract_year(pdf_name)
+    year_full = extract_year_full(pdf_name)
     if "Africa" in pdf_name and "Amnesty" in pdf_name and "Middle" not in pdf_name:
-        return output_dir / f"{year}_Africa"
+        return output_dir / f"{year_full}_Africa"
     if "Americas" in pdf_name:
-        return output_dir / f"{year}_Americas"
+        return output_dir / f"{year_full}_Americas"
     if "Asia_Pacific" in pdf_name:
-        return output_dir / f"{year}_Asia_Pacific"
+        return output_dir / f"{year_full}_Asia_Pacific"
     if "Eastern_Europe" in pdf_name:
-        return output_dir / f"{year}_Eastern_Europe_Central_Asia"
+        return output_dir / f"{year_full}_Eastern_Europe_Central_Asia"
     if "Middle_East" in pdf_name:
-        return output_dir / f"{year}_Middle_East_North_Africa"
-    return output_dir / year
+        return output_dir / f"{year_full}_Middle_East_North_Africa"
+    return output_dir / year_full
 
 
 def get_dest_dir(pdf_name: str, cfg: SourceConfig, source_key: str) -> Path:
     """Pick the right output subdirectory for a PDF."""
     if source_key == "ai":
         return year_dir_for(pdf_name, cfg.output_dir)
-    return cfg.output_dir / extract_year(pdf_name)
+    return cfg.output_dir / extract_year_full(pdf_name)
 
 
 def split_pdf(
@@ -76,7 +77,7 @@ def split_pdf(
     dest.mkdir(parents=True, exist_ok=True)
     reader = PdfReader(source_path)
     total_pages = len(reader.pages)
-    year = extract_year(pdf_name)
+    year = extract_year_full(pdf_name)
 
     for i, country in enumerate(countries):
         spinner.update(text=Text(f"{pdf_name} / {country['name']}", style="gray"))
@@ -149,7 +150,7 @@ def copy_pre_split(
     records = []
     dest.mkdir(parents=True, exist_ok=True)
     source_dir = Path(entry["source_path"])
-    year = extract_year(pdf_name)
+    year = extract_year_full(pdf_name)
 
     if not source_dir.is_dir():
         live.console.print(f"  WARNING: pre_split source dir {source_dir} not found")
