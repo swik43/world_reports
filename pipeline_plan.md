@@ -233,13 +233,14 @@ samples_readable/
 
 ### samples_llm/
 
-Exact structural mirror of `samples_readable/`. All files are `.md`.
-Where a markdown conversion doesn't exist (e.g. scanned AI pre-2013 PDFs),
-the corresponding directory is empty or the file is absent. The `has_llm`
-field in `index.json` tracks this.
+Exact structural mirror of `samples_readable/`. Contains the lowest-resolution
+version of each file for LLM consumption. This is usually `.md` but for files
+that can't be converted to markdown (e.g. scanned AI pre-2013 PDFs), the
+original format (PDF, HTML) is kept. Every file in `samples_readable/` has a
+corresponding entry in `samples_llm/`.
 
 ```
-samples_llm/{org}/{type}/{country_folder}/{ID}.md
+samples_llm/{org}/{type}/{country_folder}/{ID}.{ext}
 ```
 
 ### sources/
@@ -300,9 +301,8 @@ entry. Schema:
       "suffix": null,
       "readable_path": "samples_readable/idmc/wr/Sudan/IDMC-WR-2010-Sudan.pdf",
       "llm_path": "samples_llm/idmc/wr/Sudan/IDMC-WR-2010-Sudan.md",
-      "has_readable": true,
-      "has_llm": true,
-      "file_format": "pdf",
+      "readable_format": "pdf",
+      "llm_format": "md",
       "source_id": "IDMC-SRC-WR-2010",
       "source_type": "split_from_world_report",
       "archive_path": "archive/WR_split_pdf/idmc/2010/2010_Sudan.pdf",
@@ -551,26 +551,34 @@ Everything else goes to `discarded.txt` (list of paths not copied).
 ### Step 7: Convert to Markdown
 **Script:** `convert_to_markdown.py` (existing, extended)
 **Reads:** `intermediate/filtered/`
-**Writes:** `intermediate/markdown/` (mirror structure, `.md` files)
+**Writes:** `intermediate/markdown/` (mirror structure)
 **Writes manifest:** `manifests/7_converted.json`
 **Human intervention:** None
 
+Every file in `intermediate/filtered/` must end up in `intermediate/markdown/`.
+The goal is to produce the lowest-resolution version of each file for LLM
+consumption. Usually that's markdown, but when conversion isn't possible
+the original file is copied as-is.
+
 For each file in `intermediate/filtered/`:
-- If it's a PDF: convert to markdown using pymupdf4llm
+- If it's a PDF and conversion is possible: convert to markdown using pymupdf4llm
+- If it's a PDF but below `min_markdown_year` (scanned docs): copy the PDF as-is
 - If it's already `.md`: copy as-is
 - If it's `.html`: convert to markdown (simple html-to-md conversion)
+- If conversion fails: copy the original file as-is, log error in manifest
 
-Files that fail conversion are logged in the manifest with `"converted": false`.
-The original file remains in `intermediate/filtered/` and will be used as the
-readable version even though no LLM version exists.
+The `samples_llm/` folder (produced by step 8) will contain whatever format
+ended up in `intermediate/markdown/` -- usually `.md` but sometimes `.pdf`
+or `.html` for files that couldn't be converted.
 
 **The existing script handles PDF-to-markdown conversion.** It needs to be
 extended to:
 - Process CR files (currently only handles WR year directories)
 - Handle HTML files
+- Handle unconvertible PDFs by copying them through
 - Process from `intermediate/filtered/` instead of `output/`
 - Support `--org`, `--type`, `--year`, `--country` scoping flags
-- Respect the per-org `min_markdown_year` setting (AI pre-2013 = skip)
+- Respect the per-org `min_markdown_year` setting (AI pre-2013 = copy, not convert)
 - Write a manifest
 
 
@@ -591,8 +599,10 @@ This is the final assembly step. For each file in `intermediate/filtered/`:
 
 2. Copy to `samples_readable/{org}/{type}/{country_folder}/{ID}.{ext}`
 
-3. If a markdown version exists in `intermediate/markdown/`:
-   copy to `samples_llm/{org}/{type}/{country_folder}/{ID}.md`
+3. Copy the corresponding file from `intermediate/markdown/` to
+   `samples_llm/{org}/{type}/{country_folder}/{ID}.{ext}`
+   The extension matches whatever step 7 produced: `.md` for converted files,
+   or the original extension (`.pdf`, `.html`) for unconvertible files.
 
 4. Copy WR source PDFs from `input/wr/` to `sources/{org}/world_reports/`
    (keep original filenames)
