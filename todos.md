@@ -24,6 +24,4 @@ ORG-TYPE (all are WR for world report)-YEAR(REPORT_YEAR)-COUNTRY.SUFFIX
 
 - Need to somehow merge with the country-specific
 - Need to get some type of master spreadsheet
-- All split files need to have their own unique ID name and be mapped to source document 
-
-
+- All split files need to have their own unique ID name and be mapped to source document

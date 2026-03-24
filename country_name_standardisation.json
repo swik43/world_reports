@@ -1,0 +1,175 @@
+{
+  "_description": "Country name standardisation mappings. Three sections: (1) variant_to_standard maps any known spelling/naming variant to its standardised entity name for use in file IDs, (2) entity_to_folder maps standardised entity names to the country folder they belong to (only entries where entity != folder are listed; all others use the entity name with underscores replaced by spaces), (3) csv_to_folder maps country names as they appear in conflict_years_first_relevant.csv to folder names.",
+
+  "variant_to_standard": {
+    "Bosnia-Herzegovina": "Bosnia_and_Herzegovina",
+    "Bosnia And Herzegovina": "Bosnia_and_Herzegovina",
+    "Bosnia__and__Herzegovina": "Bosnia_and_Herzegovina",
+    "Bosnia_and_Herzegovina": "Bosnia_and_Herzegovina",
+    "Bosnia and Herzegovina": "Bosnia_and_Herzegovina",
+    "Bosnia-Heregovina": "Bosnia_and_Herzegovina",
+
+    "Burma": "Burma_(Myanmar)",
+    "Burma (see Myanmar)": "Burma_(Myanmar)",
+
+    "Russian Federation": "Russia",
+    "Russian_Federation": "Russia",
+
+    "Drc": "DRC",
+    "Democratic Republic of the Congo": "DRC",
+    "Democratic Republic Of Congo": "DRC",
+    "Democratic Republic Of Congo (Drc)": "DRC",
+    "The Democratic Republic of Congo": "DRC",
+    "Congo (Democratic Republic of the)": "DRC",
+    "Democratic Republic of Congo": "DRC",
+
+    "Republic of the Congo": "Congo",
+    "Republic_of_the_Congo": "Congo",
+    "Congo (Republic of the)": "Congo",
+    "Congo (Republic Of)": "Congo",
+    "Congo (Republic of)": "Congo",
+    "Congo (the)": "Congo",
+
+    "Côte d' Ivoire": "Cote_D'Ivoire",
+    "Côte d'Ivoire": "Cote_D'Ivoire",
+    "Côte D'Ivoire": "Cote_D'Ivoire",
+    "Cote D'ivoire": "Cote_D'Ivoire",
+    "Cote_dIvoire": "Cote_D'Ivoire",
+    "Cote_dIovoire": "Cote_D'Ivoire",
+    "Cote_divoire": "Cote_D'Ivoire",
+    "Ivory Coast": "Cote_D'Ivoire",
+    "Cote d'ivoire": "Cote_D'Ivoire",
+    "Cote d'Ivoire": "Cote_D'Ivoire",
+    "Cote d'Iovoire": "Cote_D'Ivoire",
+    "Cote D'Ivoire": "Cote_D'Ivoire",
+
+    "Israel OPT": "Israel_-_OPT",
+    "Israel-OPT": "Israel_-_OPT",
+    "Israel_OPT": "Israel_-_OPT",
+    "Israel - OPT": "Israel_-_OPT",
+    "Israel and the Occupied Territories": "Israel_-_OPT",
+    "Israel and the Occupied Palestinian Territories": "Israel_-_OPT",
+    "Israel-Occupied Palestinian Territories": "Israel_-_OPT",
+    "Israel-Occupied Palestinian Territories (Opt)": "Israel_-_OPT",
+    "Israel-Palestine": "Israel_-_OPT",
+    "Israel And Palestine": "Israel_-_OPT",
+
+    "Palestinian Authority": "Occupied_Palestinian_Territories_(OPT)",
+    "Palestine": "Occupied_Palestinian_Territories_(OPT)",
+    "Palestine (State Of)": "Occupied_Palestinian_Territories_(OPT)",
+    "Palestine (State of)": "Occupied_Palestinian_Territories_(OPT)",
+
+    "Phillipines": "Philippines",
+    "The Philippines": "Philippines",
+
+    "Viet Nam": "Vietnam",
+
+    "Morocco-Western Sahara": "Morocco_-_Western_Sahara",
+    "Morocco - Western Sahara": "Morocco_-_Western_Sahara",
+    "Morocco And Western Sahara": "Morocco_-_Western_Sahara",
+    "Morocco-Western_Sahara": "Morocco_-_Western_Sahara",
+
+    "Korea (Democratic People's Republic of)": "North_Korea",
+    "Korea (Democratic People's Republic Of)": "North_Korea",
+    "Korea (Democratic People'S Republic Of)": "North_Korea",
+    "Democratic People's Republic of Korea": "North_Korea",
+
+    "Korea (Republic of)": "South_Korea",
+    "Korea (Republic Of)": "South_Korea",
+    "Republic of Korea": "South_Korea",
+
+    "Türkiye": "Turkey",
+
+    "Swaziland": "Eswatini_(Swaziland)",
+    "Eswatini": "Eswatini_(Swaziland)",
+    "Eswatini (Formerly Swaziland)": "Eswatini_(Swaziland)",
+
+    "East Timor": "Timor-Leste_(East_Timor)",
+    "East Timor (see Timor-Leste)": "Timor-Leste_(East_Timor)",
+    "Timor-Leste": "Timor-Leste_(East_Timor)",
+
+    "Serbia And Montenegro": "Serbia_and_Montenegro",
+    "Yugoslavia (see Serbia and Montenegro)": "Yugoslavia_(Serbia_and_Montenegro)",
+
+    "United States of America": "United_States",
+    "United States": "United_States",
+    "Unites States of America": "United_States",
+
+    "United Arab Emirates": "UAE",
+    "United Arab Emirates (Uae)": "UAE",
+
+    "Macedonia": "North_Macedonia",
+    "North Macendonia": "North_Macedonia",
+
+    "Guinea Republic": "Guinea",
+
+    "Guinea-Bissa": "Guinea-Bissau",
+
+    "Tanzania And Zanzibar": "Tanzania_and_Zanzibar",
+
+    "Moz": "Mozambique",
+
+    "Central African Republic": "CAR",
+
+    "Chil": "Chile",
+
+    "Sudan (North)": "Sudan",
+
+    "Kazakstan": "Kazakhstan",
+
+    "The Bahamas": "Bahamas",
+
+    "Sierra_Leone": "Sierra_Leone",
+    "South_Africa": "South_Africa",
+    "Sri_Lanka": "Sri_Lanka",
+
+    "Trinidad y Tobago": "Trinidad_and_Tobago",
+
+    "Indonesia and East Timor": "Indonesia_and_East_Timor",
+
+    "China - including Hong Kong and Macao": "China_-_including_Hong_Kong_and_Macao",
+    "China and Tibet": "China_and_Tibet"
+  },
+
+  "entity_to_folder": {
+    "Israel": "Israel and Palestine",
+    "Israel_-_OPT": "Israel and Palestine",
+    "Occupied_Palestinian_Territories_(OPT)": "Israel and Palestine",
+
+    "Morocco": "Morocco",
+    "Morocco_-_Western_Sahara": "Morocco",
+
+    "Serbia": "Serbia",
+    "Serbia_and_Montenegro": "Serbia",
+    "Yugoslavia_(Federal_Republic_of)": "Serbia",
+    "Yugoslavia_(Kosovo)": "Serbia",
+    "Yugoslavia_(Serbia_and_Montenegro)": "Serbia",
+
+    "China": "China",
+    "China_-_including_Hong_Kong_and_Macao": "China",
+    "China_and_Tibet": "China",
+
+    "Tanzania": "Tanzania",
+    "Tanzania_and_Zanzibar": "Tanzania",
+
+    "Timor-Leste_(East_Timor)": "Timor-Leste",
+    "Indonesia_and_East_Timor": "Timor-Leste",
+
+    "Burma_(Myanmar)": "Myanmar"
+  },
+
+  "csv_to_folder": {
+    "Bosnia-Herzegovina": "Bosnia and Herzegovina",
+    "Cambodia (Kampuchea)": "Cambodia",
+    "Central African Republic": "CAR",
+    "Congo": "Congo",
+    "DR Congo (Zaire)": "DRC",
+    "Ivory Coast": "Cote D'Ivoire",
+    "Israel": "Israel and Palestine",
+    "Myanmar (Burma)": "Myanmar",
+    "Russia (Soviet Union)": "Russia",
+    "Serbia (Yugoslavia)": "Serbia",
+    "Yemen (North Yemen)": "Yemen",
+    "North Macedonia": "North Macedonia"
+  }
+}
