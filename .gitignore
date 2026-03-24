@@ -6,5 +6,6 @@
 .claude/worktrees*
 _tmp/*
 output/*
+input/*
 scripts/__pycache__/*
 HRW/*
