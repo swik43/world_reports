@@ -36,6 +36,12 @@ input/
         2003_Afghanistan.pdf
         2012_Afghanistan.pdf
         ...
+      Guinea, Liberia, Sierra Leone/       # multi-country parent + splits
+        2001_GuineaLiberiaSierra_Leone.pdf  # source document
+        split_files/
+          2001_Guinea.pdf                   # classification candidates
+          2001_Liberia.pdf
+          2001_Sierra_Leone.pdf
       ...
     hrw/
       Angola/
@@ -46,6 +52,20 @@ input/
         2006_Afghanistan_a.pdf
         2021_Afghanistan_IDMC_Profile.md
         ...
+      Regional Reports/                     # nested subdirectories
+        Africa/
+          2006_Africa.pdf                   # source document
+          split_files/
+            2006_West_Africa_Cote_dIvoire.pdf
+            2006_West_Africa_Guinea.pdf
+            ...
+        Eastern_Africa/
+          2016_Eastern_Africa.pdf           # source document
+          split_files/
+            2016_Eastern_Africa_Djibouti.pdf
+            ...
+        Middle_East/
+          2011_Middle_East.pdf              # no splits, goes to _general
       ...
     us/
       Afghanistan/
@@ -63,6 +83,30 @@ Notes:
 - CR files are standalone per-country reports, already in country folders.
 - The `YYYY(YYYY-1)` format in filenames indicates publication year and
   coverage year. Not all files use this -- some are just `YYYY`. Both are valid.
+
+### CR scanning rules
+
+The CR tree is not a uniform depth. Some orgs have nested subdirectories
+(e.g. `Regional Reports/Africa/split_files/`). Two rules handle this:
+
+**Rule 1: Recursive scanning.** The CR scanner walks the tree recursively
+under each `input/cr/{org}/` and collects all leaf files regardless of depth.
+The entity/country name is derived from the filename (via the standardisation
+map), not from the folder path. The folder path only determines the org.
+
+**Rule 2: The `split_files/` convention.** Anywhere in the CR tree, if a
+directory contains a `split_files/` subfolder:
+- Files **inside** `split_files/` are classification candidates -- they get
+  routed through name standardisation and into `samples_readable/`.
+- Files **next to** `split_files/` (at the parent level) are source/parent
+  documents -- they go to `sources/`.
+
+If no `split_files/` subfolder exists, all files in the directory are
+classification candidates (the normal case).
+
+Files whose entity doesn't match any known country (e.g. `2011_Middle_East.pdf`,
+`2006_Africa.pdf` without a split) get routed to `_general/` automatically
+by the existing non-country routing logic.
 
 
 ## File ID Scheme
@@ -344,6 +388,10 @@ Checks:
 - No unexpected files or structures
 - Reports any anomalies
 
+The CR tree may contain nested subdirectories and `split_files/` folders --
+these are expected patterns (see "CR scanning rules" above), not anomalies.
+The validator should flag them as informational, not warnings.
+
 This is a sanity check, not a transformation step.
 
 
@@ -446,6 +494,14 @@ folders like "Israel and Palestine", "Serbia", "China", etc.).
 Non-country entities (regional reports, thematic reports) are routed to
 `_general/` instead of a country folder.
 
+**CR scanning follows the two rules from the "CR scanning rules" section above:**
+- Scan recursively under `input/cr/{org}/` -- don't assume fixed folder depth.
+- If a `split_files/` subfolder exists, only process files inside it as
+  classification candidates. Files next to it (at the parent level) are source
+  documents and should be routed to `sources/` in step 8. The manifest should
+  record `"is_source": true` for these parent files so step 8 knows where to
+  put them.
+
 Output structure:
 ```
 intermediate/standardised/
@@ -466,7 +522,7 @@ intermediate/standardised/
 ```
 
 The manifest records for each file:
-`{org, type, year, country_raw, country_standardised, country_folder, input_path, output_path}`
+`{org, type, year, country_raw, country_standardised, country_folder, input_path, output_path, is_source}`
 
 
 ### Step 6: Filter by Country and Year
@@ -541,7 +597,10 @@ This is the final assembly step. For each file in `intermediate/filtered/`:
 4. Copy WR source PDFs from `input/wr/` to `sources/{org}/world_reports/`
    (keep original filenames)
 
-5. Copy any multi-country parent CR files to `sources/{org}/country_reports/`
+5. Copy CR parent/source files to `sources/{org}/country_reports/` or
+   `sources/{org}/regional_reports/`. These are identified by the
+   `"is_source": true` flag in the step 5 manifest -- they are the files
+   that sat next to a `split_files/` subfolder in the input tree.
 
 The manifest records: `{id, org, type, year, entity, country_folder, suffix,
 readable_path, llm_path, source_path, source_id, original_filename}`
