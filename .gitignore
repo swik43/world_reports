@@ -7,5 +7,6 @@
 _tmp/*
 output/*
 input/*
+intermediate/*
 scripts/__pycache__/*
 HRW/*
