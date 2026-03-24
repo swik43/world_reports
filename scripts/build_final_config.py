@@ -1,9 +1,15 @@
 """
-Build parsed_contents.json from Claude's output JSONs.
+Build split_config.json from Claude's output JSONs.
 
 Reads each JSON in the source's contents_json/ directory (name + report_page
 from Claude), applies the offset from contents_config.json to compute true_page,
-normalizes country names to title case, and writes parsed_contents.json.
+normalizes country names to title case, and writes split_config.json.
+
+The output includes a source_path per PDF so split_pdfs.py knows exactly
+where to read each file from (unsplit_dir for double-layout, source_dir otherwise).
+
+Manual country data can be provided in overrides.json instead of going through
+the Claude extraction step. Any PDF listed there is used as-is.
 
 Files with offset=null in the config must provide true_page
 directly in their JSON instead of report_page.
@@ -21,70 +27,89 @@ from config import get_source, titlecase_name
 def main():
     cfg, _ = get_source()
 
-    with open(cfg.config_path) as f:
-        config = json.load(f)
+    with open(cfg.contents_config_path) as f:
+        contents_config = json.load(f)
 
-    result = {}
+    # Load unsplit config to determine which PDFs live in unsplit_dir
+    unsplit_pdfs: set[str] = set()
+    if cfg.unsplit_config_path.exists():
+        with open(cfg.unsplit_config_path) as f:
+            unsplit_pdfs = set(json.load(f).keys())
 
+    # Load manual overrides (pdf_name -> list of {name, true_page, ...})
+    overrides: dict = {}
+    if cfg.overrides_path.exists():
+        with open(cfg.overrides_path) as f:
+            overrides = json.load(f)
+
+    # Load all Claude-extracted country JSONs
+    contents_json: dict = {}
     for path in sorted(cfg.contents_json_dir.glob("*.json")):
         with open(path) as f:
             data = json.load(f)
-
         for pdf_name, entries in data.items():
+            contents_json[pdf_name] = entries
+
+    result = {}
+
+    for pdf_name, pdf_cfg in sorted(contents_config.items()):
+        offset = pdf_cfg.get("offset")
+
+        # Determine source path
+        if pdf_name in unsplit_pdfs and cfg.unsplit_dir is not None:
+            source_path = str(cfg.unsplit_dir / pdf_name)
+        else:
+            source_path = str(cfg.source_dir / pdf_name)
+
+        # Get country data: overrides take priority, then contents_json
+        if pdf_name in overrides:
+            raw_countries = overrides[pdf_name]
+            source_label = "override"
+        elif pdf_name in contents_json:
+            entries = contents_json[pdf_name]
             # Support both list and {"countries": [...]} wrapper
-            countries = (
+            raw_countries = (
                 entries.get("countries", entries)
                 if isinstance(entries, dict)
                 else entries
             )
+            source_label = "contents_json"
+        else:
+            print(f"WARNING: no country data for {pdf_name}, skipping")
+            continue
 
-            pdf_cfg = config.get(pdf_name)
-            if pdf_cfg is None:
-                print(f"WARNING: {pdf_name} not in contents_config.json, skipping")
+        processed = []
+        for country in raw_countries:
+            name = titlecase_name(country["name"])
+
+            if "true_page" in country:
+                true_page = country["true_page"]
+            elif offset is not None:
+                true_page = offset + country["report_page"]
+            else:
+                print(
+                    f"  ERROR: {pdf_name}/{name} has no true_page and offset is null"
+                )
                 continue
 
-            offset = pdf_cfg.get("offset")
+            entry = {"name": name, "true_page": true_page}
+            if "end_page" in country:
+                entry["end_page"] = country["end_page"]
+            processed.append(entry)
 
-            # For double-layout PDFs, unsplit_double_pages.py has already
-            # split each double page into two single pages, so we compute
-            # the equivalent offset for the unsplit PDF.
-            if pdf_cfg.get("layout") == "double":
-                offset = 2 * pdf_cfg["report_page_1"] - pdf_cfg["double_start"]
-
-            processed = []
-            for country in countries:
-                name = titlecase_name(country["name"])
-
-                if "true_page" in country:
-                    true_page = country["true_page"]
-                elif offset is not None:
-                    true_page = offset + country["report_page"]
-                else:
-                    print(
-                        f"  ERROR: {pdf_name}/{name} has no true_page and offset is null"
-                    )
-                    continue
-
-                entry = {"name": name, "true_page": true_page}
-                if "end_page" in country:
-                    entry["end_page"] = country["end_page"]
-                processed.append(entry)
-
-            result[pdf_name] = processed
-            offset_str = (
-                f"offset {offset:+d}" if offset is not None else "true_page direct"
-            )
-            print(f"{pdf_name}: {len(processed)} countries ({offset_str})")
+        result[pdf_name] = {"source_path": source_path, "countries": processed}
+        offset_str = f"offset {offset:+d}" if offset is not None else "true_page direct"
+        print(f"{pdf_name}: {len(processed)} countries ({offset_str}, {source_label})")
 
     result = dict(sorted(result.items()))
 
-    with open(cfg.parsed_path, "w") as f:
+    with open(cfg.split_config_path, "w") as f:
         json.dump(result, f, indent=2, ensure_ascii=False)
         f.write("\n")
 
-    total = sum(len(v) for v in result.values())
+    total = sum(len(v["countries"]) for v in result.values())
     print(
-        f"\nWrote {cfg.parsed_path} ({len(result)} PDFs, {total} total country entries)"
+        f"\nWrote {cfg.split_config_path} ({len(result)} PDFs, {total} total country entries)"
     )
 
 

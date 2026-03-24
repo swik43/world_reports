@@ -1,7 +1,7 @@
 """
 Convert double-layout PDFs into single-page-per-sheet PDFs.
 
-For each double-layout PDF (as marked in contents_config.json), this script:
+Reads unsplit_config.json for the given source. For each listed PDF:
 - Keeps pages before double_start as-is
 - Splits every page from double_start onward into left and right halves
 - Writes the result to the source's unsplit_dir
@@ -80,16 +80,18 @@ def main():
 
     assert cfg.unsplit_dir is not None, f"No unsplit_dir configured for this source"
 
-    with open(cfg.config_path) as f:
+    if not cfg.unsplit_config_path.exists():
+        print(f"Error: {cfg.unsplit_config_path} not found.")
+        return
+
+    with open(cfg.unsplit_config_path) as f:
         config = json.load(f)
 
-    # Pre-scan: filter to double-layout PDFs and count total pages
+    # Pre-scan: count total pages across eligible PDFs
     eligible: list[tuple[str, dict]] = []
     pdf_page_counts: dict[str, int] = {}
 
     for pdf_name, pdf_cfg in sorted(config.items()):
-        if pdf_cfg.get("layout") != "double":
-            continue
         if year_filter:
             year = extract_year(pdf_name)
             if year not in year_filter:

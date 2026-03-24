@@ -1,11 +1,12 @@
 """
 Split report PDFs into per-country files.
 
-Reads parsed_contents.json for the given source. Each country's range runs
-from its true_page to the next country's true_page - 1 (last country to EOF).
+Reads split_config.json for the given source. Each entry contains a source_path
+(where to read the PDF from) and a list of countries with true_page values.
+Each country's range runs from its true_page to the next country's true_page - 1
+(last country runs to EOF).
 
-HRW-specific: double-layout PDFs read from unsplit_dir instead of source_dir.
-AI-specific:  regional PDFs get output subdirectories like <year>_Africa.
+AI-specific: regional PDFs get output subdirectories like <year>_Africa.
 
 Usage:
     python scripts/split_pdfs.py hrw                # all HRW PDFs
@@ -44,16 +45,6 @@ def year_dir_for(pdf_name: str, output_dir: Path) -> Path:
     return output_dir / year
 
 
-def get_source_dir(pdf_name: str, cfg: SourceConfig, config: dict) -> Path:
-    """Pick the right source directory for a PDF.
-
-    HRW double-layout PDFs read from unsplit_dir; everything else from source_dir.
-    """
-    if cfg.unsplit_dir and config.get(pdf_name, {}).get("layout") == "double":
-        return cfg.unsplit_dir
-    return cfg.source_dir
-
-
 def get_dest_dir(pdf_name: str, cfg: SourceConfig, source_key: str) -> Path:
     """Pick the right output subdirectory for a PDF."""
     if source_key == "ai":
@@ -63,8 +54,8 @@ def get_dest_dir(pdf_name: str, cfg: SourceConfig, source_key: str) -> Path:
 
 def split_pdf(
     pdf_name,
+    source_path,
     countries,
-    source_dir,
     dest,
     *,
     spinner,
@@ -73,7 +64,7 @@ def split_pdf(
     overall_task,
 ):
     dest.mkdir(parents=True, exist_ok=True)
-    reader = PdfReader(str(source_dir / pdf_name))
+    reader = PdfReader(source_path)
     total_pages = len(reader.pages)
 
     for i, country in enumerate(countries):
@@ -116,42 +107,36 @@ def main():
     cfg, year_filter = get_source()
     source_key = cfg.source_dir.name.lower()  # "hrw" or "ai"
 
-    if not cfg.parsed_path.exists():
-        print(f"Error: {cfg.parsed_path} not found.")
+    if not cfg.split_config_path.exists():
+        print(f"Error: {cfg.split_config_path} not found.")
         return
 
-    with open(cfg.parsed_path) as f:
-        parsed = json.load(f)
-
-    # Load contents_config for HRW double-layout detection
-    config: dict = {}
-    if cfg.config_path.exists():
-        with open(cfg.config_path) as f:
-            config = json.load(f)
+    with open(cfg.split_config_path) as f:
+        split_config = json.load(f)
 
     cfg.output_dir.mkdir(parents=True, exist_ok=True)
 
     # Pre-scan: build eligible list and count total countries
-    eligible: list[tuple[str, list[dict], Path, Path]] = []
+    eligible: list[tuple[str, str, list[dict], Path]] = []
     total_countries = 0
 
-    for pdf_name, countries in sorted(parsed.items()):
+    for pdf_name, entry in sorted(split_config.items()):
         if year_filter:
             year = extract_year(pdf_name)
             if year not in year_filter:
                 continue
 
+        countries = entry["countries"]
         if not countries:
             continue
 
-        source_dir = get_source_dir(pdf_name, cfg, config)
-        pdf_path = source_dir / pdf_name
-        if not pdf_path.exists():
-            print(f"WARNING: {pdf_name} not found, skipping")
+        source_path = entry["source_path"]
+        if not Path(source_path).exists():
+            print(f"WARNING: {source_path} not found, skipping")
             continue
 
         dest = get_dest_dir(pdf_name, cfg, source_key)
-        eligible.append((pdf_name, countries, source_dir, dest))
+        eligible.append((pdf_name, source_path, countries, dest))
         total_countries += len(countries)
 
     if not eligible:
@@ -162,11 +147,11 @@ def main():
     overall_task = progress.add_task("Overall", total=total_countries)
 
     with Live(make_layout(spinner, progress), refresh_per_second=10) as live:
-        for pdf_name, countries, source_dir, dest in eligible:
+        for pdf_name, source_path, countries, dest in eligible:
             split_pdf(
                 pdf_name,
+                source_path,
                 countries,
-                source_dir,
                 dest,
                 spinner=spinner,
                 live=live,

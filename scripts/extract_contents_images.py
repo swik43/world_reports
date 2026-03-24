@@ -22,7 +22,7 @@ SCALE = 3  # render at 3x for readability
 def main():
     cfg, year_filter = get_source()
 
-    with open(cfg.config_path) as f:
+    with open(cfg.contents_config_path) as f:
         config = json.load(f)
 
     output_dir = cfg.contents_images_dir

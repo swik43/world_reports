@@ -164,7 +164,13 @@ def main(source_key: str, dry_run: bool = False) -> None:
         total += rename_dir_tree(path, dry_run)
         print()
 
-    for config_path in [ROOT / cfg.config_path, ROOT / cfg.parsed_path]:
+    config_paths = [
+        ROOT / cfg.unsplit_config_path,
+        ROOT / cfg.contents_config_path,
+        ROOT / cfg.overrides_path,
+        ROOT / cfg.split_config_path,
+    ]
+    for config_path in config_paths:
         print(f"== Config: {config_path.name} ==")
         total += patch_json_keys(config_path, dry_run)
         print()

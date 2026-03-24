@@ -33,12 +33,20 @@ class SourceConfig:
     min_markdown_year: int | None
 
     @property
-    def config_path(self) -> Path:
+    def unsplit_config_path(self) -> Path:
+        return self.data_dir / "unsplit_config.json"
+
+    @property
+    def contents_config_path(self) -> Path:
         return self.data_dir / "contents_config.json"
 
     @property
-    def parsed_path(self) -> Path:
-        return self.data_dir / "parsed_contents.json"
+    def overrides_path(self) -> Path:
+        return self.data_dir / "overrides.json"
+
+    @property
+    def split_config_path(self) -> Path:
+        return self.data_dir / "split_config.json"
 
     @property
     def contents_images_dir(self) -> Path:
