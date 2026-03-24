@@ -132,7 +132,6 @@ Place HRW report PDFs in the `HRW/` directory. These are not included in the rep
 Edit `data/hrw/1_unsplit_config.json` to register double-layout PDFs with:
 
 - **double_start** — the PDF page where the double-page layout begins (typically 2, since page 1 is a single-page cover)
-- **report_page_1** — the PDF page containing report page 1
 
 ### Step 2: Unsplit double-layout PDFs
 
