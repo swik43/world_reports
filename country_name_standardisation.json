@@ -1,5 +1,5 @@
 {
-  "_description": "Country name standardisation mappings. Four sections: (1) variant_to_standard maps any known spelling/naming variant to its standardised entity name for use in file IDs, (2) entity_to_folder maps standardised entity names to the country folder they belong to (only entries where entity != folder are listed; all others use the entity name with underscores replaced by spaces), (3) csv_to_folder maps country names as they appear in conflict_years_first_relevant.csv to folder names, (4) general_entities lists entity names that should route to _general/ rather than a country folder.",
+  "_description": "Country name standardisation mappings. Three sections: (1) variant_to_standard maps any known spelling/naming variant to its standardised entity name for use in file IDs, (2) entity_to_folder maps standardised entity names to the country folder they belong to (only entries where entity != folder are listed; all others use the entity name with underscores replaced by spaces), (3) general_entities lists entity names that should route to _general/ rather than a country folder.",
   "variant_to_standard": {
     "Bosnia-Herzegovina": "Bosnia_and_Herzegovina",
     "Bosnia And Herzegovina": "Bosnia_and_Herzegovina",
@@ -218,20 +218,6 @@
     "Russia_Chechnya": "Russia",
     "Kosovo": "Serbia",
     "Somaliland": "Somalia"
-  },
-  "csv_to_folder": {
-    "Bosnia-Herzegovina": "Bosnia and Herzegovina",
-    "Cambodia (Kampuchea)": "Cambodia",
-    "Central African Republic": "CAR",
-    "Congo": "Congo",
-    "DR Congo (Zaire)": "DRC",
-    "Ivory Coast": "Cote D'Ivoire",
-    "Israel": "Israel and Palestine",
-    "Myanmar (Burma)": "Myanmar",
-    "Russia (Soviet Union)": "Russia",
-    "Serbia (Yugoslavia)": "Serbia",
-    "Yemen (North Yemen)": "Yemen",
-    "North Macedonia": "North Macedonia"
   },
   "general_entities": [
     "Balkans",

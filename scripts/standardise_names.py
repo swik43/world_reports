@@ -64,11 +64,10 @@ def load_maps():
     known = set(v2s.values()) | set(e2f.keys())
 
     # Add countries from CSV (these are valid even if they have no variant mapping)
-    csv_to_folder = std["csv_to_folder"]
+    # CSV already uses standardised folder names directly
     with open(CSV_PATH) as f:
         for row in csv.DictReader(f):
-            csv_name = row["Country"].strip()
-            folder = csv_to_folder.get(csv_name, csv_name)
+            folder = row["Country"].strip()
             known.add(folder.replace(" ", "_"))
 
     return v2s, e2f, general, known
