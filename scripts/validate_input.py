@@ -223,9 +223,7 @@ def sorted_walk(top: Path):
         yield Path(dirpath), dirnames, filenames
 
 
-def _make_cr_record(
-    f: Path, org: str, is_source: bool
-) -> tuple[dict, list[str]]:
+def _make_cr_record(f: Path, org: str, is_source: bool) -> tuple[dict, list[str]]:
     warnings = []
     rel = f.relative_to(PROJECT_ROOT)
     ext = f.suffix.lower()
