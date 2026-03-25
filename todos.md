@@ -25,3 +25,9 @@ ORG-TYPE (all are WR for world report)-YEAR(REPORT_YEAR)-COUNTRY.SUFFIX
 - Need to somehow merge with the country-specific
 - Need to get some type of master spreadsheet
 - All split files need to have their own unique ID name and be mapped to source document
+
+---
+
+- each step just dumps its files in a folder inside intermediate. Those folders should have the step name prefixed like the manifest files do
+
+- the standardise_names script does not show progress

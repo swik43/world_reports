@@ -203,7 +203,15 @@ def process_wr(args, v2s, e2f, general, known):
                 if f.name.startswith(".") or not f.is_file():
                     continue
 
-                raw_entity = f.stem
+                # Strip single-letter suffix (upper or lower), normalise to lowercase
+                raw_stem = f.stem
+                suffix = None
+                sm = re.match(r"^(.+)_([a-zA-Z])$", raw_stem)
+                if sm:
+                    raw_stem = sm.group(1)
+                    suffix = sm.group(2).lower()
+                raw_entity = raw_stem
+
                 if country_filter and raw_entity not in country_filter:
                     continue
 
@@ -212,19 +220,21 @@ def process_wr(args, v2s, e2f, general, known):
                     unknowns.append((str(f.relative_to(PROJECT_ROOT)), raw_entity))
                     records.append(_wr_record(
                         f, org, year_dir_name, raw_entity, None, None, "skipped_unknown",
+                        suffix=suffix,
                     ))
                     continue
 
                 folder = get_folder(entity, e2f, general)
+                out_name = entity + (f"_{suffix}" if suffix else "") + f.suffix
                 if folder == "_general":
                     dest = (
                         STANDARDISED_DIR / "wr" / org / year_dir_name
-                        / "_general" / (entity + f.suffix)
+                        / "_general" / out_name
                     )
                 else:
                     dest = (
                         STANDARDISED_DIR / "wr" / org / year_dir_name
-                        / (entity + f.suffix)
+                        / out_name
                     )
 
                 if not args.dry_run:
@@ -233,12 +243,13 @@ def process_wr(args, v2s, e2f, general, known):
 
                 records.append(_wr_record(
                     f, org, year_dir_name, raw_entity, entity, folder, "ok", dest,
+                    suffix=suffix,
                 ))
 
     return records, unknowns
 
 
-def _wr_record(f, org, year, raw, entity, folder, status, dest=None):
+def _wr_record(f, org, year, raw, entity, folder, status, dest=None, suffix=None):
     return {
         "input_path": str(f.relative_to(PROJECT_ROOT)),
         "output_path": str(dest.relative_to(PROJECT_ROOT)) if dest else None,
@@ -249,7 +260,7 @@ def _wr_record(f, org, year, raw, entity, folder, status, dest=None):
         "country_standardised": entity,
         "country_folder": folder,
         "is_source": False,
-        "suffix": None,
+        "suffix": suffix,
         "region_prefix": None,
         "status": status,
     }
