@@ -1,6 +1,6 @@
 {
   "2004_Global.pdf": {
-    "source_path": "IDMC/2004_Global.pdf",
+    "source_path": "input/wr/idmc/2004_Global.pdf",
     "countries": [
       {
         "name": "Housing, Land, and Property",
@@ -35,7 +35,7 @@
     ]
   },
   "2005_Global.pdf": {
-    "source_path": "IDMC/2005_Global.pdf",
+    "source_path": "input/wr/idmc/2005_Global.pdf",
     "countries": [
       {
         "name": "Housing, Land, and Property",
@@ -70,7 +70,7 @@
     ]
   },
   "2006_Global.pdf": {
-    "source_path": "IDMC/2006_Global.pdf",
+    "source_path": "input/wr/idmc/2006_Global.pdf",
     "countries": [
       {
         "name": "Africa",
@@ -105,7 +105,7 @@
     ]
   },
   "2007_Global.pdf": {
-    "source_path": "IDMC/2007_Global.pdf",
+    "source_path": "input/wr/idmc/2007_Global.pdf",
     "countries": [
       {
         "name": "Africa",
@@ -135,7 +135,7 @@
     ]
   },
   "2008_Global.pdf": {
-    "source_path": "IDMC/2008_Global.pdf",
+    "source_path": "input/wr/idmc/2008_Global.pdf",
     "countries": [
       {
         "name": "IDP's Protection needs and risks",
@@ -362,7 +362,7 @@
     ]
   },
   "2009_Global.pdf": {
-    "source_path": "IDMC/2009_Global.pdf",
+    "source_path": "input/wr/idmc/2009_Global.pdf",
     "countries": [
       {
         "name": "IDPs in displacement",
@@ -572,7 +572,7 @@
     ]
   },
   "2010_Global.pdf": {
-    "source_path": "IDMC/2010_Global.pdf",
+    "source_path": "input/wr/idmc/2010_Global.pdf",
     "countries": [
       {
         "name": "Durable solutions",
@@ -780,7 +780,7 @@
     ]
   },
   "2011_Conflict and violence.pdf": {
-    "source_path": "IDMC/2011_Conflict and violence.pdf",
+    "source_path": "input/wr/idmc/2011_Conflict and violence.pdf",
     "countries": [
       {
         "name": "Preventing and responding to abuses",
@@ -987,7 +987,7 @@
     ]
   },
   "2012_Global.pdf": {
-    "source_path": "IDMC/2012_Global.pdf",
+    "source_path": "input/wr/idmc/2012_Global.pdf",
     "countries": [
       {
         "name": "Burundi",
@@ -1169,7 +1169,7 @@
     ]
   },
   "2014(2013)_Conflict and Violence.pdf": {
-    "source_path": "IDMC/2014(2013)_Conflict and Violence.pdf",
+    "source_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
     "countries": [
       {
         "name": "Burundi",
@@ -1351,7 +1351,7 @@
     ]
   },
   "2015(2014)_Conflict and Violence.pdf": {
-    "source_path": "IDMC/2015(2014)_Conflict and Violence.pdf",
+    "source_path": "input/wr/idmc/2015(2014)_Conflict and Violence.pdf",
     "countries": [
       {
         "name": "Americas",
@@ -1417,7 +1417,7 @@
     ]
   },
   "2016(2015)_Global.pdf": {
-    "source_path": "IDMC/2016(2015)_Global.pdf",
+    "source_path": "input/wr/idmc/2016(2015)_Global.pdf",
     "countries": [
       {
         "name": "Yemen",
@@ -1447,7 +1447,7 @@
     ]
   },
   "2017(2016)_Global_Report.pdf": {
-    "source_path": "IDMC/2017(2016)_Global_Report.pdf",
+    "source_path": "input/wr/idmc/2017(2016)_Global_Report.pdf",
     "countries": [
       {
         "name": "Drc",
@@ -1489,7 +1489,7 @@
     ]
   },
   "2018(2017)_GRID.pdf": {
-    "source_path": "IDMC/2018(2017)_GRID.pdf",
+    "source_path": "input/wr/idmc/2018(2017)_GRID.pdf",
     "countries": [
       {
         "name": "The year in focus",
@@ -1563,7 +1563,7 @@
     ]
   },
   "2019(2018)_GRID.pdf": {
-    "source_path": "IDMC/2019(2018)_GRID.pdf",
+    "source_path": "input/wr/idmc/2019(2018)_GRID.pdf",
     "countries": [
       {
         "name": "Sub-Saharan Africa",
@@ -1657,7 +1657,7 @@
     ]
   },
   "2020(2019)_GRID.pdf": {
-    "source_path": "IDMC/2020(2019)_GRID.pdf",
+    "source_path": "input/wr/idmc/2020(2019)_GRID.pdf",
     "countries": [
       {
         "name": "Sub-Saharan Africa",
@@ -1727,7 +1727,7 @@
     ]
   },
   "2021(2020)_GRID.pdf": {
-    "source_path": "output/idmc_unsplit/2021(2020)_GRID.pdf",
+    "source_path": "intermediate/unsplit/idmc/2021(2020)_GRID.pdf",
     "countries": [
       {
         "name": "Sub-Saharan Africa",
@@ -1785,7 +1785,7 @@
     ]
   },
   "2022(2021)_GRID.pdf": {
-    "source_path": "output/idmc_unsplit/2022(2021)_GRID.pdf",
+    "source_path": "intermediate/unsplit/idmc/2022(2021)_GRID.pdf",
     "countries": [
       {
         "name": "Sub-Saharan Africa",
@@ -1854,7 +1854,7 @@
     ]
   },
   "2023(2022)_GRID.pdf": {
-    "source_path": "output/idmc_unsplit/2023(2022)_GRID.pdf",
+    "source_path": "intermediate/unsplit/idmc/2023(2022)_GRID.pdf",
     "countries": [
       {
         "name": "Sub-Saharan Africa",
@@ -1927,7 +1927,7 @@
     ]
   },
   "2024(2023)_GRID.pdf": {
-    "source_path": "output/idmc_unsplit/2024(2023)_GRID.pdf",
+    "source_path": "intermediate/unsplit/idmc/2024(2023)_GRID.pdf",
     "countries": [
       {
         "name": "Sub-Saharan Africa",

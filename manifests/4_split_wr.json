@@ -1,9 +1,9 @@
 {
   "step": 4,
   "name": "split_wr",
-  "timestamp": "2026-03-24T21:50:58.479052+00:00",
+  "timestamp": "2026-03-24T22:06:00.206327+00:00",
   "scoped_to": {
-    "org": "hrw"
+    "org": "idmc"
   },
   "files": [
     {
@@ -13933,11 +13933,3691 @@
       "year": "2024(2023)",
       "country_raw": "Zimbabwe",
       "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2004_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2004/Housing, Land, and Property.pdf",
+      "org": "idmc",
+      "year": "2004",
+      "country_raw": "Housing, Land, and Property",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2004_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2004/Africa.pdf",
+      "org": "idmc",
+      "year": "2004",
+      "country_raw": "Africa",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2004_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2004/Americas.pdf",
+      "org": "idmc",
+      "year": "2004",
+      "country_raw": "Americas",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2004_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2004/Asia-Pacific.pdf",
+      "org": "idmc",
+      "year": "2004",
+      "country_raw": "Asia-Pacific",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2004_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2004/Europe.pdf",
+      "org": "idmc",
+      "year": "2004",
+      "country_raw": "Europe",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2004_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2004/Middle_East.pdf",
+      "org": "idmc",
+      "year": "2004",
+      "country_raw": "Middle_East",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2005_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2005/Housing, Land, and Property.pdf",
+      "org": "idmc",
+      "year": "2005",
+      "country_raw": "Housing, Land, and Property",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2005_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2005/Africa.pdf",
+      "org": "idmc",
+      "year": "2005",
+      "country_raw": "Africa",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2005_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2005/Americas.pdf",
+      "org": "idmc",
+      "year": "2005",
+      "country_raw": "Americas",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2005_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2005/Asia.pdf",
+      "org": "idmc",
+      "year": "2005",
+      "country_raw": "Asia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2005_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2005/Europe.pdf",
+      "org": "idmc",
+      "year": "2005",
+      "country_raw": "Europe",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2005_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2005/Middle_East.pdf",
+      "org": "idmc",
+      "year": "2005",
+      "country_raw": "Middle_East",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2006_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2006/Africa.pdf",
+      "org": "idmc",
+      "year": "2006",
+      "country_raw": "Africa",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2006_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2006/Americas.pdf",
+      "org": "idmc",
+      "year": "2006",
+      "country_raw": "Americas",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2006_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2006/Asia.pdf",
+      "org": "idmc",
+      "year": "2006",
+      "country_raw": "Asia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2006_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2006/Europe.pdf",
+      "org": "idmc",
+      "year": "2006",
+      "country_raw": "Europe",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2006_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2006/Middle_East.pdf",
+      "org": "idmc",
+      "year": "2006",
+      "country_raw": "Middle_East",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2006_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2006/Housing, Land, and Property.pdf",
+      "org": "idmc",
+      "year": "2006",
+      "country_raw": "Housing, Land, and Property",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2007_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2007/Africa.pdf",
+      "org": "idmc",
+      "year": "2007",
+      "country_raw": "Africa",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2007_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2007/Americas.pdf",
+      "org": "idmc",
+      "year": "2007",
+      "country_raw": "Americas",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2007_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2007/Middle_East.pdf",
+      "org": "idmc",
+      "year": "2007",
+      "country_raw": "Middle_East",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2007_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2007/Asia.pdf",
+      "org": "idmc",
+      "year": "2007",
+      "country_raw": "Asia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2007_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2007/Europe.pdf",
+      "org": "idmc",
+      "year": "2007",
+      "country_raw": "Europe",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/IDP's Protection needs and risks.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "IDP's Protection needs and risks",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Durable solutions.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Durable solutions",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/National Responses.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "National Responses",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Car.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Car",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Chad.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Chad",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Cote D'Ivoire.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Cote D'Ivoire",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Drc.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Drc",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Ethiopia.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Ethiopia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Kenya.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Kenya",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Nigeria.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Nigeria",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Somalia.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Somalia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Sudan.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Sudan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Uganda.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Uganda",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Zimbabwe.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Zimbabwe",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Rwanda.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Rwanda",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Burundi.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Burundi",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Algeria.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Algeria",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Eritrea.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Eritrea",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Senegal.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Senegal",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Liberia.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Liberia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Congo.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Congo",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Angola.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Angola",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Afghanistan.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Afghanistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Bangladesh.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Bangladesh",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/India.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "India",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Indonesia.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Indonesia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Myanmar.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Myanmar",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Nepal.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Nepal",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Pakistan.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Pakistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Philippines.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Philippines",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Sri Lanka.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Sri Lanka",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Timor-Leste.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Timor-Leste",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Azerbaijan.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Azerbaijan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Bosnia And Herzegovina.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Bosnia And Herzegovina",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Georgia.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Georgia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Russia.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Russia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Turkey.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Turkey",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Serbia And Kosovo.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Serbia And Kosovo",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Croatia.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Croatia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/The Former Yugoslav Republic Of Macedonia.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "The Former Yugoslav Republic Of Macedonia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Armenia.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Armenia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Cyprus.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Cyprus",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Turkmenistan.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Turkmenistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Uzbekistan.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Uzbekistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Iraq.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Iraq",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Occupied Palestinian Territory.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Occupied Palestinian Territory",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Lebanon.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Lebanon",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Yemen.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Yemen",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Israel.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Israel",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Syria.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Syria",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Peru.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Peru",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Colombia.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Colombia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Mexico.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Mexico",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2008_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2008/Guatemala.pdf",
+      "org": "idmc",
+      "year": "2008",
+      "country_raw": "Guatemala",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/IDPs in displacement.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "IDPs in displacement",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Durable solutions.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Durable solutions",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Responses to internal displacement.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Responses to internal displacement",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Car.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Car",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Chad.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Chad",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Cote D'Ivoire.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Cote D'Ivoire",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Drc.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Drc",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Ethiopia.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Ethiopia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Kenya.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Kenya",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Nigeria.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Nigeria",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Somalia.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Somalia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Sudan.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Sudan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Uganda.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Uganda",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Zimbabwe.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Zimbabwe",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Algeria.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Algeria",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Burundi.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Burundi",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Eritrea.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Eritrea",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Niger.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Niger",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Senegal.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Senegal",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Liberia.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Liberia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Peru.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Peru",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Colombia.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Colombia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Mexico.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Mexico",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Guatemala.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Guatemala",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Azerbaijan.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Azerbaijan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Bosnia And Herzegovina.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Bosnia And Herzegovina",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Cyprus.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Cyprus",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Georgia.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Georgia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Russia.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Russia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Turkey.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Turkey",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Armenia.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Armenia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Croatia.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Croatia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Serbia.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Serbia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Kosovo.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Kosovo",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Iraq.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Iraq",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Lebanon.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Lebanon",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Occupied Palestinian Territory.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Occupied Palestinian Territory",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Yemen.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Yemen",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Israel.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Israel",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Syria.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Syria",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Afghanistan.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Afghanistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Bangladesh.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Bangladesh",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/India.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "India",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Indonesia.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Indonesia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Myanmar.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Myanmar",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Nepal.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Nepal",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Pakistan.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Pakistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Philippines.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Philippines",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Sri Lanka.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Sri Lanka",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2009_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2009/Timor-Leste.pdf",
+      "org": "idmc",
+      "year": "2009",
+      "country_raw": "Timor-Leste",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Durable solutions.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Durable solutions",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/National Responses.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "National Responses",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Algeria.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Algeria",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Burundi.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Burundi",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Car.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Car",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Chad.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Chad",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Cote D'Ivoire.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Cote D'Ivoire",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Drc.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Drc",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Eritrea.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Eritrea",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Ethiopia.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Ethiopia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Kenya.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Kenya",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Liberia.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Liberia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Niger.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Niger",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Nigeria.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Nigeria",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Senegal.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Senegal",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Somalia.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Somalia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Sudan.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Sudan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Uganda.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Uganda",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Zimbabwe.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Zimbabwe",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Armenia.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Armenia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Azerbaijan.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Azerbaijan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Bosnia And Herzegovina.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Bosnia And Herzegovina",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Croatia.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Croatia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Cyprus.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Cyprus",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Georgia.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Georgia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Kosovo.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Kosovo",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Kyrgyzstan.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Kyrgyzstan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Russia.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Russia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Serbia.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Serbia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Turkey.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Turkey",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Colombia.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Colombia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Guatemala.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Guatemala",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Mexico.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Mexico",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Peru.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Peru",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Iraq.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Iraq",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Lebanon.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Lebanon",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Occupied Palestinian Territory.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Occupied Palestinian Territory",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Syria.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Syria",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Yemen.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Yemen",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Afghanistan.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Afghanistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Bangladesh.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Bangladesh",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/India.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "India",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Indonesia.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Indonesia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Myanmar.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Myanmar",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Nepal.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Nepal",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Pakistan.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Pakistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Philippines.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Philippines",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Sri Lanka.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Sri Lanka",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2010_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2010/Timor-Leste.pdf",
+      "org": "idmc",
+      "year": "2010",
+      "country_raw": "Timor-Leste",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Preventing and responding to abuses.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Preventing and responding to abuses",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Recovering dignity and self-sufficiency.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Recovering dignity and self-sufficiency",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Burundi.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Burundi",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Car.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Car",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Chad.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Chad",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Cote D'Ivoire.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Cote D'Ivoire",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Drc.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Drc",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Ethiopia.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Ethiopia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Kenya.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Kenya",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Liberia.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Liberia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Niger.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Niger",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Nigeria.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Nigeria",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Senegal.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Senegal",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Somalia.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Somalia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/South Sudan.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "South Sudan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Sudan.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Sudan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Uganda.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Uganda",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Zimbabwe.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Zimbabwe",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Colombia.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Colombia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Guatemala.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Guatemala",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Mexico.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Mexico",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Peru.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Peru",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Armenia.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Armenia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Azerbaijan.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Azerbaijan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Bosnia And Herzegovina.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Bosnia And Herzegovina",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Cyprus.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Cyprus",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Georgia.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Georgia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Kosovo.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Kosovo",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Kyrgyzstan.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Kyrgyzstan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Russia.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Russia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Serbia.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Serbia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Turkey.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Turkey",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Iraq.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Iraq",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Lebanon.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Lebanon",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Libya.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Libya",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Occupied Palestinian Territory.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Occupied Palestinian Territory",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Syria.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Syria",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Yemen.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Yemen",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Afghanistan.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Afghanistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Bangladesh.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Bangladesh",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/India.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "India",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Indonesia.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Indonesia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Myanmar.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Myanmar",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Nepal.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Nepal",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Pakistan.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Pakistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Philippines.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Philippines",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Sri Lanka.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Sri Lanka",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Thailand.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Thailand",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2011_Conflict and violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2011/Timor-Leste.pdf",
+      "org": "idmc",
+      "year": "2011",
+      "country_raw": "Timor-Leste",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Burundi.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Burundi",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Car.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Car",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Chad.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Chad",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Cote D'Ivoire.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Cote D'Ivoire",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Drc.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Drc",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Ethiopia.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Ethiopia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Kenya.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Kenya",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Liberia.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Liberia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Mali.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Mali",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Nigeria.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Nigeria",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Senegal.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Senegal",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Somalia.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Somalia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/South Sudan.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "South Sudan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Sudan.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Sudan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Uganda.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Uganda",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Zimbabwe.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Zimbabwe",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Colombia.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Colombia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Mexico.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Mexico",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Peru.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Peru",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Azerbaijan.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Azerbaijan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Bosnia And Herzegovina.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Bosnia And Herzegovina",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Georgia.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Georgia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Kosovo.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Kosovo",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Kyrgyzstan.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Kyrgyzstan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Russia.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Russia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Serbia.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Serbia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Turkey.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Turkey",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Iraq.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Iraq",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Lebanon.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Lebanon",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Libya.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Libya",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Occupied Palestinian Territory.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Occupied Palestinian Territory",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Syria.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Syria",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Yemen.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Yemen",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Afghanistan.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Afghanistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Bangladesh.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Bangladesh",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/India.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "India",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Indonesia.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Indonesia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Myanmar.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Myanmar",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Nepal.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Nepal",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Pakistan.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Pakistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Philippines.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Philippines",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Sri Lanka.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Sri Lanka",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2012_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2012/Thailand.pdf",
+      "org": "idmc",
+      "year": "2012",
+      "country_raw": "Thailand",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Burundi.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Burundi",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Car.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Car",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Chad.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Chad",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Cote D'Ivoire.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Cote D'Ivoire",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Drc.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Drc",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Ethiopia.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Ethiopia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Kenya.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Kenya",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Liberia.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Liberia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Mali.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Mali",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Nigeria.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Nigeria",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Senegal.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Senegal",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Somalia.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Somalia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/South Sudan.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "South Sudan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Sudan.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Sudan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Uganda.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Uganda",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Zimbabwe.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Zimbabwe",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Colombia.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Colombia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Honduras.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Honduras",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Mexico.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Mexico",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Peru.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Peru",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Azerbaijan.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Azerbaijan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Bosnia And Herzegovina.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Bosnia And Herzegovina",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Georgia.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Georgia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Kosovo.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Kosovo",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Russia.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Russia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Serbia.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Serbia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Turkey.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Turkey",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Iraq.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Iraq",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Lebanon.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Lebanon",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Libya.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Libya",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Palestine.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Palestine",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Syria.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Syria",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Yemen.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Yemen",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Afghanistan.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Afghanistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Bangladesh.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Bangladesh",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/India.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "India",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Indonesia.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Indonesia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Myanmar.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Myanmar",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Nepal.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Nepal",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Pakistan.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Pakistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Philippines.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Philippines",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Sri Lanka.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Sri Lanka",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2014(2013)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2014(2013)/Thailand.pdf",
+      "org": "idmc",
+      "year": "2014(2013)",
+      "country_raw": "Thailand",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2015(2014)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2015(2014)/Americas.pdf",
+      "org": "idmc",
+      "year": "2015(2014)",
+      "country_raw": "Americas",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2015(2014)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2015(2014)/Colombia.pdf",
+      "org": "idmc",
+      "year": "2015(2014)",
+      "country_raw": "Colombia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2015(2014)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2015(2014)/Central Africa.pdf",
+      "org": "idmc",
+      "year": "2015(2014)",
+      "country_raw": "Central Africa",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2015(2014)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2015(2014)/Drc.pdf",
+      "org": "idmc",
+      "year": "2015(2014)",
+      "country_raw": "Drc",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2015(2014)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2015(2014)/East Africa.pdf",
+      "org": "idmc",
+      "year": "2015(2014)",
+      "country_raw": "East Africa",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2015(2014)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2015(2014)/Kenya.pdf",
+      "org": "idmc",
+      "year": "2015(2014)",
+      "country_raw": "Kenya",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2015(2014)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2015(2014)/West Africa.pdf",
+      "org": "idmc",
+      "year": "2015(2014)",
+      "country_raw": "West Africa",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2015(2014)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2015(2014)/Middle East And North Africa.pdf",
+      "org": "idmc",
+      "year": "2015(2014)",
+      "country_raw": "Middle East And North Africa",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2015(2014)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2015(2014)/Occupied Palestine.pdf",
+      "org": "idmc",
+      "year": "2015(2014)",
+      "country_raw": "Occupied Palestine",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2015(2014)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2015(2014)/Europe, The Caucasus, And Central Asia.pdf",
+      "org": "idmc",
+      "year": "2015(2014)",
+      "country_raw": "Europe, The Caucasus, And Central Asia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2015(2014)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2015(2014)/Bosnia And Herzegovina.pdf",
+      "org": "idmc",
+      "year": "2015(2014)",
+      "country_raw": "Bosnia And Herzegovina",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2015(2014)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2015(2014)/South Asia.pdf",
+      "org": "idmc",
+      "year": "2015(2014)",
+      "country_raw": "South Asia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2015(2014)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2015(2014)/Sri Lanka.pdf",
+      "org": "idmc",
+      "year": "2015(2014)",
+      "country_raw": "Sri Lanka",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2015(2014)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2015(2014)/South-East Asia.pdf",
+      "org": "idmc",
+      "year": "2015(2014)",
+      "country_raw": "South-East Asia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2015(2014)_Conflict and Violence.pdf",
+      "output_path": "intermediate/split_wr/idmc/2015(2014)/Philippines.pdf",
+      "org": "idmc",
+      "year": "2015(2014)",
+      "country_raw": "Philippines",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2016(2015)_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2016(2015)/Yemen.pdf",
+      "org": "idmc",
+      "year": "2016(2015)",
+      "country_raw": "Yemen",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2016(2015)_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2016(2015)/Nepal.pdf",
+      "org": "idmc",
+      "year": "2016(2015)",
+      "country_raw": "Nepal",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2016(2015)_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2016(2015)/Drc.pdf",
+      "org": "idmc",
+      "year": "2016(2015)",
+      "country_raw": "Drc",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2016(2015)_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2016(2015)/Syria.pdf",
+      "org": "idmc",
+      "year": "2016(2015)",
+      "country_raw": "Syria",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2016(2015)_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2016(2015)/Honduras.pdf",
+      "org": "idmc",
+      "year": "2016(2015)",
+      "country_raw": "Honduras",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2016(2015)_Global.pdf",
+      "output_path": "intermediate/split_wr/idmc/2016(2015)/Ethiopia.pdf",
+      "org": "idmc",
+      "year": "2016(2015)",
+      "country_raw": "Ethiopia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2017(2016)_Global_Report.pdf",
+      "output_path": "intermediate/split_wr/idmc/2017(2016)/Drc.pdf",
+      "org": "idmc",
+      "year": "2017(2016)",
+      "country_raw": "Drc",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2017(2016)_Global_Report.pdf",
+      "output_path": "intermediate/split_wr/idmc/2017(2016)/Syria.pdf",
+      "org": "idmc",
+      "year": "2017(2016)",
+      "country_raw": "Syria",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2017(2016)_Global_Report.pdf",
+      "output_path": "intermediate/split_wr/idmc/2017(2016)/Iraq.pdf",
+      "org": "idmc",
+      "year": "2017(2016)",
+      "country_raw": "Iraq",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2017(2016)_Global_Report.pdf",
+      "output_path": "intermediate/split_wr/idmc/2017(2016)/El Salvador.pdf",
+      "org": "idmc",
+      "year": "2017(2016)",
+      "country_raw": "El Salvador",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2017(2016)_Global_Report.pdf",
+      "output_path": "intermediate/split_wr/idmc/2017(2016)/Colombia.pdf",
+      "org": "idmc",
+      "year": "2017(2016)",
+      "country_raw": "Colombia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2017(2016)_Global_Report.pdf",
+      "output_path": "intermediate/split_wr/idmc/2017(2016)/Horn Of Africa.pdf",
+      "org": "idmc",
+      "year": "2017(2016)",
+      "country_raw": "Horn Of Africa",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2017(2016)_Global_Report.pdf",
+      "output_path": "intermediate/split_wr/idmc/2017(2016)/South Sudan.pdf",
+      "org": "idmc",
+      "year": "2017(2016)",
+      "country_raw": "South Sudan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2017(2016)_Global_Report.pdf",
+      "output_path": "intermediate/split_wr/idmc/2017(2016)/Afghanistan.pdf",
+      "org": "idmc",
+      "year": "2017(2016)",
+      "country_raw": "Afghanistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2017(2016)_Global_Report.pdf",
+      "output_path": "intermediate/split_wr/idmc/2017(2016)/Somalia.pdf",
+      "org": "idmc",
+      "year": "2017(2016)",
+      "country_raw": "Somalia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2018(2017)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2018(2017)/The year in focus.pdf",
+      "org": "idmc",
+      "year": "2018(2017)",
+      "country_raw": "The year in focus",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2018(2017)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2018(2017)/Sub-Saharan Africa.pdf",
+      "org": "idmc",
+      "year": "2018(2017)",
+      "country_raw": "Sub-Saharan Africa",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2018(2017)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2018(2017)/Drc.pdf",
+      "org": "idmc",
+      "year": "2018(2017)",
+      "country_raw": "Drc",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2018(2017)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2018(2017)/Lake Chad Basin.pdf",
+      "org": "idmc",
+      "year": "2018(2017)",
+      "country_raw": "Lake Chad Basin",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2018(2017)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2018(2017)/Middle East And North Africa.pdf",
+      "org": "idmc",
+      "year": "2018(2017)",
+      "country_raw": "Middle East And North Africa",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2018(2017)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2018(2017)/Syria.pdf",
+      "org": "idmc",
+      "year": "2018(2017)",
+      "country_raw": "Syria",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2018(2017)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2018(2017)/Yemen.pdf",
+      "org": "idmc",
+      "year": "2018(2017)",
+      "country_raw": "Yemen",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2018(2017)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2018(2017)/East Asia And Pacific.pdf",
+      "org": "idmc",
+      "year": "2018(2017)",
+      "country_raw": "East Asia And Pacific",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2018(2017)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2018(2017)/Indonesia And Vanuatu.pdf",
+      "org": "idmc",
+      "year": "2018(2017)",
+      "country_raw": "Indonesia And Vanuatu",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2018(2017)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2018(2017)/Viet Nam.pdf",
+      "org": "idmc",
+      "year": "2018(2017)",
+      "country_raw": "Viet Nam",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2018(2017)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2018(2017)/South Asia.pdf",
+      "org": "idmc",
+      "year": "2018(2017)",
+      "country_raw": "South Asia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2018(2017)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2018(2017)/Afghanistan.pdf",
+      "org": "idmc",
+      "year": "2018(2017)",
+      "country_raw": "Afghanistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2018(2017)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2018(2017)/Americas.pdf",
+      "org": "idmc",
+      "year": "2018(2017)",
+      "country_raw": "Americas",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2018(2017)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2018(2017)/Northern Triangle Of Central America.pdf",
+      "org": "idmc",
+      "year": "2018(2017)",
+      "country_raw": "Northern Triangle Of Central America",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2018(2017)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2018(2017)/The Atlantic Hurricane Season.pdf",
+      "org": "idmc",
+      "year": "2018(2017)",
+      "country_raw": "The Atlantic Hurricane Season",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2018(2017)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2018(2017)/Europe And Central Asia.pdf",
+      "org": "idmc",
+      "year": "2018(2017)",
+      "country_raw": "Europe And Central Asia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2018(2017)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2018(2017)/Ukraine.pdf",
+      "org": "idmc",
+      "year": "2018(2017)",
+      "country_raw": "Ukraine",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2019(2018)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2019(2018)/Sub-Saharan Africa.pdf",
+      "org": "idmc",
+      "year": "2019(2018)",
+      "country_raw": "Sub-Saharan Africa",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2019(2018)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2019(2018)/Ethiopia.pdf",
+      "org": "idmc",
+      "year": "2019(2018)",
+      "country_raw": "Ethiopia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2019(2018)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2019(2018)/Cameroon.pdf",
+      "org": "idmc",
+      "year": "2019(2018)",
+      "country_raw": "Cameroon",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2019(2018)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2019(2018)/Nigeria.pdf",
+      "org": "idmc",
+      "year": "2019(2018)",
+      "country_raw": "Nigeria",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2019(2018)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2019(2018)/Middle East And North Africa.pdf",
+      "org": "idmc",
+      "year": "2019(2018)",
+      "country_raw": "Middle East And North Africa",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2019(2018)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2019(2018)/Syria_A.pdf",
+      "org": "idmc",
+      "year": "2019(2018)",
+      "country_raw": "Syria_A",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2019(2018)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2019(2018)/Libya.pdf",
+      "org": "idmc",
+      "year": "2019(2018)",
+      "country_raw": "Libya",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2019(2018)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2019(2018)/East Asia And Pacific.pdf",
+      "org": "idmc",
+      "year": "2019(2018)",
+      "country_raw": "East Asia And Pacific",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2019(2018)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2019(2018)/Japan.pdf",
+      "org": "idmc",
+      "year": "2019(2018)",
+      "country_raw": "Japan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2019(2018)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2019(2018)/Philippines.pdf",
+      "org": "idmc",
+      "year": "2019(2018)",
+      "country_raw": "Philippines",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2019(2018)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2019(2018)/South Asia.pdf",
+      "org": "idmc",
+      "year": "2019(2018)",
+      "country_raw": "South Asia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2019(2018)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2019(2018)/Afghanistan.pdf",
+      "org": "idmc",
+      "year": "2019(2018)",
+      "country_raw": "Afghanistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2019(2018)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2019(2018)/India.pdf",
+      "org": "idmc",
+      "year": "2019(2018)",
+      "country_raw": "India",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2019(2018)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2019(2018)/Americas.pdf",
+      "org": "idmc",
+      "year": "2019(2018)",
+      "country_raw": "Americas",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2019(2018)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2019(2018)/United States.pdf",
+      "org": "idmc",
+      "year": "2019(2018)",
+      "country_raw": "United States",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2019(2018)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2019(2018)/Colombia.pdf",
+      "org": "idmc",
+      "year": "2019(2018)",
+      "country_raw": "Colombia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2019(2018)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2019(2018)/Europe And Central Asia.pdf",
+      "org": "idmc",
+      "year": "2019(2018)",
+      "country_raw": "Europe And Central Asia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2019(2018)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2019(2018)/Medellin And San Salvador.pdf",
+      "org": "idmc",
+      "year": "2019(2018)",
+      "country_raw": "Medellin And San Salvador",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2019(2018)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2019(2018)/Flood Displacement Risk.pdf",
+      "org": "idmc",
+      "year": "2019(2018)",
+      "country_raw": "Flood Displacement Risk",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2019(2018)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2019(2018)/Nairobi.pdf",
+      "org": "idmc",
+      "year": "2019(2018)",
+      "country_raw": "Nairobi",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2019(2018)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2019(2018)/Displacement Profiling In Urban Areas.pdf",
+      "org": "idmc",
+      "year": "2019(2018)",
+      "country_raw": "Displacement Profiling In Urban Areas",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2019(2018)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2019(2018)/Syria_B.pdf",
+      "org": "idmc",
+      "year": "2019(2018)",
+      "country_raw": "Syria_B",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2020(2019)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2020(2019)/Sub-Saharan Africa.pdf",
+      "org": "idmc",
+      "year": "2020(2019)",
+      "country_raw": "Sub-Saharan Africa",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2020(2019)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2020(2019)/The Sahel.pdf",
+      "org": "idmc",
+      "year": "2020(2019)",
+      "country_raw": "The Sahel",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2020(2019)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2020(2019)/Mozambique.pdf",
+      "org": "idmc",
+      "year": "2020(2019)",
+      "country_raw": "Mozambique",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2020(2019)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2020(2019)/White Nile Basin.pdf",
+      "org": "idmc",
+      "year": "2020(2019)",
+      "country_raw": "White Nile Basin",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2020(2019)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2020(2019)/Middle East And North Africa.pdf",
+      "org": "idmc",
+      "year": "2020(2019)",
+      "country_raw": "Middle East And North Africa",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2020(2019)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2020(2019)/Syria.pdf",
+      "org": "idmc",
+      "year": "2020(2019)",
+      "country_raw": "Syria",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2020(2019)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2020(2019)/Iraq.pdf",
+      "org": "idmc",
+      "year": "2020(2019)",
+      "country_raw": "Iraq",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2020(2019)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2020(2019)/East Asia And Pacific.pdf",
+      "org": "idmc",
+      "year": "2020(2019)",
+      "country_raw": "East Asia And Pacific",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2020(2019)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2020(2019)/Myanmar.pdf",
+      "org": "idmc",
+      "year": "2020(2019)",
+      "country_raw": "Myanmar",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2020(2019)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2020(2019)/South Asia.pdf",
+      "org": "idmc",
+      "year": "2020(2019)",
+      "country_raw": "South Asia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2020(2019)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2020(2019)/Americas.pdf",
+      "org": "idmc",
+      "year": "2020(2019)",
+      "country_raw": "Americas",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2020(2019)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2020(2019)/Venezuela.pdf",
+      "org": "idmc",
+      "year": "2020(2019)",
+      "country_raw": "Venezuela",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2020(2019)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2020(2019)/The Bahamas.pdf",
+      "org": "idmc",
+      "year": "2020(2019)",
+      "country_raw": "The Bahamas",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2020(2019)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2020(2019)/Europe And Central Asia.pdf",
+      "org": "idmc",
+      "year": "2020(2019)",
+      "country_raw": "Europe And Central Asia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2020(2019)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2020(2019)/Ending Internal Displacement.pdf",
+      "org": "idmc",
+      "year": "2020(2019)",
+      "country_raw": "Ending Internal Displacement",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/idmc/2020(2019)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2020(2019)/Philippines.pdf",
+      "org": "idmc",
+      "year": "2020(2019)",
+      "country_raw": "Philippines",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2021(2020)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2021(2020)/Sub-Saharan Africa.pdf",
+      "org": "idmc",
+      "year": "2021(2020)",
+      "country_raw": "Sub-Saharan Africa",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2021(2020)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2021(2020)/Burkina Faso.pdf",
+      "org": "idmc",
+      "year": "2021(2020)",
+      "country_raw": "Burkina Faso",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2021(2020)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2021(2020)/Mozambique.pdf",
+      "org": "idmc",
+      "year": "2021(2020)",
+      "country_raw": "Mozambique",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2021(2020)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2021(2020)/Middle East And North Africa.pdf",
+      "org": "idmc",
+      "year": "2021(2020)",
+      "country_raw": "Middle East And North Africa",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2021(2020)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2021(2020)/Syria.pdf",
+      "org": "idmc",
+      "year": "2021(2020)",
+      "country_raw": "Syria",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2021(2020)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2021(2020)/Yemen.pdf",
+      "org": "idmc",
+      "year": "2021(2020)",
+      "country_raw": "Yemen",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2021(2020)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2021(2020)/East Asia And Pacific.pdf",
+      "org": "idmc",
+      "year": "2021(2020)",
+      "country_raw": "East Asia And Pacific",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2021(2020)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2021(2020)/Storms In East Asia And Pacific.pdf",
+      "org": "idmc",
+      "year": "2021(2020)",
+      "country_raw": "Storms In East Asia And Pacific",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2021(2020)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2021(2020)/South Asia.pdf",
+      "org": "idmc",
+      "year": "2021(2020)",
+      "country_raw": "South Asia",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2021(2020)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2021(2020)/Afghanistan.pdf",
+      "org": "idmc",
+      "year": "2021(2020)",
+      "country_raw": "Afghanistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2021(2020)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2021(2020)/Americas.pdf",
+      "org": "idmc",
+      "year": "2021(2020)",
+      "country_raw": "Americas",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2021(2020)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2021(2020)/Atlantic Hurricane Season.pdf",
+      "org": "idmc",
+      "year": "2021(2020)",
+      "country_raw": "Atlantic Hurricane Season",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2021(2020)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2021(2020)/Europe And Central Asia.pdf",
+      "org": "idmc",
+      "year": "2021(2020)",
+      "country_raw": "Europe And Central Asia",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2022(2021)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2022(2021)/Sub-Saharan Africa.pdf",
+      "org": "idmc",
+      "year": "2022(2021)",
+      "country_raw": "Sub-Saharan Africa",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2022(2021)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2022(2021)/Ethiopia.pdf",
+      "org": "idmc",
+      "year": "2022(2021)",
+      "country_raw": "Ethiopia",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2022(2021)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2022(2021)/Sudan.pdf",
+      "org": "idmc",
+      "year": "2022(2021)",
+      "country_raw": "Sudan",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2022(2021)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2022(2021)/Middle East And North Africa.pdf",
+      "org": "idmc",
+      "year": "2022(2021)",
+      "country_raw": "Middle East And North Africa",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2022(2021)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2022(2021)/Palestine.pdf",
+      "org": "idmc",
+      "year": "2022(2021)",
+      "country_raw": "Palestine",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2022(2021)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2022(2021)/East Asia And Pacific.pdf",
+      "org": "idmc",
+      "year": "2022(2021)",
+      "country_raw": "East Asia And Pacific",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2022(2021)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2022(2021)/China.pdf",
+      "org": "idmc",
+      "year": "2022(2021)",
+      "country_raw": "China",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2022(2021)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2022(2021)/Myanmar.pdf",
+      "org": "idmc",
+      "year": "2022(2021)",
+      "country_raw": "Myanmar",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2022(2021)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2022(2021)/Papua New Guinea.pdf",
+      "org": "idmc",
+      "year": "2022(2021)",
+      "country_raw": "Papua New Guinea",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2022(2021)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2022(2021)/South Asia.pdf",
+      "org": "idmc",
+      "year": "2022(2021)",
+      "country_raw": "South Asia",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2022(2021)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2022(2021)/Afghanistan.pdf",
+      "org": "idmc",
+      "year": "2022(2021)",
+      "country_raw": "Afghanistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2022(2021)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2022(2021)/Americas.pdf",
+      "org": "idmc",
+      "year": "2022(2021)",
+      "country_raw": "Americas",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2022(2021)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2022(2021)/Haiti.pdf",
+      "org": "idmc",
+      "year": "2022(2021)",
+      "country_raw": "Haiti",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2022(2021)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2022(2021)/Europe And Central Asia.pdf",
+      "org": "idmc",
+      "year": "2022(2021)",
+      "country_raw": "Europe And Central Asia",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2022(2021)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2022(2021)/Germany.pdf",
+      "org": "idmc",
+      "year": "2022(2021)",
+      "country_raw": "Germany",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2022(2021)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2022(2021)/Central Asia.pdf",
+      "org": "idmc",
+      "year": "2022(2021)",
+      "country_raw": "Central Asia",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2023(2022)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2023(2022)/Sub-Saharan Africa.pdf",
+      "org": "idmc",
+      "year": "2023(2022)",
+      "country_raw": "Sub-Saharan Africa",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2023(2022)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2023(2022)/Drc.pdf",
+      "org": "idmc",
+      "year": "2023(2022)",
+      "country_raw": "Drc",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2023(2022)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2023(2022)/Somalia.pdf",
+      "org": "idmc",
+      "year": "2023(2022)",
+      "country_raw": "Somalia",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2023(2022)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2023(2022)/Madagascar.pdf",
+      "org": "idmc",
+      "year": "2023(2022)",
+      "country_raw": "Madagascar",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2023(2022)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2023(2022)/Middle East And North Africa.pdf",
+      "org": "idmc",
+      "year": "2023(2022)",
+      "country_raw": "Middle East And North Africa",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2023(2022)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2023(2022)/Yemen.pdf",
+      "org": "idmc",
+      "year": "2023(2022)",
+      "country_raw": "Yemen",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2023(2022)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2023(2022)/East Asia And The Pacific.pdf",
+      "org": "idmc",
+      "year": "2023(2022)",
+      "country_raw": "East Asia And The Pacific",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2023(2022)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2023(2022)/Myanmar.pdf",
+      "org": "idmc",
+      "year": "2023(2022)",
+      "country_raw": "Myanmar",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2023(2022)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2023(2022)/Philippines.pdf",
+      "org": "idmc",
+      "year": "2023(2022)",
+      "country_raw": "Philippines",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2023(2022)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2023(2022)/Tonga.pdf",
+      "org": "idmc",
+      "year": "2023(2022)",
+      "country_raw": "Tonga",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2023(2022)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2023(2022)/South Asia.pdf",
+      "org": "idmc",
+      "year": "2023(2022)",
+      "country_raw": "South Asia",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2023(2022)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2023(2022)/Pakistan.pdf",
+      "org": "idmc",
+      "year": "2023(2022)",
+      "country_raw": "Pakistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2023(2022)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2023(2022)/Americas.pdf",
+      "org": "idmc",
+      "year": "2023(2022)",
+      "country_raw": "Americas",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2023(2022)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2023(2022)/Europe And Central Asia.pdf",
+      "org": "idmc",
+      "year": "2023(2022)",
+      "country_raw": "Europe And Central Asia",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2023(2022)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2023(2022)/Ukraine.pdf",
+      "org": "idmc",
+      "year": "2023(2022)",
+      "country_raw": "Ukraine",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2023(2022)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2023(2022)/Burkina Faso.pdf",
+      "org": "idmc",
+      "year": "2023(2022)",
+      "country_raw": "Burkina Faso",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2023(2022)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2023(2022)/South Sudan.pdf",
+      "org": "idmc",
+      "year": "2023(2022)",
+      "country_raw": "South Sudan",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2024(2023)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2024(2023)/Sub-Saharan Africa.pdf",
+      "org": "idmc",
+      "year": "2024(2023)",
+      "country_raw": "Sub-Saharan Africa",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2024(2023)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2024(2023)/Sudan.pdf",
+      "org": "idmc",
+      "year": "2024(2023)",
+      "country_raw": "Sudan",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2024(2023)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2024(2023)/Malawi.pdf",
+      "org": "idmc",
+      "year": "2024(2023)",
+      "country_raw": "Malawi",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2024(2023)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2024(2023)/Middle East And North Africa.pdf",
+      "org": "idmc",
+      "year": "2024(2023)",
+      "country_raw": "Middle East And North Africa",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2024(2023)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2024(2023)/Palestine.pdf",
+      "org": "idmc",
+      "year": "2024(2023)",
+      "country_raw": "Palestine",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2024(2023)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2024(2023)/Syria.pdf",
+      "org": "idmc",
+      "year": "2024(2023)",
+      "country_raw": "Syria",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2024(2023)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2024(2023)/Libya.pdf",
+      "org": "idmc",
+      "year": "2024(2023)",
+      "country_raw": "Libya",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2024(2023)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2024(2023)/East Asia And Pacific.pdf",
+      "org": "idmc",
+      "year": "2024(2023)",
+      "country_raw": "East Asia And Pacific",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2024(2023)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2024(2023)/New Zealand.pdf",
+      "org": "idmc",
+      "year": "2024(2023)",
+      "country_raw": "New Zealand",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2024(2023)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2024(2023)/The Philippines.pdf",
+      "org": "idmc",
+      "year": "2024(2023)",
+      "country_raw": "The Philippines",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2024(2023)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2024(2023)/South Asia.pdf",
+      "org": "idmc",
+      "year": "2024(2023)",
+      "country_raw": "South Asia",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2024(2023)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2024(2023)/Afghanistan.pdf",
+      "org": "idmc",
+      "year": "2024(2023)",
+      "country_raw": "Afghanistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2024(2023)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2024(2023)/Americas.pdf",
+      "org": "idmc",
+      "year": "2024(2023)",
+      "country_raw": "Americas",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2024(2023)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2024(2023)/Colombia.pdf",
+      "org": "idmc",
+      "year": "2024(2023)",
+      "country_raw": "Colombia",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2024(2023)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2024(2023)/Canada.pdf",
+      "org": "idmc",
+      "year": "2024(2023)",
+      "country_raw": "Canada",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2024(2023)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2024(2023)/Europe And Central Asia.pdf",
+      "org": "idmc",
+      "year": "2024(2023)",
+      "country_raw": "Europe And Central Asia",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2024(2023)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2024(2023)/T\u00fcrkiye.pdf",
+      "org": "idmc",
+      "year": "2024(2023)",
+      "country_raw": "T\u00fcrkiye",
+      "status": "ok"
+    },
+    {
+      "input_path": "intermediate/unsplit/idmc/2024(2023)_GRID.pdf",
+      "output_path": "intermediate/split_wr/idmc/2024(2023)/Ukraine.pdf",
+      "org": "idmc",
+      "year": "2024(2023)",
+      "country_raw": "Ukraine",
+      "status": "ok"
     }
   ],
   "summary": {
-    "total": 3482,
-    "ok": 3482,
+    "total": 2201,
+    "ok": 2201,
     "skipped": 0,
     "error": 0
   }

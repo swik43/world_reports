@@ -1,0 +1,46 @@
+Asia-Pacific	intermediate/split_wr/idmc/2004/Asia-Pacific.pdf
+Housing, Land, and Property	intermediate/split_wr/idmc/2004/Housing, Land, and Property.pdf
+Housing, Land, and Property	intermediate/split_wr/idmc/2005/Housing, Land, and Property.pdf
+Housing, Land, and Property	intermediate/split_wr/idmc/2006/Housing, Land, and Property.pdf
+Car	intermediate/split_wr/idmc/2008/Car.pdf
+Cyprus	intermediate/split_wr/idmc/2008/Cyprus.pdf
+Durable solutions	intermediate/split_wr/idmc/2008/Durable solutions.pdf
+IDP's Protection needs and risks	intermediate/split_wr/idmc/2008/IDP's Protection needs and risks.pdf
+National Responses	intermediate/split_wr/idmc/2008/National Responses.pdf
+Occupied Palestinian Territory	intermediate/split_wr/idmc/2008/Occupied Palestinian Territory.pdf
+Serbia And Kosovo	intermediate/split_wr/idmc/2008/Serbia And Kosovo.pdf
+The Former Yugoslav Republic Of Macedonia	intermediate/split_wr/idmc/2008/The Former Yugoslav Republic Of Macedonia.pdf
+Car	intermediate/split_wr/idmc/2009/Car.pdf
+Cyprus	intermediate/split_wr/idmc/2009/Cyprus.pdf
+Durable solutions	intermediate/split_wr/idmc/2009/Durable solutions.pdf
+IDPs in displacement	intermediate/split_wr/idmc/2009/IDPs in displacement.pdf
+Occupied Palestinian Territory	intermediate/split_wr/idmc/2009/Occupied Palestinian Territory.pdf
+Responses to internal displacement	intermediate/split_wr/idmc/2009/Responses to internal displacement.pdf
+Car	intermediate/split_wr/idmc/2010/Car.pdf
+Cyprus	intermediate/split_wr/idmc/2010/Cyprus.pdf
+Durable solutions	intermediate/split_wr/idmc/2010/Durable solutions.pdf
+National Responses	intermediate/split_wr/idmc/2010/National Responses.pdf
+Occupied Palestinian Territory	intermediate/split_wr/idmc/2010/Occupied Palestinian Territory.pdf
+Car	intermediate/split_wr/idmc/2011/Car.pdf
+Cyprus	intermediate/split_wr/idmc/2011/Cyprus.pdf
+Occupied Palestinian Territory	intermediate/split_wr/idmc/2011/Occupied Palestinian Territory.pdf
+Preventing and responding to abuses	intermediate/split_wr/idmc/2011/Preventing and responding to abuses.pdf
+Recovering dignity and self-sufficiency	intermediate/split_wr/idmc/2011/Recovering dignity and self-sufficiency.pdf
+Car	intermediate/split_wr/idmc/2012/Car.pdf
+Occupied Palestinian Territory	intermediate/split_wr/idmc/2012/Occupied Palestinian Territory.pdf
+Car	intermediate/split_wr/idmc/2014(2013)/Car.pdf
+Central Africa	intermediate/split_wr/idmc/2015(2014)/Central Africa.pdf
+East Africa	intermediate/split_wr/idmc/2015(2014)/East Africa.pdf
+Europe, The Caucasus, And Central Asia	intermediate/split_wr/idmc/2015(2014)/Europe, The Caucasus, And Central Asia.pdf
+Occupied Palestine	intermediate/split_wr/idmc/2015(2014)/Occupied Palestine.pdf
+South-East Asia	intermediate/split_wr/idmc/2015(2014)/South-East Asia.pdf
+West Africa	intermediate/split_wr/idmc/2015(2014)/West Africa.pdf
+Horn Of Africa	intermediate/split_wr/idmc/2017(2016)/Horn Of Africa.pdf
+Indonesia And Vanuatu	intermediate/split_wr/idmc/2018(2017)/Indonesia And Vanuatu.pdf
+The year in focus	intermediate/split_wr/idmc/2018(2017)/The year in focus.pdf
+Syria_A	intermediate/split_wr/idmc/2019(2018)/Syria_A.pdf
+Syria_B	intermediate/split_wr/idmc/2019(2018)/Syria_B.pdf
+Ending Internal Displacement	intermediate/split_wr/idmc/2020(2019)/Ending Internal Displacement.pdf
+Madagascar	intermediate/split_wr/idmc/2023(2022)/Madagascar.pdf
+Tonga	intermediate/split_wr/idmc/2023(2022)/Tonga.pdf
+New Zealand	intermediate/split_wr/idmc/2024(2023)/New Zealand.pdf
