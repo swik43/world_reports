@@ -1,4 +1,20 @@
 {
+  "2000(1999)": {
+    "source_path": "input/wr/hrw/2000(1999)",
+    "pre_split": true
+  },
+  "2001(2000)": {
+    "source_path": "input/wr/hrw/2001(2000)",
+    "pre_split": true
+  },
+  "2002(2001)": {
+    "source_path": "input/wr/hrw/2002(2001)",
+    "pre_split": true
+  },
+  "2003(2002)": {
+    "source_path": "input/wr/hrw/2003(2002)",
+    "pre_split": true
+  },
   "2004(2003)_World_Report_Human_Rights_Watch.pdf": {
     "source_path": "input/wr/hrw/2004(2003)_World_Report_Human_Rights_Watch.pdf",
     "countries": [

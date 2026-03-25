@@ -16,6 +16,7 @@ Usage:
 """
 
 import json
+import re
 import shutil
 from datetime import datetime, timezone
 from pathlib import Path
@@ -157,13 +158,16 @@ def copy_pre_split(
         progress.advance(overall_task, advance=len(entry.get("countries", [])))
         return records
 
+    year_prefix_re = re.compile(r"^\d{4}(?:\(\d{4}\))?_")
+
     for f in sorted(source_dir.iterdir()):
         if f.name.startswith(".") or not f.is_file():
             continue
         spinner.update(text=Text(f"{pdf_name} / {f.name} (copy)", style="gray"))
         live.update(make_layout(spinner, progress))
 
-        out_path = dest / f.name
+        stripped_name = year_prefix_re.sub("", f.name)
+        out_path = dest / stripped_name
         shutil.copy2(f, out_path)
 
         records.append({
@@ -171,7 +175,7 @@ def copy_pre_split(
             "output_path": str(out_path),
             "org": org,
             "year": year,
-            "country_raw": f.stem,
+            "country_raw": Path(stripped_name).stem,
             "status": "ok",
         })
         progress.advance(overall_task)

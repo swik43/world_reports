@@ -1,9 +1,15 @@
 {
   "step": 4,
   "name": "split_wr",
-  "timestamp": "2026-03-25T08:09:03.545447+00:00",
+  "timestamp": "2026-03-25T08:38:33.107271+00:00",
   "scoped_to": {
-    "org": "idmc"
+    "org": "hrw",
+    "year": [
+      "2000",
+      "2001",
+      "2002",
+      "2003"
+    ]
   },
   "files": [
     {
@@ -44469,11 +44475,1859 @@
       "year": "2024(2023)",
       "country_raw": "Ukraine",
       "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Afghanistan.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Afghanistan.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Afghanistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Africa.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Africa.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Africa",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Algeria.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Algeria.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Algeria",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Azerbaijan.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Azerbaijan.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Azerbaijan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Bosnia and Herzegovina.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Bosnia and Herzegovina.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Bosnia and Herzegovina",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Burma.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Burma.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Burma",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Burundi.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Burundi.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Burundi",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Cambodia.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Cambodia.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Cambodia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Colombia.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Colombia.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Colombia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Croatia.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Croatia.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Croatia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_DRC.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/DRC.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "DRC",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Displacement.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Displacement.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Displacement",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Egypt.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Egypt.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Egypt",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Ethiopia.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Ethiopia.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Ethiopia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Georgia.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Georgia.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Georgia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Guatemala.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Guatemala.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Guatemala",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Haiti.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Haiti.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Haiti",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_India.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/India.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "India",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Indonesia.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Indonesia.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Indonesia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Iran.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Iran.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Iran",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Iraq.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Iraq.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Iraq",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Israel-OPT.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Israel-OPT.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Israel-OPT",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Kenya.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Kenya.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Kenya",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Liberia.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Liberia.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Liberia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Mexico.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Mexico.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Mexico",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Moz.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Moz.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Moz",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Nigeria.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Nigeria.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Nigeria",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Pakistan.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Pakistan.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Pakistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Peru.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Peru.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Peru",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Russia.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Russia.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Russia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Rwanda.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Rwanda.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Rwanda",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Serbia.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Serbia.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Serbia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Sierra Leone.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Sierra Leone.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Sierra Leone",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_South Africa.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/South Africa.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "South Africa",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Sri Lanka.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Sri Lanka.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Sri Lanka",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Sudan.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Sudan.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Sudan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Tajikistan.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Tajikistan.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Tajikistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Turkey.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Turkey.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Turkey",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Uganda.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Uganda.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Uganda",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Uzbekistan.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Uzbekistan.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Uzbekistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Venezuela.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Venezuela.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Venezuela",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Yemen.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Yemen.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Yemen",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2000(1999)/2000(1999)_Zambia.pdf",
+      "output_path": "intermediate/split_wr/hrw/2000(1999)/Zambia.pdf",
+      "org": "hrw",
+      "year": "2000(1999)",
+      "country_raw": "Zambia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Albania.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Albania.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Albania",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Algeria.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Algeria.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Algeria",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Angola.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Angola.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Angola",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Argentina.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Argentina.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Argentina",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Armenia.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Armenia.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Armenia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Azerbaijan.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Azerbaijan.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Azerbaijan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Belarus.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Belarus.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Belarus",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Bosnia and Herzegovina.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Bosnia and Herzegovina.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Bosnia and Herzegovina",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Brazil.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Brazil.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Brazil",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Bulgaria.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Bulgaria.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Bulgaria",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Burma.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Burma.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Burma",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Burundi.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Burundi.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Burundi",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Cambodia.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Cambodia.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Cambodia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Chile.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Chile.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Chile",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_China and Tibet.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/China and Tibet.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "China and Tibet",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Colombia.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Colombia.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Colombia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Croatia.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Croatia.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Croatia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Cuba.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Cuba.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Cuba",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Czech Republic.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Czech Republic.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Czech Republic",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Democratic Republic of Congo.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Democratic Republic of Congo.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Democratic Republic of Congo",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_East Timor.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/East Timor.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "East Timor",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Egypt.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Egypt.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Egypt",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Ethiopia.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Ethiopia.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Ethiopia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Federal Republic of Yugoslavia.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Federal Republic of Yugoslavia.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Federal Republic of Yugoslavia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Georgia.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Georgia.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Georgia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Greece.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Greece.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Greece",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Guatemala.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Guatemala.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Guatemala",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Haiti.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Haiti.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Haiti",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Hungary.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Hungary.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Hungary",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_India.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/India.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "India",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Indonesia.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Indonesia.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Indonesia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Iran.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Iran.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Iran",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Iraq and Iraqi Kurdistan.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Iraq and Iraqi Kurdistan.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Iraq and Iraqi Kurdistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Israel - OPT.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Israel - OPT.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Israel - OPT",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Kazakhstan.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Kazakhstan.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Kazakhstan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Kenya.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Kenya.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Kenya",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Kuwait.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Kuwait.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Kuwait",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Kyrgyzstan.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Kyrgyzstan.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Kyrgyzstan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Liberia.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Liberia.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Liberia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Macedonia.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Macedonia.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Macedonia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Malaysia.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Malaysia.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Malaysia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Mexico.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Mexico.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Mexico",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Mozambique.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Mozambique.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Mozambique",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Nigeria.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Nigeria.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Nigeria",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Pakistan.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Pakistan.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Pakistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Peru.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Peru.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Peru",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Romania.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Romania.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Romania",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Russian Federation.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Russian Federation.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Russian Federation",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Rwanda.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Rwanda.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Rwanda",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Saudi Arabia.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Saudi Arabia.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Saudi Arabia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Sierra Leone.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Sierra Leone.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Sierra Leone",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Slovakia.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Slovakia.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Slovakia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_South Africa.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/South Africa.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "South Africa",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Sri Lanka.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Sri Lanka.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Sri Lanka",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Sudan.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Sudan.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Sudan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Syria.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Syria.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Syria",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Tajikistan.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Tajikistan.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Tajikistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Thailand.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Thailand.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Thailand",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Tunisia.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Tunisia.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Tunisia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Turkey.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Turkey.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Turkey",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Turkmenistan.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Turkmenistan.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Turkmenistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_United Kingdom.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/United Kingdom.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "United Kingdom",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Uzbekistan.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Uzbekistan.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Uzbekistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Venezuela.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Venezuela.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Venezuela",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Vietnam.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Vietnam.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Vietnam",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Yemen.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Yemen.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Yemen",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2001(2000)/2001(2000)_Zambia.html",
+      "output_path": "intermediate/split_wr/hrw/2001(2000)/Zambia.html",
+      "org": "hrw",
+      "year": "2001(2000)",
+      "country_raw": "Zambia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Afghanistan.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Afghanistan.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Afghanistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Albania.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Albania.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Albania",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Algeria.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Algeria.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Algeria",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Angola.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Angola.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Angola",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Argentina.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Argentina.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Argentina",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Armenia.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Armenia.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Armenia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Azerbaijan.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Azerbaijan.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Azerbaijan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Bosnia and Herzegovina.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Bosnia and Herzegovina.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Bosnia and Herzegovina",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Brazil.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Brazil.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Brazil",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Bulgaria.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Bulgaria.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Bulgaria",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Burma.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Burma.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Burma",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Burundi.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Burundi.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Burundi",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Cambodia.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Cambodia.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Cambodia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Chile.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Chile.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Chile",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_China and Tibet.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/China and Tibet.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "China and Tibet",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Colombia.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Colombia.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Colombia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Croatia.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Croatia.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Croatia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Cuba.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Cuba.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Cuba",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Czech Republic.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Czech Republic.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Czech Republic",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_DRC.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/DRC.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "DRC",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_East Timor.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/East Timor.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "East Timor",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Egypt.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Egypt.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Egypt",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Eritrea.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Eritrea.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Eritrea",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Ethiopia.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Ethiopia.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Ethiopia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Georgia.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Georgia.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Georgia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Greece.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Greece.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Greece",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Guatemala.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Guatemala.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Guatemala",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Haiti.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Haiti.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Haiti",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Hungary.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Hungary.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Hungary",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_India.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/India.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "India",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Indonesia.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Indonesia.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Indonesia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Iran.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Iran.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Iran",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Iraq.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Iraq.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Iraq",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Israel - OPT.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Israel - OPT.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Israel - OPT",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Kazakhstan.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Kazakhstan.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Kazakhstan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Kenya.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Kenya.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Kenya",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Kyrgyzstan.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Kyrgyzstan.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Kyrgyzstan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Liberia.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Liberia.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Liberia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Macedonia.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Macedonia.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Macedonia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Malaysia.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Malaysia.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Malaysia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Mexico.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Mexico.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Mexico",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Morocco.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Morocco.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Morocco",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Nigeria.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Nigeria.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Nigeria",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Pakistan.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Pakistan.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Pakistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Peru.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Peru.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Peru",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Romania.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Romania.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Romania",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Russian Federation.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Russian Federation.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Russian Federation",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Rwanda.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Rwanda.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Rwanda",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Saudi Arabia.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Saudi Arabia.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Saudi Arabia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Sierra Leone.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Sierra Leone.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Sierra Leone",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Slovakia.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Slovakia.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Slovakia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_South Africa.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/South Africa.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "South Africa",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Sri Lanka.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Sri Lanka.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Sri Lanka",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Sudan.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Sudan.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Sudan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Syria.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Syria.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Syria",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Tajikistan.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Tajikistan.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Tajikistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Tunisia.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Tunisia.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Tunisia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Turkey.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Turkey.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Turkey",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Turkmenistan.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Turkmenistan.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Turkmenistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_United Kingdom.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/United Kingdom.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "United Kingdom",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Uzbekistan.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Uzbekistan.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Uzbekistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Venezuela.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Venezuela.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Venezuela",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Vietnam.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Vietnam.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Vietnam",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Yemen.html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Yemen.html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Yemen",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2002(2001)/2002(2001)_Yugoslavia (Serbia and Montenegro).html",
+      "output_path": "intermediate/split_wr/hrw/2002(2001)/Yugoslavia (Serbia and Montenegro).html",
+      "org": "hrw",
+      "year": "2002(2001)",
+      "country_raw": "Yugoslavia (Serbia and Montenegro)",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Afghanistan.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Afghanistan.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Afghanistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Albania.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Albania.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Albania",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Algeria.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Algeria.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Algeria",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Angola.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Angola.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Angola",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Argentina.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Argentina.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Argentina",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Armenia.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Armenia.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Armenia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Azerbaijan.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Azerbaijan.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Azerbaijan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Belarus.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Belarus.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Belarus",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Bosnia and Herzegovina.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Bosnia and Herzegovina.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Bosnia and Herzegovina",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Brazil.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Brazil.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Brazil",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Burma.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Burma.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Burma",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Burundi.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Burundi.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Burundi",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Cambodia.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Cambodia.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Cambodia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Chile.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Chile.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Chile",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_China and Tibet.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/China and Tibet.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "China and Tibet",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Colombia.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Colombia.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Colombia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Croatia.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Croatia.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Croatia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Cuba.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Cuba.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Cuba",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Democratic Republic of Congo.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Democratic Republic of Congo.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Democratic Republic of Congo",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_East Timor.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/East Timor.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "East Timor",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Egypt.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Egypt.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Egypt",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Eritrea.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Eritrea.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Eritrea",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Ethiopia.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Ethiopia.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Ethiopia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Federal Republic of Yugoslavia.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Federal Republic of Yugoslavia.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Federal Republic of Yugoslavia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Georgia.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Georgia.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Georgia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Guatemala.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Guatemala.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Guatemala",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Haiti.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Haiti.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Haiti",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_India.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/India.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "India",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Indonesia.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Indonesia.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Indonesia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Iran.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Iran.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Iran",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Iraq and Iraqi Kurdistan.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Iraq and Iraqi Kurdistan.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Iraq and Iraqi Kurdistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Israel - OPT.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Israel - OPT.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Israel - OPT",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Kazakhstan.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Kazakhstan.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Kazakhstan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Kenya.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Kenya.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Kenya",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Kyrgyzstan.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Kyrgyzstan.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Kyrgyzstan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Macedonia.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Macedonia.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Macedonia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Mexico.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Mexico.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Mexico",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Nigeria.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Nigeria.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Nigeria",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Pakistan.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Pakistan.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Pakistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Peru.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Peru.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Peru",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Russian Federation.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Russian Federation.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Russian Federation",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Rwanda.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Rwanda.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Rwanda",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Saudi Arabia.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Saudi Arabia.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Saudi Arabia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Sierra Leone.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Sierra Leone.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Sierra Leone",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_South Africa.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/South Africa.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "South Africa",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Sudan.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Sudan.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Sudan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Syria.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Syria.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Syria",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Tajikistan.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Tajikistan.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Tajikistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Tunisia.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Tunisia.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Tunisia",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Turkey.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Turkey.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Turkey",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Turkmenistan.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Turkmenistan.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Turkmenistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Uganda.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Uganda.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Uganda",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Ukraine.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Ukraine.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Ukraine",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Uzbekistan.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Uzbekistan.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Uzbekistan",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Venezuela.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Venezuela.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Venezuela",
+      "status": "ok"
+    },
+    {
+      "input_path": "input/wr/hrw/2003(2002)/2003(2002)_Vietnam.html",
+      "output_path": "intermediate/split_wr/hrw/2003(2002)/Vietnam.html",
+      "org": "hrw",
+      "year": "2003(2002)",
+      "country_raw": "Vietnam",
+      "status": "ok"
     }
   ],
   "summary": {
-    "total": 5558,
-    "ok": 5558,
+    "total": 5789,
+    "ok": 5789,
     "skipped": 0,
     "error": 0
   }
