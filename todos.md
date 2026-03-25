@@ -31,3 +31,5 @@ ORG-TYPE (all are WR for world report)-YEAR(REPORT_YEAR)-COUNTRY.SUFFIX
 - each step just dumps its files in a folder inside intermediate. Those folders should have the step name prefixed like the manifest files do
 
 - the standardise_names script does not show progress
+
+- the filter_files script also doe not show progress
